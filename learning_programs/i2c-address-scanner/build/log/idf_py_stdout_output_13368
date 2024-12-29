@@ -1,0 +1,186 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-811-ga2f420a36e 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 29 2024 13:48:24[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae10h ( 44560) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001ae38 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001ae5c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001d200 vaddr=40080000 size=02e18h ( 11800) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15b0ch ( 88844) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=00035b34 vaddr=40082e18 size=0b4a8h ( 46248) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     i2c-address-scanner[0m
+[0;32mI (203) app_init: App version:      1[0m
+[0;32mI (206) app_init: Compile time:     Dec 29 2024 13:48:48[0m
+[0;32mI (212) app_init: ELF file SHA256:  8314b1664...[0m
+[0;32mI (216) app_init: ESP-IDF:          v5.5-dev-811-ga2f420a36e[0m
+[0;32mI (221) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (225) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (229) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (233) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (239) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (255) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 4008E2C0 len 00011D40 (71 KiB): IRAM[0m
+[0;32mI (267) spi_flash: detected chip: generic[0m
+[0;32mI (269) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (284) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) I2C: Scanning I2C bus...[0m
+[0;33mW (305) I2C: Error scanning address 0x01: ESP_FAIL[0m
+[0;33mW (305) I2C: Error scanning address 0x02: ESP_FAIL[0m
+[0;33mW (305) I2C: Error scanning address 0x03: ESP_FAIL[0m
+[0;33mW (315) I2C: Error scanning address 0x04: ESP_FAIL[0m
+[0;33mW (315) I2C: Error scanning address 0x05: ESP_FAIL[0m
+[0;33mW (325) I2C: Error scanning address 0x06: ESP_FAIL[0m
+[0;33mW (325) I2C: Error scanning address 0x07: ESP_FAIL[0m
+[0;33mW (335) I2C: Error scanning address 0x08: ESP_FAIL[0m
+[0;33mW (335) I2C: Error scanning address 0x09: ESP_FAIL[0m
+[0;33mW (335) I2C: Error scanning address 0x0a: ESP_FAIL[0m
+[0;33mW (345) I2C: Error scanning address 0x0b: ESP_FAIL[0m
+[0;33mW (345) I2C: Error scanning address 0x0c: ESP_FAIL[0m
+[0;33mW (355) I2C: Error scanning address 0x0d: ESP_FAIL[0m
+[0;33mW (355) I2C: Error scanning address 0x0e: ESP_FAIL[0m
+[0;33mW (365) I2C: Error scanning address 0x0f: ESP_FAIL[0m
+[0;33mW (365) I2C: Error scanning address 0x10: ESP_FAIL[0m
+[0;33mW (375) I2C: Error scanning address 0x11: ESP_FAIL[0m
+[0;33mW (375) I2C: Error scanning address 0x12: ESP_FAIL[0m
+[0;33mW (385) I2C: Error scanning address 0x13: ESP_FAIL[0m
+[0;33mW (385) I2C: Error scanning address 0x14: ESP_FAIL[0m
+[0;33mW (385) I2C: Error scanning address 0x15: ESP_FAIL[0m
+[0;33mW (395) I2C: Error scanning address 0x16: ESP_FAIL[0m
+[0;33mW (395) I2C: Error scanning address 0x17: ESP_FAIL[0m
+[0;33mW (405) I2C: Error scanning address 0x18: ESP_FAIL[0m
+[0;33mW (405) I2C: Error scanning address 0x19: ESP_FAIL[0m
+[0;33mW (415) I2C: Error scanning address 0x1a: ESP_FAIL[0m
+[0;33mW (415) I2C: Error scanning address 0x1b: ESP_FAIL[0m
+[0;33mW (425) I2C: Error scanning address 0x1c: ESP_FAIL[0m
+[0;33mW (425) I2C: Error scanning address 0x1d: ESP_FAIL[0m
+[0;33mW (435) I2C: Error scanning address 0x1e: ESP_FAIL[0m
+[0;33mW (435) I2C: Error scanning address 0x1f: ESP_FAIL[0m
+[0;33mW (435) I2C: Error scanning address 0x20: ESP_FAIL[0m
+[0;33mW (445) I2C: Error scanning address 0x21: ESP_FAIL[0m
+[0;33mW (445) I2C: Error scanning address 0x22: ESP_FAIL[0m
+[0;33mW (455) I2C: Error scanning address 0x23: ESP_FAIL[0m
+[0;33mW (455) I2C: Error scanning address 0x24: ESP_FAIL[0m
+[0;33mW (465) I2C: Error scanning address 0x25: ESP_FAIL[0m
+[0;33mW (465) I2C: Error scanning address 0x26: ESP_FAIL[0m
+[0;33mW (475) I2C: Error scanning address 0x27: ESP_FAIL[0m
+[0;33mW (475) I2C: Error scanning address 0x28: ESP_FAIL[0m
+[0;33mW (475) I2C: Error scanning address 0x29: ESP_FAIL[0m
+[0;33mW (485) I2C: Error scanning address 0x2a: ESP_FAIL[0m
+[0;33mW (485) I2C: Error scanning address 0x2b: ESP_FAIL[0m
+[0;33mW (495) I2C: Error scanning address 0x2c: ESP_FAIL[0m
+[0;33mW (495) I2C: Error scanning address 0x2d: ESP_FAIL[0m
+[0;33mW (505) I2C: Error scanning address 0x2e: ESP_FAIL[0m
+[0;33mW (505) I2C: Error scanning address 0x2f: ESP_FAIL[0m
+[0;33mW (515) I2C: Error scanning address 0x30: ESP_FAIL[0m
+[0;33mW (515) I2C: Error scanning address 0x31: ESP_FAIL[0m
+[0;33mW (525) I2C: Error scanning address 0x32: ESP_FAIL[0m
+[0;33mW (525) I2C: Error scanning address 0x33: ESP_FAIL[0m
+[0;33mW (525) I2C: Error scanning address 0x34: ESP_FAIL[0m
+[0;33mW (535) I2C: Error scanning address 0x35: ESP_FAIL[0m
+[0;33mW (535) I2C: Error scanning address 0x36: ESP_FAIL[0m
+[0;33mW (545) I2C: Error scanning address 0x37: ESP_FAIL[0m
+[0;33mW (545) I2C: Error scanning address 0x38: ESP_FAIL[0m
+[0;33mW (555) I2C: Error scanning address 0x39: ESP_FAIL[0m
+[0;33mW (555) I2C: Error scanning address 0x3a: ESP_FAIL[0m
+[0;33mW (565) I2C: Error scanning address 0x3b: ESP_FAIL[0m
+[0;32mI (565) I2C: I2C device found at address 0x3c[0m
+[0;33mW (565) I2C: Error scanning address 0x3d: ESP_FAIL[0m
+[0;33mW (575) I2C: Error scanning address 0x3e: ESP_FAIL[0m
+[0;33mW (575) I2C: Error scanning address 0x3f: ESP_FAIL[0m
+[0;33mW (585) I2C: Error scanning address 0x40: ESP_FAIL[0m
+[0;33mW (585) I2C: Error scanning address 0x41: ESP_FAIL[0m
+[0;33mW (595) I2C: Error scanning address 0x42: ESP_FAIL[0m
+[0;33mW (595) I2C: Error scanning address 0x43: ESP_FAIL[0m
+[0;33mW (605) I2C: Error scanning address 0x44: ESP_FAIL[0m
+[0;33mW (605) I2C: Error scanning address 0x45: ESP_FAIL[0m
+[0;33mW (615) I2C: Error scanning address 0x46: ESP_FAIL[0m
+[0;33mW (615) I2C: Error scanning address 0x47: ESP_FAIL[0m
+[0;33mW (615) I2C: Error scanning address 0x48: ESP_FAIL[0m
+[0;33mW (625) I2C: Error scanning address 0x49: ESP_FAIL[0m
+[0;33mW (625) I2C: Error scanning address 0x4a: ESP_FAIL[0m
+[0;33mW (635) I2C: Error scanning address 0x4b: ESP_FAIL[0m
+[0;33mW (635) I2C: Error scanning address 0x4c: ESP_FAIL[0m
+[0;33mW (645) I2C: Error scanning address 0x4d: ESP_FAIL[0m
+[0;33mW (645) I2C: Error scanning address 0x4e: ESP_FAIL[0m
+[0;33mW (655) I2C: Error scanning address 0x4f: ESP_FAIL[0m
+[0;33mW (655) I2C: Error scanning address 0x50: ESP_FAIL[0m
+[0;33mW (655) I2C: Error scanning address 0x51: ESP_FAIL[0m
+[0;33mW (665) I2C: Error scanning address 0x52: ESP_FAIL[0m
+[0;33mW (665) I2C: Error scanning address 0x53: ESP_FAIL[0m
+[0;33mW (675) I2C: Error scanning address 0x54: ESP_FAIL[0m
+[0;33mW (675) I2C: Error scanning address 0x55: ESP_FAIL[0m
+[0;33mW (685) I2C: Error scanning address 0x56: ESP_FAIL[0m
+[0;33mW (685) I2C: Error scanning address 0x57: ESP_FAIL[0m
+[0;33mW (695) I2C: Error scanning address 0x58: ESP_FAIL[0m
+[0;33mW (695) I2C: Error scanning address 0x59: ESP_FAIL[0m
+[0;33mW (705) I2C: Error scanning address 0x5a: ESP_FAIL[0m
+[0;33mW (705) I2C: Error scanning address 0x5b: ESP_FAIL[0m
+[0;33mW (705) I2C: Error scanning address 0x5c: ESP_FAIL[0m
+[0;33mW (715) I2C: Error scanning address 0x5d: ESP_FAIL[0m
+[0;33mW (715) I2C: Error scanning address 0x5e: ESP_FAIL[0m
+[0;33mW (725) I2C: Error scanning address 0x5f: ESP_FAIL[0m
+[0;33mW (725) I2C: Error scanning address 0x60: ESP_FAIL[0m
+[0;33mW (735) I2C: Error scanning address 0x61: ESP_FAIL[0m
+[0;33mW (735) I2C: Error scanning address 0x62: ESP_FAIL[0m
+[0;33mW (745) I2C: Error scanning address 0x63: ESP_FAIL[0m
+[0;33mW (745) I2C: Error scanning address 0x64: ESP_FAIL[0m
+[0;33mW (755) I2C: Error scanning address 0x65: ESP_FAIL[0m
+[0;33mW (755) I2C: Error scanning address 0x66: ESP_FAIL[0m
+[0;33mW (755) I2C: Error scanning address 0x67: ESP_FAIL[0m
+[0;33mW (765) I2C: Error scanning address 0x68: ESP_FAIL[0m
+[0;33mW (765) I2C: Error scanning address 0x69: ESP_FAIL[0m
+[0;33mW (775) I2C: Error scanning address 0x6a: ESP_FAIL[0m
+[0;33mW (775) I2C: Error scanning address 0x6b: ESP_FAIL[0m
+[0;33mW (785) I2C: Error scanning address 0x6c: ESP_FAIL[0m
+[0;33mW (785) I2C: Error scanning address 0x6d: ESP_FAIL[0m
+[0;33mW (795) I2C: Error scanning address 0x6e: ESP_FAIL[0m
+[0;33mW (795) I2C: Error scanning address 0x6f: ESP_FAIL[0m
+[0;33mW (795) I2C: Error scanning address 0x70: ESP_FAIL[0m
+[0;33mW (805) I2C: Error scanning address 0x71: ESP_FAIL[0m
+[0;33mW (805) I2C: Error scanning address 0x72: ESP_FAIL[0m
+[0;33mW (815) I2C: Error scanning address 0x73: ESP_FAIL[0m
+[0;33mW (815) I2C: Error scanning address 0x74: ESP_FAIL[0m
+[0;33mW (825) I2C: Error scanning address 0x75: ESP_FAIL[0m
+[0;33mW (825) I2C: Error scanning address 0x76: ESP_FAIL[0m
+[0;33mW (835) I2C: Error scanning address 0x77: ESP_FAIL[0m
+[0;33mW (835) I2C: Error scanning address 0x78: ESP_FAIL[0m
+[0;33mW (845) I2C: Error scanning address 0x79: ESP_FAIL[0m
+[0;33mW (845) I2C: Error scanning address 0x7a: ESP_FAIL[0m
+[0;33mW (845) I2C: Error scanning address 0x7b: ESP_FAIL[0m
+[0;33mW (855) I2C: Error scanning address 0x7c: ESP_FAIL[0m
+[0;33mW (855) I2C: Error scanning address 0x7d: ESP_FAIL[0m
+[0;33mW (865) I2C: Error scanning address 0x7e: ESP_FAIL[0m
+[0;33mW (865) I2C: Error scanning address 0x7f: ESP_FAIL[0m
+[0;32mI (875) main_task: Returned from app_main()[0m
