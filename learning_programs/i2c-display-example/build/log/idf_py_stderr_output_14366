@@ -1,0 +1,28 @@
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:20:20: error: expected declaration specifiers or '...' before '&' token
+   20 | i2c_new_master_bus(&i2c_bus_config, &bus_handle);
+      |                    ^
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:20:37: error: expected declaration specifiers or '...' before '&' token
+   20 | i2c_new_master_bus(&i2c_bus_config, &bus_handle);
+      |                                     ^
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:29:38: error: expected ')' before '&' token
+   29 | i2c_master_bus_add_device(bus_handle, &dev_cfg, &dev_handle);
+      |                                      ^~
+      |                                      )
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:31:20: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+   31 | char message[32] = 'hello world';
+      |                    ^~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:31:20: error: invalid initializer
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:32:1: warning: data definition has no type or storage class
+   32 | message_ptr = &message;
+      | ^~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:32:1: error: type defaults to 'int' in declaration of 'message_ptr' [-Wimplicit-int]
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:32:15: error: initialization of 'int' from 'char (*)[32]' makes integer from pointer without a cast [-Wint-conversion]
+   32 | message_ptr = &message;
+      |               ^
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:35:45: error: expected ')' before 'sizeof'
+   35 | i2c_master_transmit(dev_handle, message_ptr, sizeof(message), -1 );
+      |                                             ^~~~~~~
+      |                                             )
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/i2c-display-example.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5672: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

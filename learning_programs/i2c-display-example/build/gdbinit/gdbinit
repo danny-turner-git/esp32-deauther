@@ -1,0 +1,2 @@
+source /home/danny/esp-idf/projects/learning_programs/i2c-display-example/build/gdbinit/symbols
+source /home/danny/esp-idf/projects/learning_programs/i2c-display-example/build/gdbinit/connect

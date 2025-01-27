@@ -1,0 +1,13 @@
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c: In function 'app_main':
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:34:26: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+   34 |     char * message[32] = 'hello world';
+      |                          ^~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:34:26: error: invalid initializer
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:37:37: error: 'message_ptr' undeclared (first use in this function); did you mean 'message'?
+   37 |     i2c_master_transmit(dev_handle, message_ptr, sizeof(message), -1 );
+      |                                     ^~~~~~~~~~~
+      |                                     message
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:37:37: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/i2c-display-example.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5672: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

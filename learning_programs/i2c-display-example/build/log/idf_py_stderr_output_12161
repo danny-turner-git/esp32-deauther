@@ -1,0 +1,45 @@
+In file included from /home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:2:
+/home/danny/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:20:1: note: in expansion of macro 'ESP_ERROR_CHECK'
+   20 | ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_bus_config, &bus_handle));
+      | ^~~~~~~~~~~~~~~
+/home/danny/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:20:1: note: in expansion of macro 'ESP_ERROR_CHECK'
+   20 | ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_bus_config, &bus_handle));
+      | ^~~~~~~~~~~~~~~
+/home/danny/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:29:1: note: in expansion of macro 'ESP_ERROR_CHECK'
+   29 | ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &dev_cfg, &dev_handle));
+      | ^~~~~~~~~~~~~~~
+/home/danny/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:29:1: note: in expansion of macro 'ESP_ERROR_CHECK'
+   29 | ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &dev_cfg, &dev_handle));
+      | ^~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:31:18: warning: multi-character literal with 11 characters exceeds 'int' size of 4 bytes
+   31 | char message[] = 'hello world';
+      |                  ^~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:31:18: error: invalid initializer
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:32:1: warning: data definition has no type or storage class
+   32 | message_ptr = &message;
+      | ^~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:32:1: error: type defaults to 'int' in declaration of 'message_ptr' [-Wimplicit-int]
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:32:15: error: initialization of 'int' from 'char (*)[1]' makes integer from pointer without a cast [-Wint-conversion]
+   32 | message_ptr = &message;
+      |               ^
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:40:2: error: unterminated argument list invoking macro "ESP_ERROR_CHECK"
+   40 | }
+      |  ^
+/home/danny/esp-idf/projects/learning_programs/i2c-display-example/main/i2c-display-example.c:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' at end of input
+   35 | ESP_ERROR_CHECK(i2c_master_transmit(dev_handle, message_ptr, sizeof(message), -1 );
+      | ^~~~~~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/i2c-display-example.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5672: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
