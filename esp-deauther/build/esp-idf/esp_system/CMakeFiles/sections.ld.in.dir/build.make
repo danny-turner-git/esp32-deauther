@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for sections.ld.in.
 
@@ -68,10 +68,10 @@ include esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/progress.make
 
 esp-idf/esp_system/CMakeFiles/sections.ld.in: esp-idf/esp_system/ld/sections.ld.in
 
-esp-idf/esp_system/ld/sections.ld.in: /home/danny/esp-idf-v5.3.2/components/esp_system/ld/esp32/sections.ld.in
+esp-idf/esp_system/ld/sections.ld.in: /home/danny/esp-idf/components/esp_system/ld/esp32/sections.ld.in
 esp-idf/esp_system/ld/sections.ld.in: config/sdkconfig.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in linker script..."
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system && /usr/bin/cmake -DCC=/home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DSOURCE=/home/danny/esp-idf-v5.3.2/components/esp_system/ld/esp32/sections.ld.in -DTARGET=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in -DCONFIG_DIR=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/config -DLD_DIR=/home/danny/esp-idf-v5.3.2/components/esp_system/ld -P /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/ld/linker_script_generator.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in linker script..."
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system && /usr/bin/cmake -DCC=/home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DSOURCE=/home/danny/esp-idf/components/esp_system/ld/esp32/sections.ld.in -DTARGET=/home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in -DCONFIG_DIR=/home/danny/esp-idf/projects/esp-deauther/build/config -DLD_DIR=/home/danny/esp-idf/components/esp_system/ld -P /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/ld/linker_script_generator.cmake
 
 sections.ld.in: esp-idf/esp_system/CMakeFiles/sections.ld.in
 sections.ld.in: esp-idf/esp_system/ld/sections.ld.in
@@ -83,10 +83,10 @@ esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/build: sections.ld.in
 .PHONY : esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/build
 
 esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system && $(CMAKE_COMMAND) -P CMakeFiles/sections.ld.in.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system && $(CMAKE_COMMAND) -P CMakeFiles/sections.ld.in.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/clean
 
 esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/esp_system /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/esp_system /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/depend
 

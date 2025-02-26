@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Include any dependencies generated for this target.
 include esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/depend.make
@@ -70,18 +70,18 @@ include esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/progress.ma
 include esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/flags.make
 
 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj: esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/flags.make
-esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj: /home/danny/esp-idf-v5.3.2/components/esp_vfs_console/vfs_console.c
+esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj: /home/danny/esp-idf/components/esp_vfs_console/vfs_console.c
 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj: esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_vfs_console && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj -MF CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj.d -o CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj -c /home/danny/esp-idf-v5.3.2/components/esp_vfs_console/vfs_console.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_vfs_console && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj -MF CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj.d -o CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj -c /home/danny/esp-idf/components/esp_vfs_console/vfs_console.c
 
 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_vfs_console && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/esp_vfs_console/vfs_console.c > CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_vfs_console && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/esp_vfs_console/vfs_console.c > CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.i
 
 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_vfs_console && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/esp_vfs_console/vfs_console.c -o CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_vfs_console && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/esp_vfs_console/vfs_console.c -o CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.s
 
 # Object files for target __idf_esp_vfs_console
 __idf_esp_vfs_console_OBJECTS = \
@@ -93,19 +93,19 @@ __idf_esp_vfs_console_EXTERNAL_OBJECTS =
 esp-idf/esp_vfs_console/libesp_vfs_console.a: esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/vfs_console.c.obj
 esp-idf/esp_vfs_console/libesp_vfs_console.a: esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/build.make
 esp-idf/esp_vfs_console/libesp_vfs_console.a: esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libesp_vfs_console.a"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_vfs_console && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_vfs_console.dir/cmake_clean_target.cmake
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_vfs_console && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_vfs_console.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libesp_vfs_console.a"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_vfs_console && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_vfs_console.dir/cmake_clean_target.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_vfs_console && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_vfs_console.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/build: esp-idf/esp_vfs_console/libesp_vfs_console.a
 .PHONY : esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/build
 
 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_vfs_console && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_vfs_console.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_vfs_console && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_vfs_console.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/clean
 
 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/esp_vfs_console /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_vfs_console /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/esp_vfs_console /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_vfs_console /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/depend
 

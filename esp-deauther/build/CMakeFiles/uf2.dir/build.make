@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for uf2.
 
@@ -67,7 +67,7 @@ include CMakeFiles/uf2.dir/compiler_depend.make
 include CMakeFiles/uf2.dir/progress.make
 
 CMakeFiles/uf2:
-	/usr/bin/cmake -D IDF_PATH=/home/danny/esp-idf-v5.3.2 -D "UF2_CMD=/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python;/home/danny/esp-idf-v5.3.2/tools/mkuf2.py;write;--chip;esp32" -D "UF2_ARGS=--json;/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/flasher_args.json;-o;/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/uf2.bin" -P /home/danny/esp-idf-v5.3.2/tools/cmake/run_uf2_cmds.cmake
+	/usr/bin/cmake -D IDF_PATH=/home/danny/esp-idf -D "UF2_CMD=/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python;/home/danny/esp-idf/tools/mkuf2.py;write;--chip;esp32" -D "UF2_ARGS=--json;/home/danny/esp-idf/projects/esp-deauther/build/flasher_args.json;-o;/home/danny/esp-idf/projects/esp-deauther/build/uf2.bin" -P /home/danny/esp-idf/tools/cmake/run_uf2_cmds.cmake
 
 uf2: CMakeFiles/uf2
 uf2: CMakeFiles/uf2.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/uf2.dir/clean:
 .PHONY : CMakeFiles/uf2.dir/clean
 
 CMakeFiles/uf2.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles/uf2.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles/uf2.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uf2.dir/depend
 

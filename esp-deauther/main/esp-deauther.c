@@ -8,10 +8,11 @@
 #include "driver/i2c_master.h"
 #include "esp_netif.h"
 #include "nvs_flash.h"
+#include "esp_wifi.h"
 #include <esp_wifi_types_generic.h>
 
-void send_frame(uint8_t * frame_buffer[], wifi_interface_t ifx){
-
+const uint8_t deauth_frame[] = {
+    // frame control
 }
 
 void app_main(void)
@@ -26,6 +27,8 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
     esp_wifi_set_mode(WIFI_MODE_AP); // set mode in order to use alter AP configs
 
+    ESP_ERROR_CHECK(esp_wifi_start());
 
+    esp_wifi_80211_tx(WIFI_IF_STA, &deauth_frame, sizeof(deauth_frame), true);
 
 }

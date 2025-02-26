@@ -1,0 +1,1 @@
+Command: cmake -G Unix Makefiles -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 /home/danny/esp-idf/projects/esp-deauther

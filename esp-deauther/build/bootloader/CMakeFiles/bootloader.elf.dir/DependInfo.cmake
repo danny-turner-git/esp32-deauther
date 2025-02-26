@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/project_elf_src_esp32.c" "CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj" "gcc" "CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj.d"
+  "/home/danny/esp-idf/projects/esp-deauther/build/bootloader/project_elf_src_esp32.c" "CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj" "gcc" "CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

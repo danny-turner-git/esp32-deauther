@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Include any dependencies generated for this target.
 include esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/depend.make
@@ -70,60 +70,60 @@ include esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/progress.make
 include esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/flags.make
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/flags.make
-esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj: /home/danny/esp-idf-v5.3.2/components/app_trace/app_trace.c
+esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj: /home/danny/esp-idf/components/app_trace/app_trace.c
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj -MF CMakeFiles/__idf_app_trace.dir/app_trace.c.obj.d -o CMakeFiles/__idf_app_trace.dir/app_trace.c.obj -c /home/danny/esp-idf-v5.3.2/components/app_trace/app_trace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj -MF CMakeFiles/__idf_app_trace.dir/app_trace.c.obj.d -o CMakeFiles/__idf_app_trace.dir/app_trace.c.obj -c /home/danny/esp-idf/components/app_trace/app_trace.c
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_app_trace.dir/app_trace.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/app_trace/app_trace.c > CMakeFiles/__idf_app_trace.dir/app_trace.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/app_trace/app_trace.c > CMakeFiles/__idf_app_trace.dir/app_trace.c.i
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_app_trace.dir/app_trace.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/app_trace/app_trace.c -o CMakeFiles/__idf_app_trace.dir/app_trace.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/app_trace/app_trace.c -o CMakeFiles/__idf_app_trace.dir/app_trace.c.s
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/flags.make
-esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj: /home/danny/esp-idf-v5.3.2/components/app_trace/app_trace_util.c
+esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj: /home/danny/esp-idf/components/app_trace/app_trace_util.c
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj -MF CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj.d -o CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj -c /home/danny/esp-idf-v5.3.2/components/app_trace/app_trace_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj -MF CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj.d -o CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj -c /home/danny/esp-idf/components/app_trace/app_trace_util.c
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_app_trace.dir/app_trace_util.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/app_trace/app_trace_util.c > CMakeFiles/__idf_app_trace.dir/app_trace_util.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/app_trace/app_trace_util.c > CMakeFiles/__idf_app_trace.dir/app_trace_util.c.i
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_app_trace.dir/app_trace_util.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/app_trace/app_trace_util.c -o CMakeFiles/__idf_app_trace.dir/app_trace_util.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/app_trace/app_trace_util.c -o CMakeFiles/__idf_app_trace.dir/app_trace_util.c.s
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/flags.make
-esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj: /home/danny/esp-idf-v5.3.2/components/app_trace/host_file_io.c
+esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj: /home/danny/esp-idf/components/app_trace/host_file_io.c
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj -MF CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj.d -o CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj -c /home/danny/esp-idf-v5.3.2/components/app_trace/host_file_io.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj -MF CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj.d -o CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj -c /home/danny/esp-idf/components/app_trace/host_file_io.c
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_app_trace.dir/host_file_io.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/app_trace/host_file_io.c > CMakeFiles/__idf_app_trace.dir/host_file_io.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/app_trace/host_file_io.c > CMakeFiles/__idf_app_trace.dir/host_file_io.c.i
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_app_trace.dir/host_file_io.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/app_trace/host_file_io.c -o CMakeFiles/__idf_app_trace.dir/host_file_io.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/app_trace/host_file_io.c -o CMakeFiles/__idf_app_trace.dir/host_file_io.c.s
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/flags.make
-esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj: /home/danny/esp-idf-v5.3.2/components/app_trace/port/port_uart.c
+esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj: /home/danny/esp-idf/components/app_trace/port/port_uart.c
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj -MF CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj.d -o CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj -c /home/danny/esp-idf-v5.3.2/components/app_trace/port/port_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj -MF CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj.d -o CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj -c /home/danny/esp-idf/components/app_trace/port/port_uart.c
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_app_trace.dir/port/port_uart.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/app_trace/port/port_uart.c > CMakeFiles/__idf_app_trace.dir/port/port_uart.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/app_trace/port/port_uart.c > CMakeFiles/__idf_app_trace.dir/port/port_uart.c.i
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_app_trace.dir/port/port_uart.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/app_trace/port/port_uart.c -o CMakeFiles/__idf_app_trace.dir/port/port_uart.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/app_trace/port/port_uart.c -o CMakeFiles/__idf_app_trace.dir/port/port_uart.c.s
 
 # Object files for target __idf_app_trace
 __idf_app_trace_OBJECTS = \
@@ -141,19 +141,19 @@ esp-idf/app_trace/libapp_trace.a: esp-idf/app_trace/CMakeFiles/__idf_app_trace.d
 esp-idf/app_trace/libapp_trace.a: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj
 esp-idf/app_trace/libapp_trace.a: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/build.make
 esp-idf/app_trace/libapp_trace.a: esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libapp_trace.a"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && $(CMAKE_COMMAND) -P CMakeFiles/__idf_app_trace.dir/cmake_clean_target.cmake
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_app_trace.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libapp_trace.a"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && $(CMAKE_COMMAND) -P CMakeFiles/__idf_app_trace.dir/cmake_clean_target.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_app_trace.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/build: esp-idf/app_trace/libapp_trace.a
 .PHONY : esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/build
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace && $(CMAKE_COMMAND) -P CMakeFiles/__idf_app_trace.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace && $(CMAKE_COMMAND) -P CMakeFiles/__idf_app_trace.dir/cmake_clean.cmake
 .PHONY : esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/clean
 
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/app_trace /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/app_trace /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/depend
 

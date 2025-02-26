@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build/bootloader
 
 # Include any dependencies generated for this target.
 include esp-idf/log/CMakeFiles/__idf_log.dir/depend.make
@@ -69,75 +69,155 @@ include esp-idf/log/CMakeFiles/__idf_log.dir/progress.make
 # Include the compile flags for this target's objects.
 include esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
-esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj: /home/danny/esp-idf-v5.3.2/components/log/log.c
-esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj -MF CMakeFiles/__idf_log.dir/log.c.obj.d -o CMakeFiles/__idf_log.dir/log.c.obj -c /home/danny/esp-idf-v5.3.2/components/log/log.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj: /home/danny/esp-idf/components/log/src/noos/log_timestamp.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj -MF CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj.d -o CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj -c /home/danny/esp-idf/components/log/src/noos/log_timestamp.c
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/log.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/log/log.c > CMakeFiles/__idf_log.dir/log.c.i
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/log/src/noos/log_timestamp.c > CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.i
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/log.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/log/log.c -o CMakeFiles/__idf_log.dir/log.c.s
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/log/src/noos/log_timestamp.c -o CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.s
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
-esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj: /home/danny/esp-idf-v5.3.2/components/log/log_buffers.c
-esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj -MF CMakeFiles/__idf_log.dir/log_buffers.c.obj.d -o CMakeFiles/__idf_log.dir/log_buffers.c.obj -c /home/danny/esp-idf-v5.3.2/components/log/log_buffers.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj: /home/danny/esp-idf/components/log/src/log_timestamp_common.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj -MF CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj.d -o CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj -c /home/danny/esp-idf/components/log/src/log_timestamp_common.c
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/log_buffers.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/log/log_buffers.c > CMakeFiles/__idf_log.dir/log_buffers.c.i
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/log/src/log_timestamp_common.c > CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.i
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/log_buffers.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/log/log_buffers.c -o CMakeFiles/__idf_log.dir/log_buffers.c.s
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/log/src/log_timestamp_common.c -o CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.s
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
-esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj: /home/danny/esp-idf-v5.3.2/components/log/log_noos.c
-esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj -MF CMakeFiles/__idf_log.dir/log_noos.c.obj.d -o CMakeFiles/__idf_log.dir/log_noos.c.obj -c /home/danny/esp-idf-v5.3.2/components/log/log_noos.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj: /home/danny/esp-idf/components/log/src/noos/log_lock.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj -MF CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj.d -o CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj -c /home/danny/esp-idf/components/log/src/noos/log_lock.c
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/log_noos.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/log/log_noos.c > CMakeFiles/__idf_log.dir/log_noos.c.i
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/src/noos/log_lock.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/log/src/noos/log_lock.c > CMakeFiles/__idf_log.dir/src/noos/log_lock.c.i
 
-esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/log_noos.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/log/log_noos.c -o CMakeFiles/__idf_log.dir/log_noos.c.s
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/src/noos/log_lock.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/log/src/noos/log_lock.c -o CMakeFiles/__idf_log.dir/src/noos/log_lock.c.s
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
+esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj: /home/danny/esp-idf/components/log/src/buffer/log_buffers.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj -MF CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj.d -o CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj -c /home/danny/esp-idf/components/log/src/buffer/log_buffers.c
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/log/src/buffer/log_buffers.c > CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.i
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/log/src/buffer/log_buffers.c -o CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.s
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj: /home/danny/esp-idf/components/log/src/noos/util.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj -MF CMakeFiles/__idf_log.dir/src/noos/util.c.obj.d -o CMakeFiles/__idf_log.dir/src/noos/util.c.obj -c /home/danny/esp-idf/components/log/src/noos/util.c
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/src/noos/util.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/log/src/noos/util.c > CMakeFiles/__idf_log.dir/src/noos/util.c.i
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/src/noos/util.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/log/src/noos/util.c -o CMakeFiles/__idf_log.dir/src/noos/util.c.s
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
+esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj: /home/danny/esp-idf/components/log/src/util.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj -MF CMakeFiles/__idf_log.dir/src/util.c.obj.d -o CMakeFiles/__idf_log.dir/src/util.c.obj -c /home/danny/esp-idf/components/log/src/util.c
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/src/util.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/log/src/util.c > CMakeFiles/__idf_log.dir/src/util.c.i
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/src/util.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/log/src/util.c -o CMakeFiles/__idf_log.dir/src/util.c.s
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj: /home/danny/esp-idf/components/log/src/log_print.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj -MF CMakeFiles/__idf_log.dir/src/log_print.c.obj.d -o CMakeFiles/__idf_log.dir/src/log_print.c.obj -c /home/danny/esp-idf/components/log/src/log_print.c
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/src/log_print.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/log/src/log_print.c > CMakeFiles/__idf_log.dir/src/log_print.c.i
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/src/log_print.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/log/src/log_print.c -o CMakeFiles/__idf_log.dir/src/log_print.c.s
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj: /home/danny/esp-idf/components/log/src/log.c
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj -MF CMakeFiles/__idf_log.dir/src/log.c.obj.d -o CMakeFiles/__idf_log.dir/src/log.c.obj -c /home/danny/esp-idf/components/log/src/log.c
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_log.dir/src/log.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/log/src/log.c > CMakeFiles/__idf_log.dir/src/log.c.i
+
+esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/src/log.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/log/src/log.c -o CMakeFiles/__idf_log.dir/src/log.c.s
 
 # Object files for target __idf_log
 __idf_log_OBJECTS = \
-"CMakeFiles/__idf_log.dir/log.c.obj" \
-"CMakeFiles/__idf_log.dir/log_buffers.c.obj" \
-"CMakeFiles/__idf_log.dir/log_noos.c.obj"
+"CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj" \
+"CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj" \
+"CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj" \
+"CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj" \
+"CMakeFiles/__idf_log.dir/src/noos/util.c.obj" \
+"CMakeFiles/__idf_log.dir/src/util.c.obj" \
+"CMakeFiles/__idf_log.dir/src/log_print.c.obj" \
+"CMakeFiles/__idf_log.dir/src/log.c.obj"
 
 # External object files for target __idf_log
 __idf_log_EXTERNAL_OBJECTS =
 
-esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
-esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj
-esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj
+esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj
+esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj
+esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj
+esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj
+esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj
+esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj
+esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj
+esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj
 esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/build.make
 esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library liblog.a"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -P CMakeFiles/__idf_log.dir/cmake_clean_target.cmake
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_log.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library liblog.a"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -P CMakeFiles/__idf_log.dir/cmake_clean_target.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_log.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/log/CMakeFiles/__idf_log.dir/build: esp-idf/log/liblog.a
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/build
 
 esp-idf/log/CMakeFiles/__idf_log.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -P CMakeFiles/__idf_log.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -P CMakeFiles/__idf_log.dir/cmake_clean.cmake
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/clean
 
 esp-idf/log/CMakeFiles/__idf_log.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/components/log /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/components/log /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/depend
 

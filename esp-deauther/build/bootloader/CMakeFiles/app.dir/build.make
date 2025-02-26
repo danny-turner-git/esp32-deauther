@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build/bootloader
 
 # Utility rule file for app.
 
@@ -81,6 +81,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/app.dir/depend
 

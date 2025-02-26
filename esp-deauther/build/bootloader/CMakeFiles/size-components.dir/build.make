@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build/bootloader
 
 # Utility rule file for size-components.
 
@@ -67,7 +67,7 @@ include CMakeFiles/size-components.dir/compiler_depend.make
 include CMakeFiles/size-components.dir/progress.make
 
 CMakeFiles/size-components: bootloader.map
-	/usr/bin/cmake -D "IDF_SIZE_TOOL=/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python;-m;esp_idf_size" -D IDF_SIZE_MODE=--archives -D MAP_FILE=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/bootloader.map -D OUTPUT_JSON= -P /home/danny/esp-idf-v5.3.2/tools/cmake/run_size_tool.cmake
+	/usr/bin/cmake -D "IDF_SIZE_TOOL=/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python;-m;esp_idf_size" -D IDF_SIZE_MODE=--archives -D MAP_FILE=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/bootloader.map -D OUTPUT_JSON= -P /home/danny/esp-idf/tools/cmake/run_size_tool.cmake
 
 size-components: CMakeFiles/size-components
 size-components: CMakeFiles/size-components.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/size-components.dir/clean:
 .PHONY : CMakeFiles/size-components.dir/clean
 
 CMakeFiles/size-components.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles/size-components.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles/size-components.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/size-components.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Include any dependencies generated for this target.
 include esp-idf/main/CMakeFiles/__idf_main.dir/depend.make
@@ -70,18 +70,18 @@ include esp-idf/main/CMakeFiles/__idf_main.dir/progress.make
 include esp-idf/main/CMakeFiles/__idf_main.dir/flags.make
 
 esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj: esp-idf/main/CMakeFiles/__idf_main.dir/flags.make
-esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj: /home/danny/esp-idf-v5.3.2/projects/esp-deauther/main/esp-deauther.c
+esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj: /home/danny/esp-idf/projects/esp-deauther/main/esp-deauther.c
 esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj: esp-idf/main/CMakeFiles/__idf_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj -MF CMakeFiles/__idf_main.dir/esp-deauther.c.obj.d -o CMakeFiles/__idf_main.dir/esp-deauther.c.obj -c /home/danny/esp-idf-v5.3.2/projects/esp-deauther/main/esp-deauther.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj -MF CMakeFiles/__idf_main.dir/esp-deauther.c.obj.d -o CMakeFiles/__idf_main.dir/esp-deauther.c.obj -c /home/danny/esp-idf/projects/esp-deauther/main/esp-deauther.c
 
 esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_main.dir/esp-deauther.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/projects/esp-deauther/main/esp-deauther.c > CMakeFiles/__idf_main.dir/esp-deauther.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/projects/esp-deauther/main/esp-deauther.c > CMakeFiles/__idf_main.dir/esp-deauther.c.i
 
 esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_main.dir/esp-deauther.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/projects/esp-deauther/main/esp-deauther.c -o CMakeFiles/__idf_main.dir/esp-deauther.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/projects/esp-deauther/main/esp-deauther.c -o CMakeFiles/__idf_main.dir/esp-deauther.c.s
 
 # Object files for target __idf_main
 __idf_main_OBJECTS = \
@@ -93,19 +93,19 @@ __idf_main_EXTERNAL_OBJECTS =
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/build.make
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmain.a"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main && $(CMAKE_COMMAND) -P CMakeFiles/__idf_main.dir/cmake_clean_target.cmake
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmain.a"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main && $(CMAKE_COMMAND) -P CMakeFiles/__idf_main.dir/cmake_clean_target.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/main/CMakeFiles/__idf_main.dir/build: esp-idf/main/libmain.a
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/build
 
 esp-idf/main/CMakeFiles/__idf_main.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main && $(CMAKE_COMMAND) -P CMakeFiles/__idf_main.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main && $(CMAKE_COMMAND) -P CMakeFiles/__idf_main.dir/cmake_clean.cmake
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/clean
 
 esp-idf/main/CMakeFiles/__idf_main.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/projects/esp-deauther/main /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main/CMakeFiles/__idf_main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/projects/esp-deauther/main /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main/CMakeFiles/__idf_main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for confserver.
 
@@ -67,8 +67,8 @@ include CMakeFiles/confserver.dir/compiler_depend.make
 include CMakeFiles/confserver.dir/progress.make
 
 CMakeFiles/confserver:
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/config.env
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfserver --env-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/config.env --kconfig /home/danny/esp-idf-v5.3.2/Kconfig --sdkconfig-rename /home/danny/esp-idf-v5.3.2/sdkconfig.rename --config /home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/danny/esp-idf/projects/esp-deauther/build/config.env
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfserver --env-file /home/danny/esp-idf/projects/esp-deauther/build/config.env --kconfig /home/danny/esp-idf/Kconfig --sdkconfig-rename /home/danny/esp-idf/sdkconfig.rename --config /home/danny/esp-idf/projects/esp-deauther/sdkconfig
 
 confserver: CMakeFiles/confserver
 confserver: CMakeFiles/confserver.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/confserver.dir/clean:
 .PHONY : CMakeFiles/confserver.dir/clean
 
 CMakeFiles/confserver.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles/confserver.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles/confserver.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/confserver.dir/depend
 

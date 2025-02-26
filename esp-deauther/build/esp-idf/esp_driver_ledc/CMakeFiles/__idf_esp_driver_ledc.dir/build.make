@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Include any dependencies generated for this target.
 include esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/depend.make
@@ -70,18 +70,18 @@ include esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/progress.ma
 include esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/flags.make
 
 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj: esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/flags.make
-esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj: /home/danny/esp-idf-v5.3.2/components/esp_driver_ledc/src/ledc.c
+esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj: /home/danny/esp-idf/components/esp_driver_ledc/src/ledc.c
 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj: esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_ledc && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj -MF CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj.d -o CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj -c /home/danny/esp-idf-v5.3.2/components/esp_driver_ledc/src/ledc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_ledc && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj -MF CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj.d -o CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj -c /home/danny/esp-idf/components/esp_driver_ledc/src/ledc.c
 
 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_ledc && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/esp_driver_ledc/src/ledc.c > CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_ledc && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/esp_driver_ledc/src/ledc.c > CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.i
 
 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_ledc && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/esp_driver_ledc/src/ledc.c -o CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_ledc && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/esp_driver_ledc/src/ledc.c -o CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.s
 
 # Object files for target __idf_esp_driver_ledc
 __idf_esp_driver_ledc_OBJECTS = \
@@ -93,19 +93,19 @@ __idf_esp_driver_ledc_EXTERNAL_OBJECTS =
 esp-idf/esp_driver_ledc/libesp_driver_ledc.a: esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src/ledc.c.obj
 esp-idf/esp_driver_ledc/libesp_driver_ledc.a: esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/build.make
 esp-idf/esp_driver_ledc/libesp_driver_ledc.a: esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libesp_driver_ledc.a"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_ledc && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_driver_ledc.dir/cmake_clean_target.cmake
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_ledc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_driver_ledc.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libesp_driver_ledc.a"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_ledc && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_driver_ledc.dir/cmake_clean_target.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_ledc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_driver_ledc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/build: esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 .PHONY : esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/build
 
 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_ledc && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_driver_ledc.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_ledc && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_driver_ledc.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/clean
 
 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/esp_driver_ledc /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_ledc /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/esp_driver_ledc /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_ledc /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/depend
 

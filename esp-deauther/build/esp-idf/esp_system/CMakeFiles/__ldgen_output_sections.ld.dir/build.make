@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for __ldgen_output_sections.ld.
 
@@ -69,57 +69,60 @@ include esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/progress.ma
 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld: esp-idf/esp_system/ld/sections.ld
 
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_system/ld/sections.ld.in
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/xtensa/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_gpio/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_pm/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_mm/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/spi_flash/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_system/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_system/app.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_common/common.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_common/soc.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_rom/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/hal/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/log/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/heap/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/soc/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_hw_support/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_hw_support/dma/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_hw_support/ldo/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/freertos/linker_common.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/freertos/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/newlib/newlib.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/newlib/system_libs.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_gptimer/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_ringbuf/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/app_trace/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_event/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_pcnt/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_spi/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_mcpwm/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_ana_cmpr/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_dac/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_rmt/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_sdm/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_i2c/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_ledc/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_driver_parlio/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/driver/twai/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_phy/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/vfs/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/lwip/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_netif/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/wpa_supplicant/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_wifi/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_adc/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_eth/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_gdbstub/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_psram/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/esp_lcd/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/espcoredump/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/ieee802154/linker.lf
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/components/openthread/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/xtensa/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_gpio/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_pm/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_mm/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/spi_flash/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_system/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_system/app.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_common/common.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_common/soc.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_rom/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/hal/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/log/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/heap/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/soc/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_hw_support/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_hw_support/dma/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_hw_support/ldo/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_hw_support/mspi_timing_tuning/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/freertos/linker_common.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/freertos/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/newlib/src/newlib.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/newlib/src/system_libs.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_gptimer/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_ringbuf/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_uart/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/app_trace/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_event/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_phy/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_usb_serial_jtag/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/vfs/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/lwip/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_netif/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/wpa_supplicant/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_wifi/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_spi/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_pcnt/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_mcpwm/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_ana_cmpr/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_dac/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_rmt/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_sdm/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_i2c/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_ledc/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_parlio/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/driver/twai/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_adc/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_driver_isp/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_eth/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_gdbstub/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_psram/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/esp_lcd/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/espcoredump/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/ieee802154/linker.lf
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/components/openthread/linker.lf
 esp-idf/esp_system/ld/sections.ld: esp-idf/xtensa/libxtensa.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_gpio/libesp_driver_gpio.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_pm/libesp_pm.a
@@ -139,6 +142,7 @@ esp-idf/esp_system/ld/sections.ld: esp-idf/hal/libhal.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/log/liblog.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/heap/libheap.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/soc/libsoc.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/esp_security/libesp_security.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_hw_support/libesp_hw_support.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/freertos/libfreertos.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/newlib/libnewlib.a
@@ -151,8 +155,19 @@ esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_uart/libesp_driver_uart.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/app_trace/libapp_trace.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_event/libesp_event.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/nvs_flash/libnvs_flash.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/esp_phy/libesp_phy.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/esp_vfs_console/libesp_vfs_console.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/vfs/libvfs.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/lwip/liblwip.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/esp_netif/libesp_netif.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/wpa_supplicant/libwpa_supplicant.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/esp_coex/libesp_coex.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/esp_wifi/libesp_wifi.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_spi/libesp_driver_spi.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/unity/libunity.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/cmock/libcmock.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/console/libconsole.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/sdmmc/libsdmmc.a
@@ -165,21 +180,11 @@ esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/driver/libdriver.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/esp_phy/libesp_phy.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/esp_vfs_console/libesp_vfs_console.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/vfs/libvfs.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/lwip/liblwip.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/esp_netif/libesp_netif.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/wpa_supplicant/libwpa_supplicant.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/esp_coex/libesp_coex.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/esp_wifi/libesp_wifi.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/unity/libunity.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/cmock/libcmock.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/console/libconsole.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/http_parser/libhttp_parser.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp-tls/libesp-tls.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_adc/libesp_adc.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_cam/libesp_driver_cam.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_touch_sens/libesp_driver_touch_sens.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_eth/libesp_eth.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_gdbstub/libesp_gdbstub.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_hid/libesp_hid.a
@@ -199,17 +204,18 @@ esp-idf/esp_system/ld/sections.ld: esp-idf/json/libjson.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/mqtt/libmqtt.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/nvs_sec_provider/libnvs_sec_provider.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/perfmon/libperfmon.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/rt/librt.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/spiffs/libspiffs.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/main/libmain.a
-esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/sections.ld"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system && /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/tools/ldgen/ldgen.py --config /home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig --fragments-list "/home/danny/esp-idf-v5.3.2/components/xtensa/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_gpio/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_pm/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_mm/linker.lf;/home/danny/esp-idf-v5.3.2/components/spi_flash/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_system/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_system/app.lf;/home/danny/esp-idf-v5.3.2/components/esp_common/common.lf;/home/danny/esp-idf-v5.3.2/components/esp_common/soc.lf;/home/danny/esp-idf-v5.3.2/components/esp_rom/linker.lf;/home/danny/esp-idf-v5.3.2/components/hal/linker.lf;/home/danny/esp-idf-v5.3.2/components/log/linker.lf;/home/danny/esp-idf-v5.3.2/components/heap/linker.lf;/home/danny/esp-idf-v5.3.2/components/soc/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_hw_support/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_hw_support/dma/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_hw_support/ldo/linker.lf;/home/danny/esp-idf-v5.3.2/components/freertos/linker_common.lf;/home/danny/esp-idf-v5.3.2/components/freertos/linker.lf;/home/danny/esp-idf-v5.3.2/components/newlib/newlib.lf;/home/danny/esp-idf-v5.3.2/components/newlib/system_libs.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_gptimer/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_ringbuf/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_uart/linker.lf;/home/danny/esp-idf-v5.3.2/components/app_trace/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_event/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_pcnt/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_spi/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_mcpwm/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_ana_cmpr/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_dac/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_rmt/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_sdm/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_i2c/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_ledc/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_driver_parlio/linker.lf;/home/danny/esp-idf-v5.3.2/components/driver/twai/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_phy/linker.lf;/home/danny/esp-idf-v5.3.2/components/vfs/linker.lf;/home/danny/esp-idf-v5.3.2/components/lwip/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_netif/linker.lf;/home/danny/esp-idf-v5.3.2/components/wpa_supplicant/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_wifi/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_adc/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_eth/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_gdbstub/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_psram/linker.lf;/home/danny/esp-idf-v5.3.2/components/esp_lcd/linker.lf;/home/danny/esp-idf-v5.3.2/components/espcoredump/linker.lf;/home/danny/esp-idf-v5.3.2/components/ieee802154/linker.lf;/home/danny/esp-idf-v5.3.2/components/openthread/linker.lf" --input /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in --output /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld --kconfig /home/danny/esp-idf-v5.3.2/Kconfig --env-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/config.env --libraries-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/ldgen_libraries --objdump /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump
+esp-idf/esp_system/ld/sections.ld: /home/danny/esp-idf/projects/esp-deauther/sdkconfig
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/sections.ld"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system && /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/tools/ldgen/ldgen.py --config /home/danny/esp-idf/projects/esp-deauther/sdkconfig --fragments-list "/home/danny/esp-idf/components/xtensa/linker.lf;/home/danny/esp-idf/components/esp_driver_gpio/linker.lf;/home/danny/esp-idf/components/esp_pm/linker.lf;/home/danny/esp-idf/components/esp_mm/linker.lf;/home/danny/esp-idf/components/spi_flash/linker.lf;/home/danny/esp-idf/components/esp_system/linker.lf;/home/danny/esp-idf/components/esp_system/app.lf;/home/danny/esp-idf/components/esp_common/common.lf;/home/danny/esp-idf/components/esp_common/soc.lf;/home/danny/esp-idf/components/esp_rom/linker.lf;/home/danny/esp-idf/components/hal/linker.lf;/home/danny/esp-idf/components/log/linker.lf;/home/danny/esp-idf/components/heap/linker.lf;/home/danny/esp-idf/components/soc/linker.lf;/home/danny/esp-idf/components/esp_hw_support/linker.lf;/home/danny/esp-idf/components/esp_hw_support/dma/linker.lf;/home/danny/esp-idf/components/esp_hw_support/ldo/linker.lf;/home/danny/esp-idf/components/esp_hw_support/mspi_timing_tuning/linker.lf;/home/danny/esp-idf/components/freertos/linker_common.lf;/home/danny/esp-idf/components/freertos/linker.lf;/home/danny/esp-idf/components/newlib/src/newlib.lf;/home/danny/esp-idf/components/newlib/src/system_libs.lf;/home/danny/esp-idf/components/esp_driver_gptimer/linker.lf;/home/danny/esp-idf/components/esp_ringbuf/linker.lf;/home/danny/esp-idf/components/esp_driver_uart/linker.lf;/home/danny/esp-idf/components/app_trace/linker.lf;/home/danny/esp-idf/components/esp_event/linker.lf;/home/danny/esp-idf/components/esp_phy/linker.lf;/home/danny/esp-idf/components/esp_driver_usb_serial_jtag/linker.lf;/home/danny/esp-idf/components/vfs/linker.lf;/home/danny/esp-idf/components/lwip/linker.lf;/home/danny/esp-idf/components/esp_netif/linker.lf;/home/danny/esp-idf/components/wpa_supplicant/linker.lf;/home/danny/esp-idf/components/esp_wifi/linker.lf;/home/danny/esp-idf/components/esp_driver_spi/linker.lf;/home/danny/esp-idf/components/esp_driver_pcnt/linker.lf;/home/danny/esp-idf/components/esp_driver_mcpwm/linker.lf;/home/danny/esp-idf/components/esp_driver_ana_cmpr/linker.lf;/home/danny/esp-idf/components/esp_driver_dac/linker.lf;/home/danny/esp-idf/components/esp_driver_rmt/linker.lf;/home/danny/esp-idf/components/esp_driver_sdm/linker.lf;/home/danny/esp-idf/components/esp_driver_i2c/linker.lf;/home/danny/esp-idf/components/esp_driver_ledc/linker.lf;/home/danny/esp-idf/components/esp_driver_parlio/linker.lf;/home/danny/esp-idf/components/driver/twai/linker.lf;/home/danny/esp-idf/components/esp_adc/linker.lf;/home/danny/esp-idf/components/esp_driver_isp/linker.lf;/home/danny/esp-idf/components/esp_eth/linker.lf;/home/danny/esp-idf/components/esp_gdbstub/linker.lf;/home/danny/esp-idf/components/esp_psram/linker.lf;/home/danny/esp-idf/components/esp_lcd/linker.lf;/home/danny/esp-idf/components/espcoredump/linker.lf;/home/danny/esp-idf/components/ieee802154/linker.lf;/home/danny/esp-idf/components/openthread/linker.lf" --input /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in --output /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld --kconfig /home/danny/esp-idf/Kconfig --env-file /home/danny/esp-idf/projects/esp-deauther/build/config.env --libraries-file /home/danny/esp-idf/projects/esp-deauther/build/ldgen_libraries --objdump /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump
 
-esp-idf/esp_system/ld/sections.ld.in: /home/danny/esp-idf-v5.3.2/components/esp_system/ld/esp32/sections.ld.in
+esp-idf/esp_system/ld/sections.ld.in: /home/danny/esp-idf/components/esp_system/ld/esp32/sections.ld.in
 esp-idf/esp_system/ld/sections.ld.in: config/sdkconfig.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in linker script..."
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system && /usr/bin/cmake -DCC=/home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DSOURCE=/home/danny/esp-idf-v5.3.2/components/esp_system/ld/esp32/sections.ld.in -DTARGET=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in -DCONFIG_DIR=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/config -DLD_DIR=/home/danny/esp-idf-v5.3.2/components/esp_system/ld -P /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/ld/linker_script_generator.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in linker script..."
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system && /usr/bin/cmake -DCC=/home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DSOURCE=/home/danny/esp-idf/components/esp_system/ld/esp32/sections.ld.in -DTARGET=/home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/ld/sections.ld.in -DCONFIG_DIR=/home/danny/esp-idf/projects/esp-deauther/build/config -DLD_DIR=/home/danny/esp-idf/components/esp_system/ld -P /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/ld/linker_script_generator.cmake
 
 __ldgen_output_sections.ld: esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld
 __ldgen_output_sections.ld: esp-idf/esp_system/ld/sections.ld
@@ -222,10 +228,10 @@ esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/build: __ldgen_outp
 .PHONY : esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/build
 
 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system && $(CMAKE_COMMAND) -P CMakeFiles/__ldgen_output_sections.ld.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system && $(CMAKE_COMMAND) -P CMakeFiles/__ldgen_output_sections.ld.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/clean
 
 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/esp_system /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/esp_system /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/depend
 

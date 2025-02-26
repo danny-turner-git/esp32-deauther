@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build/bootloader
 
 # Utility rule file for gen_project_binary.
 
@@ -69,10 +69,10 @@ include CMakeFiles/gen_project_binary.dir/progress.make
 CMakeFiles/gen_project_binary: .bin_timestamp
 
 .bin_timestamp: bootloader.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating binary image from built executable"
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/components/esptool_py/esptool/esptool.py --chip esp32 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB --min-rev-full 0 --max-rev-full 399 -o /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/bootloader.bin /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/bootloader.elf
-	/usr/bin/cmake -E echo "Generated /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/bootloader.bin"
-	/usr/bin/cmake -E md5sum /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/bootloader.bin > /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/.bin_timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating binary image from built executable"
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB --min-rev-full 0 --max-rev-full 399 -o /home/danny/esp-idf/projects/esp-deauther/build/bootloader/bootloader.bin /home/danny/esp-idf/projects/esp-deauther/build/bootloader/bootloader.elf
+	/usr/bin/cmake -E echo "Generated /home/danny/esp-idf/projects/esp-deauther/build/bootloader/bootloader.bin"
+	/usr/bin/cmake -E md5sum /home/danny/esp-idf/projects/esp-deauther/build/bootloader/bootloader.bin > /home/danny/esp-idf/projects/esp-deauther/build/bootloader/.bin_timestamp
 
 gen_project_binary: .bin_timestamp
 gen_project_binary: CMakeFiles/gen_project_binary
@@ -88,6 +88,6 @@ CMakeFiles/gen_project_binary.dir/clean:
 .PHONY : CMakeFiles/gen_project_binary.dir/clean
 
 CMakeFiles/gen_project_binary.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles/gen_project_binary.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles/gen_project_binary.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gen_project_binary.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build/bootloader
 
 # Utility rule file for uf2-app.
 
@@ -67,7 +67,7 @@ include CMakeFiles/uf2-app.dir/compiler_depend.make
 include CMakeFiles/uf2-app.dir/progress.make
 
 CMakeFiles/uf2-app:
-	/usr/bin/cmake -D IDF_PATH=/home/danny/esp-idf-v5.3.2 -D "UF2_CMD=/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python;/home/danny/esp-idf-v5.3.2/tools/mkuf2.py;write;--chip;esp32" -D "UF2_ARGS=--json;/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/flasher_args.json;-o;/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/uf2-app.bin;--bin;app" -P /home/danny/esp-idf-v5.3.2/tools/cmake/run_uf2_cmds.cmake
+	/usr/bin/cmake -D IDF_PATH=/home/danny/esp-idf -D "UF2_CMD=/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python;/home/danny/esp-idf/tools/mkuf2.py;write;--chip;esp32" -D "UF2_ARGS=--json;/home/danny/esp-idf/projects/esp-deauther/build/bootloader/flasher_args.json;-o;/home/danny/esp-idf/projects/esp-deauther/build/bootloader/uf2-app.bin;--bin;app" -P /home/danny/esp-idf/tools/cmake/run_uf2_cmds.cmake
 
 uf2-app: CMakeFiles/uf2-app
 uf2-app: CMakeFiles/uf2-app.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/uf2-app.dir/clean:
 .PHONY : CMakeFiles/uf2-app.dir/clean
 
 CMakeFiles/uf2-app.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles/uf2-app.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles/uf2-app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uf2-app.dir/depend
 

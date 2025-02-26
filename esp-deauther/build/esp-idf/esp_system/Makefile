@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_system//CMakeFiles/progress.marks
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles 0
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_system//CMakeFiles/progress.marks
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/clean
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/preinstall
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/preinstall
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule
 .PHONY : esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ __idf_esp_system: esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule
 
 # fast build rule for target.
 __idf_esp_system/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build
 .PHONY : __idf_esp_system/fast
 
 # Convenience name for target.
 esp-idf/esp_system/CMakeFiles/memory.ld.dir/rule:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/memory.ld.dir/rule
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/memory.ld.dir/rule
 .PHONY : esp-idf/esp_system/CMakeFiles/memory.ld.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ memory.ld: esp-idf/esp_system/CMakeFiles/memory.ld.dir/rule
 
 # fast build rule for target.
 memory.ld/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/memory.ld.dir/build.make esp-idf/esp_system/CMakeFiles/memory.ld.dir/build
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/memory.ld.dir/build.make esp-idf/esp_system/CMakeFiles/memory.ld.dir/build
 .PHONY : memory.ld/fast
 
 # Convenience name for target.
 esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/rule:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/rule
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/rule
 .PHONY : esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/rule
 
 # Convenience name for target.
@@ -200,12 +200,12 @@ sections.ld.in: esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/rule
 
 # fast build rule for target.
 sections.ld.in/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/build.make esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/build
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/build.make esp-idf/esp_system/CMakeFiles/sections.ld.in.dir/build
 .PHONY : sections.ld.in/fast
 
 # Convenience name for target.
 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/rule:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/rule
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/rule
 .PHONY : esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/rule
 
 # Convenience name for target.
@@ -214,7 +214,7 @@ __ldgen_output_sections.ld: esp-idf/esp_system/CMakeFiles/__ldgen_output_section
 
 # fast build rule for target.
 __ldgen_output_sections.ld/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/build.make esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/build
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/build.make esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/build
 .PHONY : __ldgen_output_sections.ld/fast
 
 crosscore_int.obj: crosscore_int.c.obj
@@ -222,7 +222,7 @@ crosscore_int.obj: crosscore_int.c.obj
 
 # target to build an object file
 crosscore_int.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.obj
 .PHONY : crosscore_int.c.obj
 
 crosscore_int.i: crosscore_int.c.i
@@ -230,7 +230,7 @@ crosscore_int.i: crosscore_int.c.i
 
 # target to preprocess a source file
 crosscore_int.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.i
 .PHONY : crosscore_int.c.i
 
 crosscore_int.s: crosscore_int.c.s
@@ -238,7 +238,7 @@ crosscore_int.s: crosscore_int.c.s
 
 # target to generate assembly for a file
 crosscore_int.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.s
 .PHONY : crosscore_int.c.s
 
 esp_err.obj: esp_err.c.obj
@@ -246,7 +246,7 @@ esp_err.obj: esp_err.c.obj
 
 # target to build an object file
 esp_err.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
 .PHONY : esp_err.c.obj
 
 esp_err.i: esp_err.c.i
@@ -254,7 +254,7 @@ esp_err.i: esp_err.c.i
 
 # target to preprocess a source file
 esp_err.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.i
 .PHONY : esp_err.c.i
 
 esp_err.s: esp_err.c.s
@@ -262,7 +262,7 @@ esp_err.s: esp_err.c.s
 
 # target to generate assembly for a file
 esp_err.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.s
 .PHONY : esp_err.c.s
 
 esp_ipc.obj: esp_ipc.c.obj
@@ -270,7 +270,7 @@ esp_ipc.obj: esp_ipc.c.obj
 
 # target to build an object file
 esp_ipc.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.obj
 .PHONY : esp_ipc.c.obj
 
 esp_ipc.i: esp_ipc.c.i
@@ -278,7 +278,7 @@ esp_ipc.i: esp_ipc.c.i
 
 # target to preprocess a source file
 esp_ipc.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.i
 .PHONY : esp_ipc.c.i
 
 esp_ipc.s: esp_ipc.c.s
@@ -286,7 +286,7 @@ esp_ipc.s: esp_ipc.c.s
 
 # target to generate assembly for a file
 esp_ipc.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.s
 .PHONY : esp_ipc.c.s
 
 esp_system.obj: esp_system.c.obj
@@ -294,7 +294,7 @@ esp_system.obj: esp_system.c.obj
 
 # target to build an object file
 esp_system.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.obj
 .PHONY : esp_system.c.obj
 
 esp_system.i: esp_system.c.i
@@ -302,7 +302,7 @@ esp_system.i: esp_system.c.i
 
 # target to preprocess a source file
 esp_system.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.i
 .PHONY : esp_system.c.i
 
 esp_system.s: esp_system.c.s
@@ -310,7 +310,7 @@ esp_system.s: esp_system.c.s
 
 # target to generate assembly for a file
 esp_system.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.s
 .PHONY : esp_system.c.s
 
 freertos_hooks.obj: freertos_hooks.c.obj
@@ -318,7 +318,7 @@ freertos_hooks.obj: freertos_hooks.c.obj
 
 # target to build an object file
 freertos_hooks.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.obj
 .PHONY : freertos_hooks.c.obj
 
 freertos_hooks.i: freertos_hooks.c.i
@@ -326,7 +326,7 @@ freertos_hooks.i: freertos_hooks.c.i
 
 # target to preprocess a source file
 freertos_hooks.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.i
 .PHONY : freertos_hooks.c.i
 
 freertos_hooks.s: freertos_hooks.c.s
@@ -334,7 +334,7 @@ freertos_hooks.s: freertos_hooks.c.s
 
 # target to generate assembly for a file
 freertos_hooks.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.s
 .PHONY : freertos_hooks.c.s
 
 int_wdt.obj: int_wdt.c.obj
@@ -342,7 +342,7 @@ int_wdt.obj: int_wdt.c.obj
 
 # target to build an object file
 int_wdt.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.obj
 .PHONY : int_wdt.c.obj
 
 int_wdt.i: int_wdt.c.i
@@ -350,7 +350,7 @@ int_wdt.i: int_wdt.c.i
 
 # target to preprocess a source file
 int_wdt.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.i
 .PHONY : int_wdt.c.i
 
 int_wdt.s: int_wdt.c.s
@@ -358,7 +358,7 @@ int_wdt.s: int_wdt.c.s
 
 # target to generate assembly for a file
 int_wdt.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.s
 .PHONY : int_wdt.c.s
 
 panic.obj: panic.c.obj
@@ -366,7 +366,7 @@ panic.obj: panic.c.obj
 
 # target to build an object file
 panic.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.obj
 .PHONY : panic.c.obj
 
 panic.i: panic.c.i
@@ -374,7 +374,7 @@ panic.i: panic.c.i
 
 # target to preprocess a source file
 panic.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.i
 .PHONY : panic.c.i
 
 panic.s: panic.c.s
@@ -382,7 +382,7 @@ panic.s: panic.c.s
 
 # target to generate assembly for a file
 panic.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.s
 .PHONY : panic.c.s
 
 port/arch/xtensa/debug_helpers.obj: port/arch/xtensa/debug_helpers.c.obj
@@ -390,7 +390,7 @@ port/arch/xtensa/debug_helpers.obj: port/arch/xtensa/debug_helpers.c.obj
 
 # target to build an object file
 port/arch/xtensa/debug_helpers.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.obj
 .PHONY : port/arch/xtensa/debug_helpers.c.obj
 
 port/arch/xtensa/debug_helpers.i: port/arch/xtensa/debug_helpers.c.i
@@ -398,7 +398,7 @@ port/arch/xtensa/debug_helpers.i: port/arch/xtensa/debug_helpers.c.i
 
 # target to preprocess a source file
 port/arch/xtensa/debug_helpers.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.i
 .PHONY : port/arch/xtensa/debug_helpers.c.i
 
 port/arch/xtensa/debug_helpers.s: port/arch/xtensa/debug_helpers.c.s
@@ -406,7 +406,7 @@ port/arch/xtensa/debug_helpers.s: port/arch/xtensa/debug_helpers.c.s
 
 # target to generate assembly for a file
 port/arch/xtensa/debug_helpers.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.s
 .PHONY : port/arch/xtensa/debug_helpers.c.s
 
 port/arch/xtensa/debug_helpers_asm.obj: port/arch/xtensa/debug_helpers_asm.S.obj
@@ -414,7 +414,7 @@ port/arch/xtensa/debug_helpers_asm.obj: port/arch/xtensa/debug_helpers_asm.S.obj
 
 # target to build an object file
 port/arch/xtensa/debug_helpers_asm.S.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers_asm.S.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers_asm.S.obj
 .PHONY : port/arch/xtensa/debug_helpers_asm.S.obj
 
 port/arch/xtensa/debug_stubs.obj: port/arch/xtensa/debug_stubs.c.obj
@@ -422,7 +422,7 @@ port/arch/xtensa/debug_stubs.obj: port/arch/xtensa/debug_stubs.c.obj
 
 # target to build an object file
 port/arch/xtensa/debug_stubs.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj
 .PHONY : port/arch/xtensa/debug_stubs.c.obj
 
 port/arch/xtensa/debug_stubs.i: port/arch/xtensa/debug_stubs.c.i
@@ -430,7 +430,7 @@ port/arch/xtensa/debug_stubs.i: port/arch/xtensa/debug_stubs.c.i
 
 # target to preprocess a source file
 port/arch/xtensa/debug_stubs.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.i
 .PHONY : port/arch/xtensa/debug_stubs.c.i
 
 port/arch/xtensa/debug_stubs.s: port/arch/xtensa/debug_stubs.c.s
@@ -438,7 +438,7 @@ port/arch/xtensa/debug_stubs.s: port/arch/xtensa/debug_stubs.c.s
 
 # target to generate assembly for a file
 port/arch/xtensa/debug_stubs.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.s
 .PHONY : port/arch/xtensa/debug_stubs.c.s
 
 port/arch/xtensa/esp_ipc_isr_handler.obj: port/arch/xtensa/esp_ipc_isr_handler.S.obj
@@ -446,7 +446,7 @@ port/arch/xtensa/esp_ipc_isr_handler.obj: port/arch/xtensa/esp_ipc_isr_handler.S
 
 # target to build an object file
 port/arch/xtensa/esp_ipc_isr_handler.S.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_handler.S.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_handler.S.obj
 .PHONY : port/arch/xtensa/esp_ipc_isr_handler.S.obj
 
 port/arch/xtensa/esp_ipc_isr_port.obj: port/arch/xtensa/esp_ipc_isr_port.c.obj
@@ -454,7 +454,7 @@ port/arch/xtensa/esp_ipc_isr_port.obj: port/arch/xtensa/esp_ipc_isr_port.c.obj
 
 # target to build an object file
 port/arch/xtensa/esp_ipc_isr_port.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.obj
 .PHONY : port/arch/xtensa/esp_ipc_isr_port.c.obj
 
 port/arch/xtensa/esp_ipc_isr_port.i: port/arch/xtensa/esp_ipc_isr_port.c.i
@@ -462,7 +462,7 @@ port/arch/xtensa/esp_ipc_isr_port.i: port/arch/xtensa/esp_ipc_isr_port.c.i
 
 # target to preprocess a source file
 port/arch/xtensa/esp_ipc_isr_port.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.i
 .PHONY : port/arch/xtensa/esp_ipc_isr_port.c.i
 
 port/arch/xtensa/esp_ipc_isr_port.s: port/arch/xtensa/esp_ipc_isr_port.c.s
@@ -470,7 +470,7 @@ port/arch/xtensa/esp_ipc_isr_port.s: port/arch/xtensa/esp_ipc_isr_port.c.s
 
 # target to generate assembly for a file
 port/arch/xtensa/esp_ipc_isr_port.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_port.c.s
 .PHONY : port/arch/xtensa/esp_ipc_isr_port.c.s
 
 port/arch/xtensa/esp_ipc_isr_routines.obj: port/arch/xtensa/esp_ipc_isr_routines.S.obj
@@ -478,7 +478,7 @@ port/arch/xtensa/esp_ipc_isr_routines.obj: port/arch/xtensa/esp_ipc_isr_routines
 
 # target to build an object file
 port/arch/xtensa/esp_ipc_isr_routines.S.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_routines.S.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_routines.S.obj
 .PHONY : port/arch/xtensa/esp_ipc_isr_routines.S.obj
 
 port/arch/xtensa/expression_with_stack.obj: port/arch/xtensa/expression_with_stack.c.obj
@@ -486,7 +486,7 @@ port/arch/xtensa/expression_with_stack.obj: port/arch/xtensa/expression_with_sta
 
 # target to build an object file
 port/arch/xtensa/expression_with_stack.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.obj
 .PHONY : port/arch/xtensa/expression_with_stack.c.obj
 
 port/arch/xtensa/expression_with_stack.i: port/arch/xtensa/expression_with_stack.c.i
@@ -494,7 +494,7 @@ port/arch/xtensa/expression_with_stack.i: port/arch/xtensa/expression_with_stack
 
 # target to preprocess a source file
 port/arch/xtensa/expression_with_stack.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.i
 .PHONY : port/arch/xtensa/expression_with_stack.c.i
 
 port/arch/xtensa/expression_with_stack.s: port/arch/xtensa/expression_with_stack.c.s
@@ -502,7 +502,7 @@ port/arch/xtensa/expression_with_stack.s: port/arch/xtensa/expression_with_stack
 
 # target to generate assembly for a file
 port/arch/xtensa/expression_with_stack.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.s
 .PHONY : port/arch/xtensa/expression_with_stack.c.s
 
 port/arch/xtensa/expression_with_stack_asm.obj: port/arch/xtensa/expression_with_stack_asm.S.obj
@@ -510,7 +510,7 @@ port/arch/xtensa/expression_with_stack_asm.obj: port/arch/xtensa/expression_with
 
 # target to build an object file
 port/arch/xtensa/expression_with_stack_asm.S.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack_asm.S.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack_asm.S.obj
 .PHONY : port/arch/xtensa/expression_with_stack_asm.S.obj
 
 port/arch/xtensa/panic_arch.obj: port/arch/xtensa/panic_arch.c.obj
@@ -518,7 +518,7 @@ port/arch/xtensa/panic_arch.obj: port/arch/xtensa/panic_arch.c.obj
 
 # target to build an object file
 port/arch/xtensa/panic_arch.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.obj
 .PHONY : port/arch/xtensa/panic_arch.c.obj
 
 port/arch/xtensa/panic_arch.i: port/arch/xtensa/panic_arch.c.i
@@ -526,7 +526,7 @@ port/arch/xtensa/panic_arch.i: port/arch/xtensa/panic_arch.c.i
 
 # target to preprocess a source file
 port/arch/xtensa/panic_arch.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.i
 .PHONY : port/arch/xtensa/panic_arch.c.i
 
 port/arch/xtensa/panic_arch.s: port/arch/xtensa/panic_arch.c.s
@@ -534,7 +534,7 @@ port/arch/xtensa/panic_arch.s: port/arch/xtensa/panic_arch.c.s
 
 # target to generate assembly for a file
 port/arch/xtensa/panic_arch.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.s
 .PHONY : port/arch/xtensa/panic_arch.c.s
 
 port/arch/xtensa/panic_handler_asm.obj: port/arch/xtensa/panic_handler_asm.S.obj
@@ -542,7 +542,7 @@ port/arch/xtensa/panic_handler_asm.obj: port/arch/xtensa/panic_handler_asm.S.obj
 
 # target to build an object file
 port/arch/xtensa/panic_handler_asm.S.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_handler_asm.S.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_handler_asm.S.obj
 .PHONY : port/arch/xtensa/panic_handler_asm.S.obj
 
 port/arch/xtensa/trax.obj: port/arch/xtensa/trax.c.obj
@@ -550,7 +550,7 @@ port/arch/xtensa/trax.obj: port/arch/xtensa/trax.c.obj
 
 # target to build an object file
 port/arch/xtensa/trax.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.obj
 .PHONY : port/arch/xtensa/trax.c.obj
 
 port/arch/xtensa/trax.i: port/arch/xtensa/trax.c.i
@@ -558,7 +558,7 @@ port/arch/xtensa/trax.i: port/arch/xtensa/trax.c.i
 
 # target to preprocess a source file
 port/arch/xtensa/trax.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.i
 .PHONY : port/arch/xtensa/trax.c.i
 
 port/arch/xtensa/trax.s: port/arch/xtensa/trax.c.s
@@ -566,39 +566,15 @@ port/arch/xtensa/trax.s: port/arch/xtensa/trax.c.s
 
 # target to generate assembly for a file
 port/arch/xtensa/trax.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.s
 .PHONY : port/arch/xtensa/trax.c.s
-
-port/brownout.obj: port/brownout.c.obj
-.PHONY : port/brownout.obj
-
-# target to build an object file
-port/brownout.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/brownout.c.obj
-.PHONY : port/brownout.c.obj
-
-port/brownout.i: port/brownout.c.i
-.PHONY : port/brownout.i
-
-# target to preprocess a source file
-port/brownout.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/brownout.c.i
-.PHONY : port/brownout.c.i
-
-port/brownout.s: port/brownout.c.s
-.PHONY : port/brownout.s
-
-# target to generate assembly for a file
-port/brownout.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/brownout.c.s
-.PHONY : port/brownout.c.s
 
 port/cpu_start.obj: port/cpu_start.c.obj
 .PHONY : port/cpu_start.obj
 
 # target to build an object file
 port/cpu_start.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.obj
 .PHONY : port/cpu_start.c.obj
 
 port/cpu_start.i: port/cpu_start.c.i
@@ -606,7 +582,7 @@ port/cpu_start.i: port/cpu_start.c.i
 
 # target to preprocess a source file
 port/cpu_start.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.i
 .PHONY : port/cpu_start.c.i
 
 port/cpu_start.s: port/cpu_start.c.s
@@ -614,7 +590,7 @@ port/cpu_start.s: port/cpu_start.c.s
 
 # target to generate assembly for a file
 port/cpu_start.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.s
 .PHONY : port/cpu_start.c.s
 
 port/esp_ipc_isr.obj: port/esp_ipc_isr.c.obj
@@ -622,7 +598,7 @@ port/esp_ipc_isr.obj: port/esp_ipc_isr.c.obj
 
 # target to build an object file
 port/esp_ipc_isr.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.obj
 .PHONY : port/esp_ipc_isr.c.obj
 
 port/esp_ipc_isr.i: port/esp_ipc_isr.c.i
@@ -630,7 +606,7 @@ port/esp_ipc_isr.i: port/esp_ipc_isr.c.i
 
 # target to preprocess a source file
 port/esp_ipc_isr.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.i
 .PHONY : port/esp_ipc_isr.c.i
 
 port/esp_ipc_isr.s: port/esp_ipc_isr.c.s
@@ -638,7 +614,7 @@ port/esp_ipc_isr.s: port/esp_ipc_isr.c.s
 
 # target to generate assembly for a file
 port/esp_ipc_isr.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_ipc_isr.c.s
 .PHONY : port/esp_ipc_isr.c.s
 
 port/esp_system_chip.obj: port/esp_system_chip.c.obj
@@ -646,7 +622,7 @@ port/esp_system_chip.obj: port/esp_system_chip.c.obj
 
 # target to build an object file
 port/esp_system_chip.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.obj
 .PHONY : port/esp_system_chip.c.obj
 
 port/esp_system_chip.i: port/esp_system_chip.c.i
@@ -654,7 +630,7 @@ port/esp_system_chip.i: port/esp_system_chip.c.i
 
 # target to preprocess a source file
 port/esp_system_chip.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.i
 .PHONY : port/esp_system_chip.c.i
 
 port/esp_system_chip.s: port/esp_system_chip.c.s
@@ -662,7 +638,7 @@ port/esp_system_chip.s: port/esp_system_chip.c.s
 
 # target to generate assembly for a file
 port/esp_system_chip.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/esp_system_chip.c.s
 .PHONY : port/esp_system_chip.c.s
 
 port/image_process.obj: port/image_process.c.obj
@@ -670,7 +646,7 @@ port/image_process.obj: port/image_process.c.obj
 
 # target to build an object file
 port/image_process.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.obj
 .PHONY : port/image_process.c.obj
 
 port/image_process.i: port/image_process.c.i
@@ -678,7 +654,7 @@ port/image_process.i: port/image_process.c.i
 
 # target to preprocess a source file
 port/image_process.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.i
 .PHONY : port/image_process.c.i
 
 port/image_process.s: port/image_process.c.s
@@ -686,7 +662,7 @@ port/image_process.s: port/image_process.c.s
 
 # target to generate assembly for a file
 port/image_process.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/image_process.c.s
 .PHONY : port/image_process.c.s
 
 port/panic_handler.obj: port/panic_handler.c.obj
@@ -694,7 +670,7 @@ port/panic_handler.obj: port/panic_handler.c.obj
 
 # target to build an object file
 port/panic_handler.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.obj
 .PHONY : port/panic_handler.c.obj
 
 port/panic_handler.i: port/panic_handler.c.i
@@ -702,7 +678,7 @@ port/panic_handler.i: port/panic_handler.c.i
 
 # target to preprocess a source file
 port/panic_handler.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.i
 .PHONY : port/panic_handler.c.i
 
 port/panic_handler.s: port/panic_handler.c.s
@@ -710,7 +686,7 @@ port/panic_handler.s: port/panic_handler.c.s
 
 # target to generate assembly for a file
 port/panic_handler.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.s
 .PHONY : port/panic_handler.c.s
 
 port/soc/esp32/cache_err_int.obj: port/soc/esp32/cache_err_int.c.obj
@@ -718,7 +694,7 @@ port/soc/esp32/cache_err_int.obj: port/soc/esp32/cache_err_int.c.obj
 
 # target to build an object file
 port/soc/esp32/cache_err_int.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/cache_err_int.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/cache_err_int.c.obj
 .PHONY : port/soc/esp32/cache_err_int.c.obj
 
 port/soc/esp32/cache_err_int.i: port/soc/esp32/cache_err_int.c.i
@@ -726,7 +702,7 @@ port/soc/esp32/cache_err_int.i: port/soc/esp32/cache_err_int.c.i
 
 # target to preprocess a source file
 port/soc/esp32/cache_err_int.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/cache_err_int.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/cache_err_int.c.i
 .PHONY : port/soc/esp32/cache_err_int.c.i
 
 port/soc/esp32/cache_err_int.s: port/soc/esp32/cache_err_int.c.s
@@ -734,7 +710,7 @@ port/soc/esp32/cache_err_int.s: port/soc/esp32/cache_err_int.c.s
 
 # target to generate assembly for a file
 port/soc/esp32/cache_err_int.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/cache_err_int.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/cache_err_int.c.s
 .PHONY : port/soc/esp32/cache_err_int.c.s
 
 port/soc/esp32/clk.obj: port/soc/esp32/clk.c.obj
@@ -742,7 +718,7 @@ port/soc/esp32/clk.obj: port/soc/esp32/clk.c.obj
 
 # target to build an object file
 port/soc/esp32/clk.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/clk.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/clk.c.obj
 .PHONY : port/soc/esp32/clk.c.obj
 
 port/soc/esp32/clk.i: port/soc/esp32/clk.c.i
@@ -750,7 +726,7 @@ port/soc/esp32/clk.i: port/soc/esp32/clk.c.i
 
 # target to preprocess a source file
 port/soc/esp32/clk.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/clk.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/clk.c.i
 .PHONY : port/soc/esp32/clk.c.i
 
 port/soc/esp32/clk.s: port/soc/esp32/clk.c.s
@@ -758,7 +734,7 @@ port/soc/esp32/clk.s: port/soc/esp32/clk.c.s
 
 # target to generate assembly for a file
 port/soc/esp32/clk.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/clk.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/clk.c.s
 .PHONY : port/soc/esp32/clk.c.s
 
 port/soc/esp32/highint_hdl.obj: port/soc/esp32/highint_hdl.S.obj
@@ -766,7 +742,7 @@ port/soc/esp32/highint_hdl.obj: port/soc/esp32/highint_hdl.S.obj
 
 # target to build an object file
 port/soc/esp32/highint_hdl.S.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/highint_hdl.S.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/highint_hdl.S.obj
 .PHONY : port/soc/esp32/highint_hdl.S.obj
 
 port/soc/esp32/reset_reason.obj: port/soc/esp32/reset_reason.c.obj
@@ -774,7 +750,7 @@ port/soc/esp32/reset_reason.obj: port/soc/esp32/reset_reason.c.obj
 
 # target to build an object file
 port/soc/esp32/reset_reason.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/reset_reason.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/reset_reason.c.obj
 .PHONY : port/soc/esp32/reset_reason.c.obj
 
 port/soc/esp32/reset_reason.i: port/soc/esp32/reset_reason.c.i
@@ -782,7 +758,7 @@ port/soc/esp32/reset_reason.i: port/soc/esp32/reset_reason.c.i
 
 # target to preprocess a source file
 port/soc/esp32/reset_reason.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/reset_reason.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/reset_reason.c.i
 .PHONY : port/soc/esp32/reset_reason.c.i
 
 port/soc/esp32/reset_reason.s: port/soc/esp32/reset_reason.c.s
@@ -790,7 +766,7 @@ port/soc/esp32/reset_reason.s: port/soc/esp32/reset_reason.c.s
 
 # target to generate assembly for a file
 port/soc/esp32/reset_reason.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/reset_reason.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/reset_reason.c.s
 .PHONY : port/soc/esp32/reset_reason.c.s
 
 port/soc/esp32/system_internal.obj: port/soc/esp32/system_internal.c.obj
@@ -798,7 +774,7 @@ port/soc/esp32/system_internal.obj: port/soc/esp32/system_internal.c.obj
 
 # target to build an object file
 port/soc/esp32/system_internal.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/system_internal.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/system_internal.c.obj
 .PHONY : port/soc/esp32/system_internal.c.obj
 
 port/soc/esp32/system_internal.i: port/soc/esp32/system_internal.c.i
@@ -806,7 +782,7 @@ port/soc/esp32/system_internal.i: port/soc/esp32/system_internal.c.i
 
 # target to preprocess a source file
 port/soc/esp32/system_internal.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/system_internal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/system_internal.c.i
 .PHONY : port/soc/esp32/system_internal.c.i
 
 port/soc/esp32/system_internal.s: port/soc/esp32/system_internal.c.s
@@ -814,7 +790,7 @@ port/soc/esp32/system_internal.s: port/soc/esp32/system_internal.c.s
 
 # target to generate assembly for a file
 port/soc/esp32/system_internal.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/system_internal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32/system_internal.c.s
 .PHONY : port/soc/esp32/system_internal.c.s
 
 stack_check.obj: stack_check.c.obj
@@ -822,7 +798,7 @@ stack_check.obj: stack_check.c.obj
 
 # target to build an object file
 stack_check.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.obj
 .PHONY : stack_check.c.obj
 
 stack_check.i: stack_check.c.i
@@ -830,7 +806,7 @@ stack_check.i: stack_check.c.i
 
 # target to preprocess a source file
 stack_check.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.i
 .PHONY : stack_check.c.i
 
 stack_check.s: stack_check.c.s
@@ -838,7 +814,7 @@ stack_check.s: stack_check.c.s
 
 # target to generate assembly for a file
 stack_check.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.s
 .PHONY : stack_check.c.s
 
 startup.obj: startup.c.obj
@@ -846,7 +822,7 @@ startup.obj: startup.c.obj
 
 # target to build an object file
 startup.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.obj
 .PHONY : startup.c.obj
 
 startup.i: startup.c.i
@@ -854,7 +830,7 @@ startup.i: startup.c.i
 
 # target to preprocess a source file
 startup.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.i
 .PHONY : startup.c.i
 
 startup.s: startup.c.s
@@ -862,7 +838,7 @@ startup.s: startup.c.s
 
 # target to generate assembly for a file
 startup.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.s
 .PHONY : startup.c.s
 
 startup_funcs.obj: startup_funcs.c.obj
@@ -870,7 +846,7 @@ startup_funcs.obj: startup_funcs.c.obj
 
 # target to build an object file
 startup_funcs.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.obj
 .PHONY : startup_funcs.c.obj
 
 startup_funcs.i: startup_funcs.c.i
@@ -878,7 +854,7 @@ startup_funcs.i: startup_funcs.c.i
 
 # target to preprocess a source file
 startup_funcs.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.i
 .PHONY : startup_funcs.c.i
 
 startup_funcs.s: startup_funcs.c.s
@@ -886,7 +862,7 @@ startup_funcs.s: startup_funcs.c.s
 
 # target to generate assembly for a file
 startup_funcs.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup_funcs.c.s
 .PHONY : startup_funcs.c.s
 
 system_time.obj: system_time.c.obj
@@ -894,7 +870,7 @@ system_time.obj: system_time.c.obj
 
 # target to build an object file
 system_time.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.obj
 .PHONY : system_time.c.obj
 
 system_time.i: system_time.c.i
@@ -902,7 +878,7 @@ system_time.i: system_time.c.i
 
 # target to preprocess a source file
 system_time.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.i
 .PHONY : system_time.c.i
 
 system_time.s: system_time.c.s
@@ -910,7 +886,7 @@ system_time.s: system_time.c.s
 
 # target to generate assembly for a file
 system_time.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.s
 .PHONY : system_time.c.s
 
 task_wdt/task_wdt.obj: task_wdt/task_wdt.c.obj
@@ -918,7 +894,7 @@ task_wdt/task_wdt.obj: task_wdt/task_wdt.c.obj
 
 # target to build an object file
 task_wdt/task_wdt.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.obj
 .PHONY : task_wdt/task_wdt.c.obj
 
 task_wdt/task_wdt.i: task_wdt/task_wdt.c.i
@@ -926,7 +902,7 @@ task_wdt/task_wdt.i: task_wdt/task_wdt.c.i
 
 # target to preprocess a source file
 task_wdt/task_wdt.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.i
 .PHONY : task_wdt/task_wdt.c.i
 
 task_wdt/task_wdt.s: task_wdt/task_wdt.c.s
@@ -934,7 +910,7 @@ task_wdt/task_wdt.s: task_wdt/task_wdt.c.s
 
 # target to generate assembly for a file
 task_wdt/task_wdt.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt.c.s
 .PHONY : task_wdt/task_wdt.c.s
 
 task_wdt/task_wdt_impl_timergroup.obj: task_wdt/task_wdt_impl_timergroup.c.obj
@@ -942,7 +918,7 @@ task_wdt/task_wdt_impl_timergroup.obj: task_wdt/task_wdt_impl_timergroup.c.obj
 
 # target to build an object file
 task_wdt/task_wdt_impl_timergroup.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.obj
 .PHONY : task_wdt/task_wdt_impl_timergroup.c.obj
 
 task_wdt/task_wdt_impl_timergroup.i: task_wdt/task_wdt_impl_timergroup.c.i
@@ -950,7 +926,7 @@ task_wdt/task_wdt_impl_timergroup.i: task_wdt/task_wdt_impl_timergroup.c.i
 
 # target to preprocess a source file
 task_wdt/task_wdt_impl_timergroup.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.i
 .PHONY : task_wdt/task_wdt_impl_timergroup.c.i
 
 task_wdt/task_wdt_impl_timergroup.s: task_wdt/task_wdt_impl_timergroup.c.s
@@ -958,7 +934,7 @@ task_wdt/task_wdt_impl_timergroup.s: task_wdt/task_wdt_impl_timergroup.c.s
 
 # target to generate assembly for a file
 task_wdt/task_wdt_impl_timergroup.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timergroup.c.s
 .PHONY : task_wdt/task_wdt_impl_timergroup.c.s
 
 ubsan.obj: ubsan.c.obj
@@ -966,7 +942,7 @@ ubsan.obj: ubsan.c.obj
 
 # target to build an object file
 ubsan.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.obj
 .PHONY : ubsan.c.obj
 
 ubsan.i: ubsan.c.i
@@ -974,7 +950,7 @@ ubsan.i: ubsan.c.i
 
 # target to preprocess a source file
 ubsan.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.i
 .PHONY : ubsan.c.i
 
 ubsan.s: ubsan.c.s
@@ -982,7 +958,7 @@ ubsan.s: ubsan.c.s
 
 # target to generate assembly for a file
 ubsan.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.s
 .PHONY : ubsan.c.s
 
 xt_wdt.obj: xt_wdt.c.obj
@@ -990,7 +966,7 @@ xt_wdt.obj: xt_wdt.c.obj
 
 # target to build an object file
 xt_wdt.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.obj
 .PHONY : xt_wdt.c.obj
 
 xt_wdt.i: xt_wdt.c.i
@@ -998,7 +974,7 @@ xt_wdt.i: xt_wdt.c.i
 
 # target to preprocess a source file
 xt_wdt.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.i
 .PHONY : xt_wdt.c.i
 
 xt_wdt.s: xt_wdt.c.s
@@ -1006,7 +982,7 @@ xt_wdt.s: xt_wdt.c.s
 
 # target to generate assembly for a file
 xt_wdt.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.s
 .PHONY : xt_wdt.c.s
 
 # Help Target
@@ -1069,9 +1045,6 @@ help:
 	@echo "... port/arch/xtensa/trax.obj"
 	@echo "... port/arch/xtensa/trax.i"
 	@echo "... port/arch/xtensa/trax.s"
-	@echo "... port/brownout.obj"
-	@echo "... port/brownout.i"
-	@echo "... port/brownout.s"
 	@echo "... port/cpu_start.obj"
 	@echo "... port/cpu_start.i"
 	@echo "... port/cpu_start.s"
@@ -1135,6 +1108,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

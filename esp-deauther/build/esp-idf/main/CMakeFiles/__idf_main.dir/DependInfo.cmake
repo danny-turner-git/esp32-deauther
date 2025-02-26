@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/danny/esp-idf-v5.3.2/projects/esp-deauther/main/esp-deauther.c" "esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj.d"
+  "/home/danny/esp-idf/projects/esp-deauther/main/esp-deauther.c" "esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

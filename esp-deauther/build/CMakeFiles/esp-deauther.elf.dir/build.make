@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/esp-deauther.elf.dir/depend.make
@@ -70,22 +70,22 @@ include CMakeFiles/esp-deauther.elf.dir/progress.make
 include CMakeFiles/esp-deauther.elf.dir/flags.make
 
 project_elf_src_esp32.c:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src_esp32.c"
-	/usr/bin/cmake -E touch /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/project_elf_src_esp32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src_esp32.c"
+	/usr/bin/cmake -E touch /home/danny/esp-idf/projects/esp-deauther/build/project_elf_src_esp32.c
 
 CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj: CMakeFiles/esp-deauther.elf.dir/flags.make
 CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj: project_elf_src_esp32.c
 CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj: CMakeFiles/esp-deauther.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj"
-	/home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj -MF CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj.d -o CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj -c /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/project_elf_src_esp32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj"
+	/home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj -MF CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj.d -o CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.obj -c /home/danny/esp-idf/projects/esp-deauther/build/project_elf_src_esp32.c
 
 CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.i"
-	/home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/project_elf_src_esp32.c > CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.i
+	/home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/projects/esp-deauther/build/project_elf_src_esp32.c > CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.i
 
 CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.s"
-	/home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/project_elf_src_esp32.c -o CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.s
+	/home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/projects/esp-deauther/build/project_elf_src_esp32.c -o CMakeFiles/esp-deauther.elf.dir/project_elf_src_esp32.c.s
 
 # Object files for target esp-deauther.elf
 esp__deauther_elf_OBJECTS = \
@@ -115,6 +115,7 @@ esp-deauther.elf: esp-idf/hal/libhal.a
 esp-deauther.elf: esp-idf/log/liblog.a
 esp-deauther.elf: esp-idf/heap/libheap.a
 esp-deauther.elf: esp-idf/soc/libsoc.a
+esp-deauther.elf: esp-idf/esp_security/libesp_security.a
 esp-deauther.elf: esp-idf/esp_hw_support/libesp_hw_support.a
 esp-deauther.elf: esp-idf/freertos/libfreertos.a
 esp-deauther.elf: esp-idf/newlib/libnewlib.a
@@ -127,8 +128,19 @@ esp-deauther.elf: esp-idf/esp_driver_uart/libesp_driver_uart.a
 esp-deauther.elf: esp-idf/app_trace/libapp_trace.a
 esp-deauther.elf: esp-idf/esp_event/libesp_event.a
 esp-deauther.elf: esp-idf/nvs_flash/libnvs_flash.a
-esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
+esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
+esp-deauther.elf: esp-idf/vfs/libvfs.a
+esp-deauther.elf: esp-idf/lwip/liblwip.a
+esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
+esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
+esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
+esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/esp_driver_spi/libesp_driver_spi.a
+esp-deauther.elf: esp-idf/unity/libunity.a
+esp-deauther.elf: esp-idf/cmock/libcmock.a
+esp-deauther.elf: esp-idf/console/libconsole.a
+esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 esp-deauther.elf: esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 esp-deauther.elf: esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 esp-deauther.elf: esp-idf/sdmmc/libsdmmc.a
@@ -141,21 +153,11 @@ esp-deauther.elf: esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 esp-deauther.elf: esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 esp-deauther.elf: esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 esp-deauther.elf: esp-idf/driver/libdriver.a
-esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
-esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
-esp-deauther.elf: esp-idf/vfs/libvfs.a
-esp-deauther.elf: esp-idf/lwip/liblwip.a
-esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
-esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
-esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
-esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
-esp-deauther.elf: esp-idf/unity/libunity.a
-esp-deauther.elf: esp-idf/cmock/libcmock.a
-esp-deauther.elf: esp-idf/console/libconsole.a
 esp-deauther.elf: esp-idf/http_parser/libhttp_parser.a
 esp-deauther.elf: esp-idf/esp-tls/libesp-tls.a
 esp-deauther.elf: esp-idf/esp_adc/libesp_adc.a
 esp-deauther.elf: esp-idf/esp_driver_cam/libesp_driver_cam.a
+esp-deauther.elf: esp-idf/esp_driver_touch_sens/libesp_driver_touch_sens.a
 esp-deauther.elf: esp-idf/esp_eth/libesp_eth.a
 esp-deauther.elf: esp-idf/esp_gdbstub/libesp_gdbstub.a
 esp-deauther.elf: esp-idf/esp_hid/libesp_hid.a
@@ -175,6 +177,7 @@ esp-deauther.elf: esp-idf/json/libjson.a
 esp-deauther.elf: esp-idf/mqtt/libmqtt.a
 esp-deauther.elf: esp-idf/nvs_sec_provider/libnvs_sec_provider.a
 esp-deauther.elf: esp-idf/perfmon/libperfmon.a
+esp-deauther.elf: esp-idf/rt/librt.a
 esp-deauther.elf: esp-idf/spiffs/libspiffs.a
 esp-deauther.elf: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp-deauther.elf: esp-idf/main/libmain.a
@@ -183,6 +186,8 @@ esp-deauther.elf: esp-idf/app_trace/libapp_trace.a
 esp-deauther.elf: esp-idf/cmock/libcmock.a
 esp-deauther.elf: esp-idf/unity/libunity.a
 esp-deauther.elf: esp-idf/esp_driver_cam/libesp_driver_cam.a
+esp-deauther.elf: esp-idf/esp_driver_touch_sens/libesp_driver_touch_sens.a
+esp-deauther.elf: esp-idf/esp_eth/libesp_eth.a
 esp-deauther.elf: esp-idf/esp_hid/libesp_hid.a
 esp-deauther.elf: esp-idf/esp_lcd/libesp_lcd.a
 esp-deauther.elf: esp-idf/esp_local_ctrl/libesp_local_ctrl.a
@@ -193,6 +198,7 @@ esp-deauther.elf: esp-idf/wear_levelling/libwear_levelling.a
 esp-deauther.elf: esp-idf/mqtt/libmqtt.a
 esp-deauther.elf: esp-idf/nvs_sec_provider/libnvs_sec_provider.a
 esp-deauther.elf: esp-idf/perfmon/libperfmon.a
+esp-deauther.elf: esp-idf/rt/librt.a
 esp-deauther.elf: esp-idf/spiffs/libspiffs.a
 esp-deauther.elf: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp-deauther.elf: esp-idf/protocomm/libprotocomm.a
@@ -218,6 +224,7 @@ esp-deauther.elf: esp-idf/hal/libhal.a
 esp-deauther.elf: esp-idf/log/liblog.a
 esp-deauther.elf: esp-idf/heap/libheap.a
 esp-deauther.elf: esp-idf/soc/libsoc.a
+esp-deauther.elf: esp-idf/esp_security/libesp_security.a
 esp-deauther.elf: esp-idf/esp_hw_support/libesp_hw_support.a
 esp-deauther.elf: esp-idf/freertos/libfreertos.a
 esp-deauther.elf: esp-idf/newlib/libnewlib.a
@@ -229,8 +236,16 @@ esp-deauther.elf: esp-idf/esp_ringbuf/libesp_ringbuf.a
 esp-deauther.elf: esp-idf/esp_driver_uart/libesp_driver_uart.a
 esp-deauther.elf: esp-idf/esp_event/libesp_event.a
 esp-deauther.elf: esp-idf/nvs_flash/libnvs_flash.a
-esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
+esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
+esp-deauther.elf: esp-idf/vfs/libvfs.a
+esp-deauther.elf: esp-idf/lwip/liblwip.a
+esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
+esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
+esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
+esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/esp_driver_spi/libesp_driver_spi.a
+esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 esp-deauther.elf: esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 esp-deauther.elf: esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 esp-deauther.elf: esp-idf/sdmmc/libsdmmc.a
@@ -243,18 +258,9 @@ esp-deauther.elf: esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 esp-deauther.elf: esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 esp-deauther.elf: esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 esp-deauther.elf: esp-idf/driver/libdriver.a
-esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
-esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
-esp-deauther.elf: esp-idf/vfs/libvfs.a
-esp-deauther.elf: esp-idf/lwip/liblwip.a
-esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
-esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
-esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
-esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/http_parser/libhttp_parser.a
 esp-deauther.elf: esp-idf/esp-tls/libesp-tls.a
 esp-deauther.elf: esp-idf/esp_adc/libesp_adc.a
-esp-deauther.elf: esp-idf/esp_eth/libesp_eth.a
 esp-deauther.elf: esp-idf/esp_gdbstub/libesp_gdbstub.a
 esp-deauther.elf: esp-idf/tcp_transport/libtcp_transport.a
 esp-deauther.elf: esp-idf/esp_http_client/libesp_http_client.a
@@ -265,13 +271,13 @@ esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedx509.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libcore.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libespnow.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libmesh.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libnet80211.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libpp.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libsmartconfig.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libwapi.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libcore.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libespnow.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libmesh.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libnet80211.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libpp.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libsmartconfig.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libwapi.a
 esp-deauther.elf: esp-idf/xtensa/libxtensa.a
 esp-deauther.elf: esp-idf/esp_driver_gpio/libesp_driver_gpio.a
 esp-deauther.elf: esp-idf/esp_pm/libesp_pm.a
@@ -291,6 +297,7 @@ esp-deauther.elf: esp-idf/hal/libhal.a
 esp-deauther.elf: esp-idf/log/liblog.a
 esp-deauther.elf: esp-idf/heap/libheap.a
 esp-deauther.elf: esp-idf/soc/libsoc.a
+esp-deauther.elf: esp-idf/esp_security/libesp_security.a
 esp-deauther.elf: esp-idf/esp_hw_support/libesp_hw_support.a
 esp-deauther.elf: esp-idf/freertos/libfreertos.a
 esp-deauther.elf: esp-idf/newlib/libnewlib.a
@@ -302,8 +309,16 @@ esp-deauther.elf: esp-idf/esp_ringbuf/libesp_ringbuf.a
 esp-deauther.elf: esp-idf/esp_driver_uart/libesp_driver_uart.a
 esp-deauther.elf: esp-idf/esp_event/libesp_event.a
 esp-deauther.elf: esp-idf/nvs_flash/libnvs_flash.a
-esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
+esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
+esp-deauther.elf: esp-idf/vfs/libvfs.a
+esp-deauther.elf: esp-idf/lwip/liblwip.a
+esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
+esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
+esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
+esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/esp_driver_spi/libesp_driver_spi.a
+esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 esp-deauther.elf: esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 esp-deauther.elf: esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 esp-deauther.elf: esp-idf/sdmmc/libsdmmc.a
@@ -316,18 +331,9 @@ esp-deauther.elf: esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 esp-deauther.elf: esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 esp-deauther.elf: esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 esp-deauther.elf: esp-idf/driver/libdriver.a
-esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
-esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
-esp-deauther.elf: esp-idf/vfs/libvfs.a
-esp-deauther.elf: esp-idf/lwip/liblwip.a
-esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
-esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
-esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
-esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/http_parser/libhttp_parser.a
 esp-deauther.elf: esp-idf/esp-tls/libesp-tls.a
 esp-deauther.elf: esp-idf/esp_adc/libesp_adc.a
-esp-deauther.elf: esp-idf/esp_eth/libesp_eth.a
 esp-deauther.elf: esp-idf/esp_gdbstub/libesp_gdbstub.a
 esp-deauther.elf: esp-idf/tcp_transport/libtcp_transport.a
 esp-deauther.elf: esp-idf/esp_http_client/libesp_http_client.a
@@ -338,13 +344,13 @@ esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedx509.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libcore.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libespnow.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libmesh.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libnet80211.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libpp.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libsmartconfig.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libwapi.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libcore.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libespnow.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libmesh.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libnet80211.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libpp.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libsmartconfig.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libwapi.a
 esp-deauther.elf: esp-idf/xtensa/libxtensa.a
 esp-deauther.elf: esp-idf/esp_driver_gpio/libesp_driver_gpio.a
 esp-deauther.elf: esp-idf/esp_pm/libesp_pm.a
@@ -364,6 +370,7 @@ esp-deauther.elf: esp-idf/hal/libhal.a
 esp-deauther.elf: esp-idf/log/liblog.a
 esp-deauther.elf: esp-idf/heap/libheap.a
 esp-deauther.elf: esp-idf/soc/libsoc.a
+esp-deauther.elf: esp-idf/esp_security/libesp_security.a
 esp-deauther.elf: esp-idf/esp_hw_support/libesp_hw_support.a
 esp-deauther.elf: esp-idf/freertos/libfreertos.a
 esp-deauther.elf: esp-idf/newlib/libnewlib.a
@@ -375,8 +382,16 @@ esp-deauther.elf: esp-idf/esp_ringbuf/libesp_ringbuf.a
 esp-deauther.elf: esp-idf/esp_driver_uart/libesp_driver_uart.a
 esp-deauther.elf: esp-idf/esp_event/libesp_event.a
 esp-deauther.elf: esp-idf/nvs_flash/libnvs_flash.a
-esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
+esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
+esp-deauther.elf: esp-idf/vfs/libvfs.a
+esp-deauther.elf: esp-idf/lwip/liblwip.a
+esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
+esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
+esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
+esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/esp_driver_spi/libesp_driver_spi.a
+esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 esp-deauther.elf: esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 esp-deauther.elf: esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 esp-deauther.elf: esp-idf/sdmmc/libsdmmc.a
@@ -389,18 +404,9 @@ esp-deauther.elf: esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 esp-deauther.elf: esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 esp-deauther.elf: esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 esp-deauther.elf: esp-idf/driver/libdriver.a
-esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
-esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
-esp-deauther.elf: esp-idf/vfs/libvfs.a
-esp-deauther.elf: esp-idf/lwip/liblwip.a
-esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
-esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
-esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
-esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/http_parser/libhttp_parser.a
 esp-deauther.elf: esp-idf/esp-tls/libesp-tls.a
 esp-deauther.elf: esp-idf/esp_adc/libesp_adc.a
-esp-deauther.elf: esp-idf/esp_eth/libesp_eth.a
 esp-deauther.elf: esp-idf/esp_gdbstub/libesp_gdbstub.a
 esp-deauther.elf: esp-idf/tcp_transport/libtcp_transport.a
 esp-deauther.elf: esp-idf/esp_http_client/libesp_http_client.a
@@ -411,13 +417,13 @@ esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedx509.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libcore.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libespnow.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libmesh.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libnet80211.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libpp.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libsmartconfig.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libwapi.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libcore.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libespnow.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libmesh.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libnet80211.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libpp.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libsmartconfig.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libwapi.a
 esp-deauther.elf: esp-idf/xtensa/libxtensa.a
 esp-deauther.elf: esp-idf/esp_driver_gpio/libesp_driver_gpio.a
 esp-deauther.elf: esp-idf/esp_pm/libesp_pm.a
@@ -437,6 +443,7 @@ esp-deauther.elf: esp-idf/hal/libhal.a
 esp-deauther.elf: esp-idf/log/liblog.a
 esp-deauther.elf: esp-idf/heap/libheap.a
 esp-deauther.elf: esp-idf/soc/libsoc.a
+esp-deauther.elf: esp-idf/esp_security/libesp_security.a
 esp-deauther.elf: esp-idf/esp_hw_support/libesp_hw_support.a
 esp-deauther.elf: esp-idf/freertos/libfreertos.a
 esp-deauther.elf: esp-idf/newlib/libnewlib.a
@@ -448,8 +455,16 @@ esp-deauther.elf: esp-idf/esp_ringbuf/libesp_ringbuf.a
 esp-deauther.elf: esp-idf/esp_driver_uart/libesp_driver_uart.a
 esp-deauther.elf: esp-idf/esp_event/libesp_event.a
 esp-deauther.elf: esp-idf/nvs_flash/libnvs_flash.a
-esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
+esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
+esp-deauther.elf: esp-idf/vfs/libvfs.a
+esp-deauther.elf: esp-idf/lwip/liblwip.a
+esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
+esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
+esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
+esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/esp_driver_spi/libesp_driver_spi.a
+esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 esp-deauther.elf: esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 esp-deauther.elf: esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 esp-deauther.elf: esp-idf/sdmmc/libsdmmc.a
@@ -462,18 +477,9 @@ esp-deauther.elf: esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 esp-deauther.elf: esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 esp-deauther.elf: esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 esp-deauther.elf: esp-idf/driver/libdriver.a
-esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
-esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
-esp-deauther.elf: esp-idf/vfs/libvfs.a
-esp-deauther.elf: esp-idf/lwip/liblwip.a
-esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
-esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
-esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
-esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/http_parser/libhttp_parser.a
 esp-deauther.elf: esp-idf/esp-tls/libesp-tls.a
 esp-deauther.elf: esp-idf/esp_adc/libesp_adc.a
-esp-deauther.elf: esp-idf/esp_eth/libesp_eth.a
 esp-deauther.elf: esp-idf/esp_gdbstub/libesp_gdbstub.a
 esp-deauther.elf: esp-idf/tcp_transport/libtcp_transport.a
 esp-deauther.elf: esp-idf/esp_http_client/libesp_http_client.a
@@ -484,13 +490,13 @@ esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedx509.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libcore.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libespnow.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libmesh.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libnet80211.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libpp.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libsmartconfig.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libwapi.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libcore.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libespnow.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libmesh.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libnet80211.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libpp.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libsmartconfig.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libwapi.a
 esp-deauther.elf: esp-idf/xtensa/libxtensa.a
 esp-deauther.elf: esp-idf/esp_driver_gpio/libesp_driver_gpio.a
 esp-deauther.elf: esp-idf/esp_pm/libesp_pm.a
@@ -510,6 +516,7 @@ esp-deauther.elf: esp-idf/hal/libhal.a
 esp-deauther.elf: esp-idf/log/liblog.a
 esp-deauther.elf: esp-idf/heap/libheap.a
 esp-deauther.elf: esp-idf/soc/libsoc.a
+esp-deauther.elf: esp-idf/esp_security/libesp_security.a
 esp-deauther.elf: esp-idf/esp_hw_support/libesp_hw_support.a
 esp-deauther.elf: esp-idf/freertos/libfreertos.a
 esp-deauther.elf: esp-idf/newlib/libnewlib.a
@@ -521,8 +528,16 @@ esp-deauther.elf: esp-idf/esp_ringbuf/libesp_ringbuf.a
 esp-deauther.elf: esp-idf/esp_driver_uart/libesp_driver_uart.a
 esp-deauther.elf: esp-idf/esp_event/libesp_event.a
 esp-deauther.elf: esp-idf/nvs_flash/libnvs_flash.a
-esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
+esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
+esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
+esp-deauther.elf: esp-idf/vfs/libvfs.a
+esp-deauther.elf: esp-idf/lwip/liblwip.a
+esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
+esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
+esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
+esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/esp_driver_spi/libesp_driver_spi.a
+esp-deauther.elf: esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 esp-deauther.elf: esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 esp-deauther.elf: esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 esp-deauther.elf: esp-idf/sdmmc/libsdmmc.a
@@ -535,18 +550,9 @@ esp-deauther.elf: esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 esp-deauther.elf: esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 esp-deauther.elf: esp-idf/esp_driver_ledc/libesp_driver_ledc.a
 esp-deauther.elf: esp-idf/driver/libdriver.a
-esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
-esp-deauther.elf: esp-idf/esp_vfs_console/libesp_vfs_console.a
-esp-deauther.elf: esp-idf/vfs/libvfs.a
-esp-deauther.elf: esp-idf/lwip/liblwip.a
-esp-deauther.elf: esp-idf/esp_netif/libesp_netif.a
-esp-deauther.elf: esp-idf/wpa_supplicant/libwpa_supplicant.a
-esp-deauther.elf: esp-idf/esp_coex/libesp_coex.a
-esp-deauther.elf: esp-idf/esp_wifi/libesp_wifi.a
 esp-deauther.elf: esp-idf/http_parser/libhttp_parser.a
 esp-deauther.elf: esp-idf/esp-tls/libesp-tls.a
 esp-deauther.elf: esp-idf/esp_adc/libesp_adc.a
-esp-deauther.elf: esp-idf/esp_eth/libesp_eth.a
 esp-deauther.elf: esp-idf/esp_gdbstub/libesp_gdbstub.a
 esp-deauther.elf: esp-idf/tcp_transport/libtcp_transport.a
 esp-deauther.elf: esp-idf/esp_http_client/libesp_http_client.a
@@ -557,14 +563,14 @@ esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/library/libmbedx509.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a
 esp-deauther.elf: esp-idf/mbedtls/mbedtls/3rdparty/p256-m/libp256m.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libcore.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libespnow.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libmesh.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libnet80211.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libpp.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libsmartconfig.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_wifi/lib/esp32/libwapi.a
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/xtensa/esp32/libxt_hal.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libcore.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libespnow.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libmesh.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libnet80211.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libpp.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libsmartconfig.a
+esp-deauther.elf: /home/danny/esp-idf/components/esp_wifi/lib/esp32/libwapi.a
+esp-deauther.elf: /home/danny/esp-idf/components/xtensa/esp32/libxt_hal.a
 esp-deauther.elf: esp-idf/pthread/libpthread.a
 esp-deauther.elf: esp-idf/newlib/libnewlib.a
 esp-deauther.elf: esp-idf/cxx/libcxx.a
@@ -572,15 +578,16 @@ esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
 esp-deauther.elf: esp-idf/esp_phy/libesp_phy.a
 esp-deauther.elf: esp-idf/esp_system/ld/memory.ld
 esp-deauther.elf: esp-idf/esp_system/ld/sections.ld
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_rom/esp32/ld/esp32.rom.ld
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_rom/esp32/ld/esp32.rom.api.ld
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
-esp-deauther.elf: /home/danny/esp-idf-v5.3.2/components/soc/esp32/ld/esp32.peripherals.ld
+esp-deauther.elf: /home/danny/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+esp-deauther.elf: /home/danny/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+esp-deauther.elf: /home/danny/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+esp-deauther.elf: /home/danny/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+esp-deauther.elf: /home/danny/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+esp-deauther.elf: /home/danny/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+esp-deauther.elf: /home/danny/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+esp-deauther.elf: /home/danny/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
 esp-deauther.elf: CMakeFiles/esp-deauther.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable esp-deauther.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable esp-deauther.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/esp-deauther.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -592,6 +599,6 @@ CMakeFiles/esp-deauther.elf.dir/clean:
 .PHONY : CMakeFiles/esp-deauther.elf.dir/clean
 
 CMakeFiles/esp-deauther.elf.dir/depend: project_elf_src_esp32.c
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles/esp-deauther.elf.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles/esp-deauther.elf.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/esp-deauther.elf.dir/depend
 

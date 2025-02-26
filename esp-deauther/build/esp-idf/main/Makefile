@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/main//CMakeFiles/progress.marks
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles 0
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/main//CMakeFiles/progress.marks
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/clean
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/preinstall
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/preinstall
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/main/CMakeFiles/__idf_main.dir/rule:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/CMakeFiles/__idf_main.dir/rule
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/CMakeFiles/__idf_main.dir/rule
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ __idf_main: esp-idf/main/CMakeFiles/__idf_main.dir/rule
 
 # fast build rule for target.
 __idf_main/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
 .PHONY : __idf_main/fast
 
 esp-deauther.obj: esp-deauther.c.obj
@@ -180,7 +180,7 @@ esp-deauther.obj: esp-deauther.c.obj
 
 # target to build an object file
 esp-deauther.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.obj
 .PHONY : esp-deauther.c.obj
 
 esp-deauther.i: esp-deauther.c.i
@@ -188,7 +188,7 @@ esp-deauther.i: esp-deauther.c.i
 
 # target to preprocess a source file
 esp-deauther.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.i
 .PHONY : esp-deauther.c.i
 
 esp-deauther.s: esp-deauther.c.s
@@ -196,7 +196,7 @@ esp-deauther.s: esp-deauther.c.s
 
 # target to generate assembly for a file
 esp-deauther.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/esp-deauther.c.s
 .PHONY : esp-deauther.c.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

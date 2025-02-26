@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_touch_sens//CMakeFiles/progress.marks
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles 0
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_touch_sens//CMakeFiles/progress.marks
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/clean
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,18 +148,80 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/preinstall
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/preinstall
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/rule:
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/rule
+.PHONY : esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/rule
+
+# Convenience name for target.
+__idf_esp_driver_touch_sens: esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/rule
+.PHONY : __idf_esp_driver_touch_sens
+
+# fast build rule for target.
+__idf_esp_driver_touch_sens/fast:
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build
+.PHONY : __idf_esp_driver_touch_sens/fast
+
+common/touch_sens_common.obj: common/touch_sens_common.c.obj
+.PHONY : common/touch_sens_common.obj
+
+# target to build an object file
+common/touch_sens_common.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/common/touch_sens_common.c.obj
+.PHONY : common/touch_sens_common.c.obj
+
+common/touch_sens_common.i: common/touch_sens_common.c.i
+.PHONY : common/touch_sens_common.i
+
+# target to preprocess a source file
+common/touch_sens_common.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/common/touch_sens_common.c.i
+.PHONY : common/touch_sens_common.c.i
+
+common/touch_sens_common.s: common/touch_sens_common.c.s
+.PHONY : common/touch_sens_common.s
+
+# target to generate assembly for a file
+common/touch_sens_common.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/common/touch_sens_common.c.s
+.PHONY : common/touch_sens_common.c.s
+
+hw_ver1/touch_version_specific.obj: hw_ver1/touch_version_specific.c.obj
+.PHONY : hw_ver1/touch_version_specific.obj
+
+# target to build an object file
+hw_ver1/touch_version_specific.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/hw_ver1/touch_version_specific.c.obj
+.PHONY : hw_ver1/touch_version_specific.c.obj
+
+hw_ver1/touch_version_specific.i: hw_ver1/touch_version_specific.c.i
+.PHONY : hw_ver1/touch_version_specific.i
+
+# target to preprocess a source file
+hw_ver1/touch_version_specific.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/hw_ver1/touch_version_specific.c.i
+.PHONY : hw_ver1/touch_version_specific.c.i
+
+hw_ver1/touch_version_specific.s: hw_ver1/touch_version_specific.c.s
+.PHONY : hw_ver1/touch_version_specific.s
+
+# target to generate assembly for a file
+hw_ver1/touch_version_specific.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/hw_ver1/touch_version_specific.c.s
+.PHONY : hw_ver1/touch_version_specific.c.s
 
 # Help Target
 help:
@@ -173,6 +235,13 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... __idf_esp_driver_touch_sens"
+	@echo "... common/touch_sens_common.obj"
+	@echo "... common/touch_sens_common.i"
+	@echo "... common/touch_sens_common.s"
+	@echo "... hw_ver1/touch_version_specific.obj"
+	@echo "... hw_ver1/touch_version_specific.i"
+	@echo "... hw_ver1/touch_version_specific.s"
 .PHONY : help
 
 
@@ -184,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

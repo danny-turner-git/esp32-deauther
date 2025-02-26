@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build/bootloader
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/esp-idf/log//CMakeFiles/progress.marks
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles 0
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles /home/danny/esp-idf/projects/esp-deauther/build/bootloader/esp-idf/log//CMakeFiles/progress.marks
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/clean
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/preinstall
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/preinstall
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/log/CMakeFiles/__idf_log.dir/rule:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/CMakeFiles/__idf_log.dir/rule
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/CMakeFiles/__idf_log.dir/rule
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/rule
 
 # Convenience name for target.
@@ -127,80 +127,200 @@ __idf_log: esp-idf/log/CMakeFiles/__idf_log.dir/rule
 
 # fast build rule for target.
 __idf_log/fast:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/build
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/build
 .PHONY : __idf_log/fast
 
-log.obj: log.c.obj
-.PHONY : log.obj
+src/buffer/log_buffers.obj: src/buffer/log_buffers.c.obj
+.PHONY : src/buffer/log_buffers.obj
 
 # target to build an object file
-log.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
-.PHONY : log.c.obj
+src/buffer/log_buffers.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj
+.PHONY : src/buffer/log_buffers.c.obj
 
-log.i: log.c.i
-.PHONY : log.i
+src/buffer/log_buffers.i: src/buffer/log_buffers.c.i
+.PHONY : src/buffer/log_buffers.i
 
 # target to preprocess a source file
-log.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.i
-.PHONY : log.c.i
+src/buffer/log_buffers.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.i
+.PHONY : src/buffer/log_buffers.c.i
 
-log.s: log.c.s
-.PHONY : log.s
+src/buffer/log_buffers.s: src/buffer/log_buffers.c.s
+.PHONY : src/buffer/log_buffers.s
 
 # target to generate assembly for a file
-log.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log.c.s
-.PHONY : log.c.s
+src/buffer/log_buffers.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.s
+.PHONY : src/buffer/log_buffers.c.s
 
-log_buffers.obj: log_buffers.c.obj
-.PHONY : log_buffers.obj
+src/log.obj: src/log.c.obj
+.PHONY : src/log.obj
 
 # target to build an object file
-log_buffers.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj
-.PHONY : log_buffers.c.obj
+src/log.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj
+.PHONY : src/log.c.obj
 
-log_buffers.i: log_buffers.c.i
-.PHONY : log_buffers.i
+src/log.i: src/log.c.i
+.PHONY : src/log.i
 
 # target to preprocess a source file
-log_buffers.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.i
-.PHONY : log_buffers.c.i
+src/log.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.i
+.PHONY : src/log.c.i
 
-log_buffers.s: log_buffers.c.s
-.PHONY : log_buffers.s
+src/log.s: src/log.c.s
+.PHONY : src/log.s
 
 # target to generate assembly for a file
-log_buffers.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.s
-.PHONY : log_buffers.c.s
+src/log.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.s
+.PHONY : src/log.c.s
 
-log_noos.obj: log_noos.c.obj
-.PHONY : log_noos.obj
+src/log_print.obj: src/log_print.c.obj
+.PHONY : src/log_print.obj
 
 # target to build an object file
-log_noos.c.obj:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj
-.PHONY : log_noos.c.obj
+src/log_print.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj
+.PHONY : src/log_print.c.obj
 
-log_noos.i: log_noos.c.i
-.PHONY : log_noos.i
+src/log_print.i: src/log_print.c.i
+.PHONY : src/log_print.i
 
 # target to preprocess a source file
-log_noos.c.i:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.i
-.PHONY : log_noos.c.i
+src/log_print.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.i
+.PHONY : src/log_print.c.i
 
-log_noos.s: log_noos.c.s
-.PHONY : log_noos.s
+src/log_print.s: src/log_print.c.s
+.PHONY : src/log_print.s
 
 # target to generate assembly for a file
-log_noos.c.s:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.s
-.PHONY : log_noos.c.s
+src/log_print.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.s
+.PHONY : src/log_print.c.s
+
+src/log_timestamp_common.obj: src/log_timestamp_common.c.obj
+.PHONY : src/log_timestamp_common.obj
+
+# target to build an object file
+src/log_timestamp_common.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj
+.PHONY : src/log_timestamp_common.c.obj
+
+src/log_timestamp_common.i: src/log_timestamp_common.c.i
+.PHONY : src/log_timestamp_common.i
+
+# target to preprocess a source file
+src/log_timestamp_common.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.i
+.PHONY : src/log_timestamp_common.c.i
+
+src/log_timestamp_common.s: src/log_timestamp_common.c.s
+.PHONY : src/log_timestamp_common.s
+
+# target to generate assembly for a file
+src/log_timestamp_common.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.s
+.PHONY : src/log_timestamp_common.c.s
+
+src/noos/log_lock.obj: src/noos/log_lock.c.obj
+.PHONY : src/noos/log_lock.obj
+
+# target to build an object file
+src/noos/log_lock.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj
+.PHONY : src/noos/log_lock.c.obj
+
+src/noos/log_lock.i: src/noos/log_lock.c.i
+.PHONY : src/noos/log_lock.i
+
+# target to preprocess a source file
+src/noos/log_lock.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.i
+.PHONY : src/noos/log_lock.c.i
+
+src/noos/log_lock.s: src/noos/log_lock.c.s
+.PHONY : src/noos/log_lock.s
+
+# target to generate assembly for a file
+src/noos/log_lock.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.s
+.PHONY : src/noos/log_lock.c.s
+
+src/noos/log_timestamp.obj: src/noos/log_timestamp.c.obj
+.PHONY : src/noos/log_timestamp.obj
+
+# target to build an object file
+src/noos/log_timestamp.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj
+.PHONY : src/noos/log_timestamp.c.obj
+
+src/noos/log_timestamp.i: src/noos/log_timestamp.c.i
+.PHONY : src/noos/log_timestamp.i
+
+# target to preprocess a source file
+src/noos/log_timestamp.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.i
+.PHONY : src/noos/log_timestamp.c.i
+
+src/noos/log_timestamp.s: src/noos/log_timestamp.c.s
+.PHONY : src/noos/log_timestamp.s
+
+# target to generate assembly for a file
+src/noos/log_timestamp.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.s
+.PHONY : src/noos/log_timestamp.c.s
+
+src/noos/util.obj: src/noos/util.c.obj
+.PHONY : src/noos/util.obj
+
+# target to build an object file
+src/noos/util.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj
+.PHONY : src/noos/util.c.obj
+
+src/noos/util.i: src/noos/util.c.i
+.PHONY : src/noos/util.i
+
+# target to preprocess a source file
+src/noos/util.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.i
+.PHONY : src/noos/util.c.i
+
+src/noos/util.s: src/noos/util.c.s
+.PHONY : src/noos/util.s
+
+# target to generate assembly for a file
+src/noos/util.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.s
+.PHONY : src/noos/util.c.s
+
+src/util.obj: src/util.c.obj
+.PHONY : src/util.obj
+
+# target to build an object file
+src/util.c.obj:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj
+.PHONY : src/util.c.obj
+
+src/util.i: src/util.c.i
+.PHONY : src/util.i
+
+# target to preprocess a source file
+src/util.c.i:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.i
+.PHONY : src/util.c.i
+
+src/util.s: src/util.c.s
+.PHONY : src/util.s
+
+# target to generate assembly for a file
+src/util.c.s:
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.s
+.PHONY : src/util.c.s
 
 # Help Target
 help:
@@ -211,15 +331,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... __idf_log"
-	@echo "... log.obj"
-	@echo "... log.i"
-	@echo "... log.s"
-	@echo "... log_buffers.obj"
-	@echo "... log_buffers.i"
-	@echo "... log_buffers.s"
-	@echo "... log_noos.obj"
-	@echo "... log_noos.i"
-	@echo "... log_noos.s"
+	@echo "... src/buffer/log_buffers.obj"
+	@echo "... src/buffer/log_buffers.i"
+	@echo "... src/buffer/log_buffers.s"
+	@echo "... src/log.obj"
+	@echo "... src/log.i"
+	@echo "... src/log.s"
+	@echo "... src/log_print.obj"
+	@echo "... src/log_print.i"
+	@echo "... src/log_print.s"
+	@echo "... src/log_timestamp_common.obj"
+	@echo "... src/log_timestamp_common.i"
+	@echo "... src/log_timestamp_common.s"
+	@echo "... src/noos/log_lock.obj"
+	@echo "... src/noos/log_lock.i"
+	@echo "... src/noos/log_lock.s"
+	@echo "... src/noos/log_timestamp.obj"
+	@echo "... src/noos/log_timestamp.i"
+	@echo "... src/noos/log_timestamp.s"
+	@echo "... src/noos/util.obj"
+	@echo "... src/noos/util.i"
+	@echo "... src/noos/util.s"
+	@echo "... src/util.obj"
+	@echo "... src/util.i"
+	@echo "... src/util.s"
 .PHONY : help
 
 
@@ -231,6 +366,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

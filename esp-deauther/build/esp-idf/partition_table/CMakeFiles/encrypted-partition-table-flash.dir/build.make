@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for encrypted-partition-table-flash.
 
@@ -67,9 +67,9 @@ include esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/c
 include esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/progress.make
 
 esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "Error: The target encrypted-partition-table-flash requires"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /home/danny/esp-idf-v5.3.2/tools/cmake/scripts/fail.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "Error: The target encrypted-partition-table-flash requires"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /home/danny/esp-idf/tools/cmake/scripts/fail.cmake
 
 encrypted-partition-table-flash: esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash
 encrypted-partition-table-flash: esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/build.make
@@ -80,10 +80,10 @@ esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/build: en
 .PHONY : esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/build
 
 esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && $(CMAKE_COMMAND) -P CMakeFiles/encrypted-partition-table-flash.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && $(CMAKE_COMMAND) -P CMakeFiles/encrypted-partition-table-flash.dir/cmake_clean.cmake
 .PHONY : esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/clean
 
 esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/partition_table /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/partition_table /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/depend
 

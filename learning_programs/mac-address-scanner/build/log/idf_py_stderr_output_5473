@@ -1,0 +1,12 @@
+Command: make -j 10 all
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c: In function 'app_main':
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:19:19: error: implicit declaration of function 'esp_read_mac' [-Wimplicit-function-declaration]
+   19 |     uint8_t mac = esp_read_mac(ESP_MAC_SOFT_AP);
+      |                   ^~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:19:32: error: 'ESP_MAC_SOFT_AP' undeclared (first use in this function)
+   19 |     uint8_t mac = esp_read_mac(ESP_MAC_SOFT_AP);
+      |                                ^~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:19:32: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/mac-address-scanner.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5719: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

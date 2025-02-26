@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build/bootloader
 
 # Utility rule file for save-defconfig.
 
@@ -67,8 +67,8 @@ include CMakeFiles/save-defconfig.dir/compiler_depend.make
 include CMakeFiles/save-defconfig.dir/progress.make
 
 CMakeFiles/save-defconfig:
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/config.env
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/danny/esp-idf-v5.3.2/Kconfig --sdkconfig-rename /home/danny/esp-idf-v5.3.2/sdkconfig.rename --config /home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig --env-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/config.env --dont-write-deprecated --output savedefconfig /home/danny/esp-idf-v5.3.2/components/bootloader/subproject/sdkconfig.defaults
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/danny/esp-idf/projects/esp-deauther/build/bootloader/config.env
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/danny/esp-idf/Kconfig --sdkconfig-rename /home/danny/esp-idf/sdkconfig.rename --config /home/danny/esp-idf/projects/esp-deauther/sdkconfig --env IDF_MINIMAL_BUILD=n --env-file /home/danny/esp-idf/projects/esp-deauther/build/bootloader/config.env --dont-write-deprecated --output savedefconfig /home/danny/esp-idf/components/bootloader/subproject/sdkconfig.defaults
 
 save-defconfig: CMakeFiles/save-defconfig
 save-defconfig: CMakeFiles/save-defconfig.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/save-defconfig.dir/clean:
 .PHONY : CMakeFiles/save-defconfig.dir/clean
 
 CMakeFiles/save-defconfig.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles/save-defconfig.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles/save-defconfig.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/save-defconfig.dir/depend
 

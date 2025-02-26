@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Include any dependencies generated for this target.
 include esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/depend.make
@@ -70,58 +70,74 @@ include esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/progress.ma
 include esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/flags.make
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/flags.make
-esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj: /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/src/uart.c
+esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj: /home/danny/esp-idf/components/esp_driver_uart/src/uart.c
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj -c /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/src/uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj -c /home/danny/esp-idf/components/esp_driver_uart/src/uart.c
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/src/uart.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/esp_driver_uart/src/uart.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.i
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/src/uart.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/esp_driver_uart/src/uart.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.s
+
+esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/flags.make
+esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj: /home/danny/esp-idf/components/esp_driver_uart/src/uart_wakeup.c
+esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj -c /home/danny/esp-idf/components/esp_driver_uart/src/uart_wakeup.c
+
+esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/esp_driver_uart/src/uart_wakeup.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.i
+
+esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/esp_driver_uart/src/uart_wakeup.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.s
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/flags.make
-esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj: /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/src/uart_vfs.c
+esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj: /home/danny/esp-idf/components/esp_driver_uart/src/uart_vfs.c
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj -c /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/src/uart_vfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj -c /home/danny/esp-idf/components/esp_driver_uart/src/uart_vfs.c
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/src/uart_vfs.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/esp_driver_uart/src/uart_vfs.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.i
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/esp_driver_uart/src/uart_vfs.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/esp_driver_uart/src/uart_vfs.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.s
 
 # Object files for target __idf_esp_driver_uart
 __idf_esp_driver_uart_OBJECTS = \
 "CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj" \
+"CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj" \
 "CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj"
 
 # External object files for target __idf_esp_driver_uart
 __idf_esp_driver_uart_EXTERNAL_OBJECTS =
 
 esp-idf/esp_driver_uart/libesp_driver_uart.a: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj
+esp-idf/esp_driver_uart/libesp_driver_uart.a: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_wakeup.c.obj
 esp-idf/esp_driver_uart/libesp_driver_uart.a: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj
 esp-idf/esp_driver_uart/libesp_driver_uart.a: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/build.make
 esp-idf/esp_driver_uart/libesp_driver_uart.a: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libesp_driver_uart.a"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_driver_uart.dir/cmake_clean_target.cmake
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_driver_uart.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libesp_driver_uart.a"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_driver_uart.dir/cmake_clean_target.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_driver_uart.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/build: esp-idf/esp_driver_uart/libesp_driver_uart.a
 .PHONY : esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/build
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_driver_uart.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_driver_uart.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/clean
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/esp_driver_uart /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/esp_driver_uart /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/depend
 

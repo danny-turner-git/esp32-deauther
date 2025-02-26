@@ -1,0 +1,376 @@
+Command: make -j 10 all
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c: In function 'app_main':
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:27:18: error: passing argument 1 of 'esp_read_mac' from incompatible pointer type [-Wincompatible-pointer-types]
+   27 |     esp_read_mac(&mac.address, ESP_MAC_BASE);
+      |                  ^~~~~~~~~~~~
+      |                  |
+      |                  uint8_t (*)[6] {aka unsigned char (*)[6]}
+In file included from /home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:15:
+/home/danny/esp-idf/components/esp_hw_support/include/esp_mac.h:129:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[6]' {aka 'unsigned char (*)[6]'}
+  129 | esp_err_t esp_read_mac(uint8_t *mac, esp_mac_type_t type);
+      |                        ~~~~~~~~~^~~
+In file included from /home/danny/esp-idf/components/esp_common/include/esp_check.h:9,
+                 from /home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:5:
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:71: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:218:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  218 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:79: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:218:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  218 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:87: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:218:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  218 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:95: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:218:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  218 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:102: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                      ^
+/home/danny/esp-idf/components/log/include/esp_log.h:218:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  218 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:109: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                             ^
+/home/danny/esp-idf/components/log/include/esp_log.h:218:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  218 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:71: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:219:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  219 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:79: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:219:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  219 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:87: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:219:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  219 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:95: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:219:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  219 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:102: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                      ^
+/home/danny/esp-idf/components/log/include/esp_log.h:219:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  219 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:109: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                             ^
+/home/danny/esp-idf/components/log/include/esp_log.h:219:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  219 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:71: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:79: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:87: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:95: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:102: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                      ^
+/home/danny/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:109: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                             ^
+/home/danny/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:71: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:221:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:79: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:221:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:87: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:221:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:95: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:221:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:102: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                      ^
+/home/danny/esp-idf/components/log/include/esp_log.h:221:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:109: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                             ^
+/home/danny/esp-idf/components/log/include/esp_log.h:221:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:71: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:222:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  222 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:79: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:222:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  222 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:87: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                       ^
+/home/danny/esp-idf/components/log/include/esp_log.h:222:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  222 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:95: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                               ^
+/home/danny/esp-idf/components/log/include/esp_log.h:222:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  222 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:102: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                      ^
+/home/danny/esp-idf/components/log/include/esp_log.h:222:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  222 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:109: error: subscripted value is neither array nor pointer nor vector
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |                                                                                                             ^
+/home/danny/esp-idf/components/log/include/esp_log.h:222:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  222 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+/home/danny/esp-idf/components/log/include/esp_log.h:125:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  125 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:28:5: note: in expansion of macro 'ESP_LOGI'
+   28 |     ESP_LOGI(TAG, "Mac address is: %02x:%02x:$02x:%02x:%02x:$02x", mac[0], mac[1], mac[2], mac[3],mac[4],mac[5]);
+      |     ^~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/mac-address-scanner.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5719: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

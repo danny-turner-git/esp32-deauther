@@ -1,0 +1,16 @@
+Command: make -j 10 all
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c: In function 'app_main':
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:21:32: error: 'ESP_MAC_SOFT_AP' undeclared (first use in this function)
+   21 |     uint8_t mac = esp_read_mac(ESP_MAC_SOFT_AP);
+      |                                ^~~~~~~~~~~~~~~
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:21:32: note: each undeclared identifier is reported only once for each function it appears in
+/home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:21:19: error: too few arguments to function 'esp_read_mac'
+   21 |     uint8_t mac = esp_read_mac(ESP_MAC_SOFT_AP);
+      |                   ^~~~~~~~~~~~
+In file included from /home/danny/esp-idf/projects/learning_programs/mac-address-scanner/main/mac-address-scanner.c:15:
+/home/danny/esp-idf/components/esp_hw_support/include/esp_mac.h:129:11: note: declared here
+  129 | esp_err_t esp_read_mac(uint8_t *mac, esp_mac_type_t type);
+      |           ^~~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/mac-address-scanner.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5719: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

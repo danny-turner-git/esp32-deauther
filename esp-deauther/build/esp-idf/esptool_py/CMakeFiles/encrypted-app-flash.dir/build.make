@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for encrypted-app-flash.
 
@@ -67,9 +67,9 @@ include esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/compiler_depend.ma
 include esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/progress.make
 
 esp-idf/esptool_py/CMakeFiles/encrypted-app-flash:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py && /usr/bin/cmake -E echo "Error: The target encrypted-app-flash requires"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py && /usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /home/danny/esp-idf-v5.3.2/tools/cmake/scripts/fail.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py && /usr/bin/cmake -E echo "Error: The target encrypted-app-flash requires"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py && /usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /home/danny/esp-idf/tools/cmake/scripts/fail.cmake
 
 encrypted-app-flash: esp-idf/esptool_py/CMakeFiles/encrypted-app-flash
 encrypted-app-flash: esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/build.make
@@ -80,10 +80,10 @@ esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/build: encrypted-app-flash
 .PHONY : esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/build
 
 esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py && $(CMAKE_COMMAND) -P CMakeFiles/encrypted-app-flash.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py && $(CMAKE_COMMAND) -P CMakeFiles/encrypted-app-flash.dir/cmake_clean.cmake
 .PHONY : esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/clean
 
 esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/esptool_py /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/esptool_py /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/depend
 

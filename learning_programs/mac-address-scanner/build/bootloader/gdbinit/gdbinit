@@ -1,0 +1,2 @@
+source /home/danny/esp-idf/projects/learning_programs/mac-address-scanner/build/bootloader/gdbinit/symbols
+source /home/danny/esp-idf/projects/learning_programs/mac-address-scanner/build/bootloader/gdbinit/connect

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for app_check_size.
 
@@ -67,7 +67,7 @@ include esp-idf/esptool_py/CMakeFiles/app_check_size.dir/compiler_depend.make
 include esp-idf/esptool_py/CMakeFiles/app_check_size.dir/progress.make
 
 esp-idf/esptool_py/CMakeFiles/app_check_size:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py && /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/partition_table/partition-table.bin /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-deauther.bin
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py && /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/danny/esp-idf/projects/esp-deauther/build/partition_table/partition-table.bin /home/danny/esp-idf/projects/esp-deauther/build/esp-deauther.bin
 
 app_check_size: esp-idf/esptool_py/CMakeFiles/app_check_size
 app_check_size: esp-idf/esptool_py/CMakeFiles/app_check_size.dir/build.make
@@ -78,10 +78,10 @@ esp-idf/esptool_py/CMakeFiles/app_check_size.dir/build: app_check_size
 .PHONY : esp-idf/esptool_py/CMakeFiles/app_check_size.dir/build
 
 esp-idf/esptool_py/CMakeFiles/app_check_size.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py && $(CMAKE_COMMAND) -P CMakeFiles/app_check_size.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py && $(CMAKE_COMMAND) -P CMakeFiles/app_check_size.dir/cmake_clean.cmake
 .PHONY : esp-idf/esptool_py/CMakeFiles/app_check_size.dir/clean
 
 esp-idf/esptool_py/CMakeFiles/app_check_size.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/esptool_py /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/esptool_py/CMakeFiles/app_check_size.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/esptool_py /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/esptool_py/CMakeFiles/app_check_size.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esptool_py/CMakeFiles/app_check_size.dir/depend
 

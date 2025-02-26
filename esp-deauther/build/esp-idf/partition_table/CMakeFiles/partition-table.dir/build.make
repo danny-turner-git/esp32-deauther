@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for partition-table.
 
@@ -67,10 +67,10 @@ include esp-idf/partition_table/CMakeFiles/partition-table.dir/compiler_depend.m
 include esp-idf/partition_table/CMakeFiles/partition-table.dir/progress.make
 
 esp-idf/partition_table/CMakeFiles/partition-table:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "Partition table binary generated. Contents:"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "*******************************************************************************"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/components/partition_table/gen_esp32part.py -q --offset 0x8000 --flash-size 2MB -- /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/partition_table/partition-table.bin
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "*******************************************************************************"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "Partition table binary generated. Contents:"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "*******************************************************************************"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --primary-bootloader-offset 0x1000 --flash-size 2MB -- /home/danny/esp-idf/projects/esp-deauther/build/partition_table/partition-table.bin
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && /usr/bin/cmake -E echo "*******************************************************************************"
 
 partition-table: esp-idf/partition_table/CMakeFiles/partition-table
 partition-table: esp-idf/partition_table/CMakeFiles/partition-table.dir/build.make
@@ -81,10 +81,10 @@ esp-idf/partition_table/CMakeFiles/partition-table.dir/build: partition-table
 .PHONY : esp-idf/partition_table/CMakeFiles/partition-table.dir/build
 
 esp-idf/partition_table/CMakeFiles/partition-table.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table && $(CMAKE_COMMAND) -P CMakeFiles/partition-table.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table && $(CMAKE_COMMAND) -P CMakeFiles/partition-table.dir/cmake_clean.cmake
 .PHONY : esp-idf/partition_table/CMakeFiles/partition-table.dir/clean
 
 esp-idf/partition_table/CMakeFiles/partition-table.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/partition_table /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/partition_table/CMakeFiles/partition-table.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/partition_table /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/partition_table/CMakeFiles/partition-table.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/partition_table/CMakeFiles/partition-table.dir/depend
 

@@ -1,0 +1,2 @@
+source /home/danny/esp-idf/projects/esp-deauther/build/bootloader/gdbinit/symbols
+source /home/danny/esp-idf/projects/esp-deauther/build/bootloader/gdbinit/connect

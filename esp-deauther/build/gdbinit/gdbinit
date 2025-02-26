@@ -1,0 +1,2 @@
+source /home/danny/esp-idf/projects/esp-deauther/build/gdbinit/symbols
+source /home/danny/esp-idf/projects/esp-deauther/build/gdbinit/connect

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Utility rule file for efuse-common-table.
 
@@ -67,7 +67,7 @@ include esp-idf/efuse/CMakeFiles/efuse-common-table.dir/compiler_depend.make
 include esp-idf/efuse/CMakeFiles/efuse-common-table.dir/progress.make
 
 esp-idf/efuse/CMakeFiles/efuse-common-table:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/efuse && /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/components/efuse/efuse_table_gen.py /home/danny/esp-idf-v5.3.2/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/efuse && /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/components/efuse/efuse_table_gen.py /home/danny/esp-idf/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192
 
 efuse-common-table: esp-idf/efuse/CMakeFiles/efuse-common-table
 efuse-common-table: esp-idf/efuse/CMakeFiles/efuse-common-table.dir/build.make
@@ -78,10 +78,10 @@ esp-idf/efuse/CMakeFiles/efuse-common-table.dir/build: efuse-common-table
 .PHONY : esp-idf/efuse/CMakeFiles/efuse-common-table.dir/build
 
 esp-idf/efuse/CMakeFiles/efuse-common-table.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/efuse && $(CMAKE_COMMAND) -P CMakeFiles/efuse-common-table.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/efuse && $(CMAKE_COMMAND) -P CMakeFiles/efuse-common-table.dir/cmake_clean.cmake
 .PHONY : esp-idf/efuse/CMakeFiles/efuse-common-table.dir/clean
 
 esp-idf/efuse/CMakeFiles/efuse-common-table.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/efuse /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/efuse /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/efuse/CMakeFiles/efuse-common-table.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/efuse /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/efuse /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/efuse/CMakeFiles/efuse-common-table.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/efuse/CMakeFiles/efuse-common-table.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles /home/danny/esp-idf/projects/esp-deauther/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1020,6 +1020,19 @@ __idf_soc/fast:
 .PHONY : __idf_soc/fast
 
 #=============================================================================
+# Target rules for targets named __idf_esp_security
+
+# Build rule for target.
+__idf_esp_security: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_security
+.PHONY : __idf_esp_security
+
+# fast build rule for target.
+__idf_esp_security/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build.make esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build
+.PHONY : __idf_esp_security/fast
+
+#=============================================================================
 # Target rules for targets named __idf_esp_hw_support
 
 # Build rule for target.
@@ -1176,17 +1189,108 @@ __idf_nvs_flash/fast:
 .PHONY : __idf_nvs_flash/fast
 
 #=============================================================================
-# Target rules for targets named __idf_esp_driver_pcnt
+# Target rules for targets named __idf_esp_phy
 
 # Build rule for target.
-__idf_esp_driver_pcnt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_driver_pcnt
-.PHONY : __idf_esp_driver_pcnt
+__idf_esp_phy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_phy
+.PHONY : __idf_esp_phy
 
 # fast build rule for target.
-__idf_esp_driver_pcnt/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/build.make esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/build
-.PHONY : __idf_esp_driver_pcnt/fast
+__idf_esp_phy/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/build.make esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/build
+.PHONY : __idf_esp_phy/fast
+
+#=============================================================================
+# Target rules for targets named __idf_esp_vfs_console
+
+# Build rule for target.
+__idf_esp_vfs_console: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_vfs_console
+.PHONY : __idf_esp_vfs_console
+
+# fast build rule for target.
+__idf_esp_vfs_console/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/build.make esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/build
+.PHONY : __idf_esp_vfs_console/fast
+
+#=============================================================================
+# Target rules for targets named __idf_vfs
+
+# Build rule for target.
+__idf_vfs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_vfs
+.PHONY : __idf_vfs
+
+# fast build rule for target.
+__idf_vfs/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/vfs/CMakeFiles/__idf_vfs.dir/build.make esp-idf/vfs/CMakeFiles/__idf_vfs.dir/build
+.PHONY : __idf_vfs/fast
+
+#=============================================================================
+# Target rules for targets named __idf_lwip
+
+# Build rule for target.
+__idf_lwip: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_lwip
+.PHONY : __idf_lwip
+
+# fast build rule for target.
+__idf_lwip/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build
+.PHONY : __idf_lwip/fast
+
+#=============================================================================
+# Target rules for targets named __idf_esp_netif
+
+# Build rule for target.
+__idf_esp_netif: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_netif
+.PHONY : __idf_esp_netif
+
+# fast build rule for target.
+__idf_esp_netif/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/build.make esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/build
+.PHONY : __idf_esp_netif/fast
+
+#=============================================================================
+# Target rules for targets named __idf_wpa_supplicant
+
+# Build rule for target.
+__idf_wpa_supplicant: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_wpa_supplicant
+.PHONY : __idf_wpa_supplicant
+
+# fast build rule for target.
+__idf_wpa_supplicant/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build
+.PHONY : __idf_wpa_supplicant/fast
+
+#=============================================================================
+# Target rules for targets named __idf_esp_coex
+
+# Build rule for target.
+__idf_esp_coex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_coex
+.PHONY : __idf_esp_coex
+
+# fast build rule for target.
+__idf_esp_coex/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/build.make esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/build
+.PHONY : __idf_esp_coex/fast
+
+#=============================================================================
+# Target rules for targets named __idf_esp_wifi
+
+# Build rule for target.
+__idf_esp_wifi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_wifi
+.PHONY : __idf_esp_wifi
+
+# fast build rule for target.
+__idf_esp_wifi/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build
+.PHONY : __idf_esp_wifi/fast
 
 #=============================================================================
 # Target rules for targets named __idf_esp_driver_spi
@@ -1200,6 +1304,58 @@ __idf_esp_driver_spi: cmake_check_build_system
 __idf_esp_driver_spi/fast:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build.make esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build
 .PHONY : __idf_esp_driver_spi/fast
+
+#=============================================================================
+# Target rules for targets named __idf_unity
+
+# Build rule for target.
+__idf_unity: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_unity
+.PHONY : __idf_unity
+
+# fast build rule for target.
+__idf_unity/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/unity/CMakeFiles/__idf_unity.dir/build.make esp-idf/unity/CMakeFiles/__idf_unity.dir/build
+.PHONY : __idf_unity/fast
+
+#=============================================================================
+# Target rules for targets named __idf_cmock
+
+# Build rule for target.
+__idf_cmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_cmock
+.PHONY : __idf_cmock
+
+# fast build rule for target.
+__idf_cmock/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/cmock/CMakeFiles/__idf_cmock.dir/build.make esp-idf/cmock/CMakeFiles/__idf_cmock.dir/build
+.PHONY : __idf_cmock/fast
+
+#=============================================================================
+# Target rules for targets named __idf_console
+
+# Build rule for target.
+__idf_console: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_console
+.PHONY : __idf_console
+
+# fast build rule for target.
+__idf_console/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/console/CMakeFiles/__idf_console.dir/build.make esp-idf/console/CMakeFiles/__idf_console.dir/build
+.PHONY : __idf_console/fast
+
+#=============================================================================
+# Target rules for targets named __idf_esp_driver_pcnt
+
+# Build rule for target.
+__idf_esp_driver_pcnt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_driver_pcnt
+.PHONY : __idf_esp_driver_pcnt
+
+# fast build rule for target.
+__idf_esp_driver_pcnt/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/build.make esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/build
+.PHONY : __idf_esp_driver_pcnt/fast
 
 #=============================================================================
 # Target rules for targets named __idf_esp_driver_mcpwm
@@ -1358,149 +1514,6 @@ __idf_driver/fast:
 .PHONY : __idf_driver/fast
 
 #=============================================================================
-# Target rules for targets named __idf_esp_phy
-
-# Build rule for target.
-__idf_esp_phy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_phy
-.PHONY : __idf_esp_phy
-
-# fast build rule for target.
-__idf_esp_phy/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/build.make esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/build
-.PHONY : __idf_esp_phy/fast
-
-#=============================================================================
-# Target rules for targets named __idf_esp_vfs_console
-
-# Build rule for target.
-__idf_esp_vfs_console: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_vfs_console
-.PHONY : __idf_esp_vfs_console
-
-# fast build rule for target.
-__idf_esp_vfs_console/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/build.make esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/build
-.PHONY : __idf_esp_vfs_console/fast
-
-#=============================================================================
-# Target rules for targets named __idf_vfs
-
-# Build rule for target.
-__idf_vfs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_vfs
-.PHONY : __idf_vfs
-
-# fast build rule for target.
-__idf_vfs/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/vfs/CMakeFiles/__idf_vfs.dir/build.make esp-idf/vfs/CMakeFiles/__idf_vfs.dir/build
-.PHONY : __idf_vfs/fast
-
-#=============================================================================
-# Target rules for targets named __idf_lwip
-
-# Build rule for target.
-__idf_lwip: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_lwip
-.PHONY : __idf_lwip
-
-# fast build rule for target.
-__idf_lwip/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build
-.PHONY : __idf_lwip/fast
-
-#=============================================================================
-# Target rules for targets named __idf_esp_netif
-
-# Build rule for target.
-__idf_esp_netif: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_netif
-.PHONY : __idf_esp_netif
-
-# fast build rule for target.
-__idf_esp_netif/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/build.make esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/build
-.PHONY : __idf_esp_netif/fast
-
-#=============================================================================
-# Target rules for targets named __idf_wpa_supplicant
-
-# Build rule for target.
-__idf_wpa_supplicant: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_wpa_supplicant
-.PHONY : __idf_wpa_supplicant
-
-# fast build rule for target.
-__idf_wpa_supplicant/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build.make esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/build
-.PHONY : __idf_wpa_supplicant/fast
-
-#=============================================================================
-# Target rules for targets named __idf_esp_coex
-
-# Build rule for target.
-__idf_esp_coex: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_coex
-.PHONY : __idf_esp_coex
-
-# fast build rule for target.
-__idf_esp_coex/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/build.make esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/build
-.PHONY : __idf_esp_coex/fast
-
-#=============================================================================
-# Target rules for targets named __idf_esp_wifi
-
-# Build rule for target.
-__idf_esp_wifi: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_wifi
-.PHONY : __idf_esp_wifi
-
-# fast build rule for target.
-__idf_esp_wifi/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build
-.PHONY : __idf_esp_wifi/fast
-
-#=============================================================================
-# Target rules for targets named __idf_unity
-
-# Build rule for target.
-__idf_unity: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_unity
-.PHONY : __idf_unity
-
-# fast build rule for target.
-__idf_unity/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/unity/CMakeFiles/__idf_unity.dir/build.make esp-idf/unity/CMakeFiles/__idf_unity.dir/build
-.PHONY : __idf_unity/fast
-
-#=============================================================================
-# Target rules for targets named __idf_cmock
-
-# Build rule for target.
-__idf_cmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_cmock
-.PHONY : __idf_cmock
-
-# fast build rule for target.
-__idf_cmock/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/cmock/CMakeFiles/__idf_cmock.dir/build.make esp-idf/cmock/CMakeFiles/__idf_cmock.dir/build
-.PHONY : __idf_cmock/fast
-
-#=============================================================================
-# Target rules for targets named __idf_console
-
-# Build rule for target.
-__idf_console: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_console
-.PHONY : __idf_console
-
-# fast build rule for target.
-__idf_console/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/console/CMakeFiles/__idf_console.dir/build.make esp-idf/console/CMakeFiles/__idf_console.dir/build
-.PHONY : __idf_console/fast
-
-#=============================================================================
 # Target rules for targets named __idf_http_parser
 
 # Build rule for target.
@@ -1551,6 +1564,19 @@ __idf_esp_driver_cam: cmake_check_build_system
 __idf_esp_driver_cam/fast:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/build.make esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/build
 .PHONY : __idf_esp_driver_cam/fast
+
+#=============================================================================
+# Target rules for targets named __idf_esp_driver_touch_sens
+
+# Build rule for target.
+__idf_esp_driver_touch_sens: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_driver_touch_sens
+.PHONY : __idf_esp_driver_touch_sens
+
+# fast build rule for target.
+__idf_esp_driver_touch_sens/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build
+.PHONY : __idf_esp_driver_touch_sens/fast
 
 #=============================================================================
 # Target rules for targets named __idf_esp_eth
@@ -1800,6 +1826,19 @@ __idf_perfmon/fast:
 .PHONY : __idf_perfmon/fast
 
 #=============================================================================
+# Target rules for targets named __idf_rt
+
+# Build rule for target.
+__idf_rt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_rt
+.PHONY : __idf_rt
+
+# fast build rule for target.
+__idf_rt/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/rt/CMakeFiles/__idf_rt.dir/build.make esp-idf/rt/CMakeFiles/__idf_rt.dir/build
+.PHONY : __idf_rt/fast
+
+#=============================================================================
 # Target rules for targets named __idf_spiffs
 
 # Build rule for target.
@@ -1944,6 +1983,7 @@ help:
 	@echo "... __idf_esp_driver_sdmmc"
 	@echo "... __idf_esp_driver_sdspi"
 	@echo "... __idf_esp_driver_spi"
+	@echo "... __idf_esp_driver_touch_sens"
 	@echo "... __idf_esp_driver_uart"
 	@echo "... __idf_esp_eth"
 	@echo "... __idf_esp_event"
@@ -1963,6 +2003,7 @@ help:
 	@echo "... __idf_esp_pm"
 	@echo "... __idf_esp_ringbuf"
 	@echo "... __idf_esp_rom"
+	@echo "... __idf_esp_security"
 	@echo "... __idf_esp_system"
 	@echo "... __idf_esp_timer"
 	@echo "... __idf_esp_vfs_console"
@@ -1986,6 +2027,7 @@ help:
 	@echo "... __idf_protobuf-c"
 	@echo "... __idf_protocomm"
 	@echo "... __idf_pthread"
+	@echo "... __idf_rt"
 	@echo "... __idf_sdmmc"
 	@echo "... __idf_soc"
 	@echo "... __idf_spi_flash"

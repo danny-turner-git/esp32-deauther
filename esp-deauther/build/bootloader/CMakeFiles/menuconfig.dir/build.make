@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build/bootloader
 
 # Utility rule file for menuconfig.
 
@@ -67,11 +67,11 @@ include CMakeFiles/menuconfig.dir/compiler_depend.make
 include CMakeFiles/menuconfig.dir/progress.make
 
 CMakeFiles/menuconfig:
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/config.env
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/danny/esp-idf-v5.3.2/Kconfig --sdkconfig-rename /home/danny/esp-idf-v5.3.2/sdkconfig.rename --config /home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig --env-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/config.env --env IDF_TARGET=esp32 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.3.2 --dont-write-deprecated --output config /home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf-v5.3.2/tools/check_term.py
-	/usr/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/kconfigs_projbuild.in KCONFIG_CONFIG=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig IDF_TARGET=esp32 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.3.2 /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m menuconfig /home/danny/esp-idf-v5.3.2/Kconfig
-	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/danny/esp-idf-v5.3.2/Kconfig --sdkconfig-rename /home/danny/esp-idf-v5.3.2/sdkconfig.rename --config /home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig --env-file /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/config.env --env IDF_TARGET=esp32 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.3.2 --output config /home/danny/esp-idf-v5.3.2/projects/esp-deauther/sdkconfig
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/danny/esp-idf/projects/esp-deauther/build/bootloader/config.env
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/danny/esp-idf/Kconfig --sdkconfig-rename /home/danny/esp-idf/sdkconfig.rename --config /home/danny/esp-idf/projects/esp-deauther/sdkconfig --env IDF_MINIMAL_BUILD=n --env-file /home/danny/esp-idf/projects/esp-deauther/build/bootloader/config.env --env IDF_TARGET=esp32 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.3.2 --dont-write-deprecated --output config /home/danny/esp-idf/projects/esp-deauther/sdkconfig
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/danny/esp-idf/tools/check_term.py
+	/usr/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/home/danny/esp-idf/projects/esp-deauther/build/bootloader/kconfigs_projbuild.in KCONFIG_CONFIG=/home/danny/esp-idf/projects/esp-deauther/sdkconfig IDF_TARGET=esp32 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.3.2 IDF_MINIMAL_BUILD=n /home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m menuconfig /home/danny/esp-idf/Kconfig
+	/home/danny/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/danny/esp-idf/Kconfig --sdkconfig-rename /home/danny/esp-idf/sdkconfig.rename --config /home/danny/esp-idf/projects/esp-deauther/sdkconfig --env IDF_MINIMAL_BUILD=n --env-file /home/danny/esp-idf/projects/esp-deauther/build/bootloader/config.env --env IDF_TARGET=esp32 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.3.2 --output config /home/danny/esp-idf/projects/esp-deauther/sdkconfig
 
 menuconfig: CMakeFiles/menuconfig
 menuconfig: CMakeFiles/menuconfig.dir/build.make
@@ -86,6 +86,6 @@ CMakeFiles/menuconfig.dir/clean:
 .PHONY : CMakeFiles/menuconfig.dir/clean
 
 CMakeFiles/menuconfig.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/components/bootloader/subproject /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/components/bootloader/subproject /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader /home/danny/esp-idf/projects/esp-deauther/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/menuconfig.dir/depend
 

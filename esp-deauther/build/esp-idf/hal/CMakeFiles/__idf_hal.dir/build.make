@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther
+CMAKE_SOURCE_DIR = /home/danny/esp-idf/projects/esp-deauther
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build
+CMAKE_BINARY_DIR = /home/danny/esp-idf/projects/esp-deauther/build
 
 # Include any dependencies generated for this target.
 include esp-idf/hal/CMakeFiles/__idf_hal.dir/depend.make
@@ -70,634 +70,648 @@ include esp-idf/hal/CMakeFiles/__idf_hal.dir/progress.make
 include esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/hal_utils.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj: /home/danny/esp-idf/components/hal/hal_utils.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj -MF CMakeFiles/__idf_hal.dir/hal_utils.c.obj.d -o CMakeFiles/__idf_hal.dir/hal_utils.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/hal_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj -MF CMakeFiles/__idf_hal.dir/hal_utils.c.obj.d -o CMakeFiles/__idf_hal.dir/hal_utils.c.obj -c /home/danny/esp-idf/components/hal/hal_utils.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/hal_utils.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/hal_utils.c > CMakeFiles/__idf_hal.dir/hal_utils.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/hal_utils.c > CMakeFiles/__idf_hal.dir/hal_utils.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/hal_utils.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/hal_utils.c -o CMakeFiles/__idf_hal.dir/hal_utils.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/hal_utils.c -o CMakeFiles/__idf_hal.dir/hal_utils.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/mpu_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj: /home/danny/esp-idf/components/hal/mpu_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj -MF CMakeFiles/__idf_hal.dir/mpu_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/mpu_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/mpu_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj -MF CMakeFiles/__idf_hal.dir/mpu_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/mpu_hal.c.obj -c /home/danny/esp-idf/components/hal/mpu_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/mpu_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/mpu_hal.c > CMakeFiles/__idf_hal.dir/mpu_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/mpu_hal.c > CMakeFiles/__idf_hal.dir/mpu_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/mpu_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/mpu_hal.c -o CMakeFiles/__idf_hal.dir/mpu_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/mpu_hal.c -o CMakeFiles/__idf_hal.dir/mpu_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/efuse_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj: /home/danny/esp-idf/components/hal/efuse_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj -MF CMakeFiles/__idf_hal.dir/efuse_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/efuse_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/efuse_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj -MF CMakeFiles/__idf_hal.dir/efuse_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/efuse_hal.c.obj -c /home/danny/esp-idf/components/hal/efuse_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/efuse_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/efuse_hal.c > CMakeFiles/__idf_hal.dir/efuse_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/efuse_hal.c > CMakeFiles/__idf_hal.dir/efuse_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/efuse_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/efuse_hal.c -o CMakeFiles/__idf_hal.dir/efuse_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/efuse_hal.c -o CMakeFiles/__idf_hal.dir/efuse_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/esp32/efuse_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj: /home/danny/esp-idf/components/hal/esp32/efuse_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/esp32/efuse_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj -c /home/danny/esp-idf/components/hal/esp32/efuse_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/esp32/efuse_hal.c > CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/esp32/efuse_hal.c > CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/esp32/efuse_hal.c -o CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/esp32/efuse_hal.c -o CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/wdt_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj: /home/danny/esp-idf/components/hal/wdt_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/wdt_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/wdt_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/wdt_hal_iram.c > CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/wdt_hal_iram.c > CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/wdt_hal_iram.c -o CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/wdt_hal_iram.c -o CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/mmu_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj: /home/danny/esp-idf/components/hal/mmu_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj -MF CMakeFiles/__idf_hal.dir/mmu_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/mmu_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/mmu_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj -MF CMakeFiles/__idf_hal.dir/mmu_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/mmu_hal.c.obj -c /home/danny/esp-idf/components/hal/mmu_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/mmu_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/mmu_hal.c > CMakeFiles/__idf_hal.dir/mmu_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/mmu_hal.c > CMakeFiles/__idf_hal.dir/mmu_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/mmu_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/mmu_hal.c -o CMakeFiles/__idf_hal.dir/mmu_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/mmu_hal.c -o CMakeFiles/__idf_hal.dir/mmu_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/esp32/cache_hal_esp32.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj: /home/danny/esp-idf/components/hal/esp32/cache_hal_esp32.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/esp32/cache_hal_esp32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj -c /home/danny/esp-idf/components/hal/esp32/cache_hal_esp32.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/esp32/cache_hal_esp32.c > CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/esp32/cache_hal_esp32.c > CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/esp32/cache_hal_esp32.c -o CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/esp32/cache_hal_esp32.c -o CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/color_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj: /home/danny/esp-idf/components/hal/color_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj -MF CMakeFiles/__idf_hal.dir/color_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/color_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/color_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj -MF CMakeFiles/__idf_hal.dir/color_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/color_hal.c.obj -c /home/danny/esp-idf/components/hal/color_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/color_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/color_hal.c > CMakeFiles/__idf_hal.dir/color_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/color_hal.c > CMakeFiles/__idf_hal.dir/color_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/color_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/color_hal.c -o CMakeFiles/__idf_hal.dir/color_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/color_hal.c -o CMakeFiles/__idf_hal.dir/color_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj: /home/danny/esp-idf/components/hal/spi_flash_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj -MF CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj -MF CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj -c /home/danny/esp-idf/components/hal/spi_flash_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/spi_flash_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_hal.c > CMakeFiles/__idf_hal.dir/spi_flash_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/spi_flash_hal.c > CMakeFiles/__idf_hal.dir/spi_flash_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/spi_flash_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_hal.c -o CMakeFiles/__idf_hal.dir/spi_flash_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/spi_flash_hal.c -o CMakeFiles/__idf_hal.dir/spi_flash_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj: /home/danny/esp-idf/components/hal/spi_flash_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/spi_flash_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_hal_iram.c > CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/spi_flash_hal_iram.c > CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_hal_iram.c -o CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/spi_flash_hal_iram.c -o CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_encrypt_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj: /home/danny/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_encrypt_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_encrypt_hal_iram.c > CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c > CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/spi_flash_encrypt_hal_iram.c -o CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c -o CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/esp32/clk_tree_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj: /home/danny/esp-idf/components/hal/esp32/clk_tree_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/esp32/clk_tree_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj -c /home/danny/esp-idf/components/hal/esp32/clk_tree_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/esp32/clk_tree_hal.c > CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/esp32/clk_tree_hal.c > CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/esp32/clk_tree_hal.c -o CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/esp32/clk_tree_hal.c -o CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/uart_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj: /home/danny/esp-idf/components/hal/uart_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj -MF CMakeFiles/__idf_hal.dir/uart_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/uart_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/uart_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj -MF CMakeFiles/__idf_hal.dir/uart_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/uart_hal.c.obj -c /home/danny/esp-idf/components/hal/uart_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/uart_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/uart_hal.c > CMakeFiles/__idf_hal.dir/uart_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/uart_hal.c > CMakeFiles/__idf_hal.dir/uart_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/uart_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/uart_hal.c -o CMakeFiles/__idf_hal.dir/uart_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/uart_hal.c -o CMakeFiles/__idf_hal.dir/uart_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/uart_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj: /home/danny/esp-idf/components/hal/uart_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/uart_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/uart_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/uart_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/uart_hal_iram.c > CMakeFiles/__idf_hal.dir/uart_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/uart_hal_iram.c > CMakeFiles/__idf_hal.dir/uart_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/uart_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/uart_hal_iram.c -o CMakeFiles/__idf_hal.dir/uart_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/uart_hal_iram.c -o CMakeFiles/__idf_hal.dir/uart_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/gpio_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj: /home/danny/esp-idf/components/hal/gpio_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj -MF CMakeFiles/__idf_hal.dir/gpio_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/gpio_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/gpio_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj -MF CMakeFiles/__idf_hal.dir/gpio_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/gpio_hal.c.obj -c /home/danny/esp-idf/components/hal/gpio_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/gpio_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/gpio_hal.c > CMakeFiles/__idf_hal.dir/gpio_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/gpio_hal.c > CMakeFiles/__idf_hal.dir/gpio_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/gpio_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/gpio_hal.c -o CMakeFiles/__idf_hal.dir/gpio_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/gpio_hal.c -o CMakeFiles/__idf_hal.dir/gpio_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/rtc_io_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj: /home/danny/esp-idf/components/hal/rtc_io_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj -MF CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/rtc_io_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj -MF CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj -c /home/danny/esp-idf/components/hal/rtc_io_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/rtc_io_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/rtc_io_hal.c > CMakeFiles/__idf_hal.dir/rtc_io_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/rtc_io_hal.c > CMakeFiles/__idf_hal.dir/rtc_io_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/rtc_io_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/rtc_io_hal.c -o CMakeFiles/__idf_hal.dir/rtc_io_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/rtc_io_hal.c -o CMakeFiles/__idf_hal.dir/rtc_io_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/timer_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj: /home/danny/esp-idf/components/hal/timer_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj -MF CMakeFiles/__idf_hal.dir/timer_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/timer_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/timer_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj -MF CMakeFiles/__idf_hal.dir/timer_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/timer_hal.c.obj -c /home/danny/esp-idf/components/hal/timer_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/timer_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/timer_hal.c > CMakeFiles/__idf_hal.dir/timer_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/timer_hal.c > CMakeFiles/__idf_hal.dir/timer_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/timer_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/timer_hal.c -o CMakeFiles/__idf_hal.dir/timer_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/timer_hal.c -o CMakeFiles/__idf_hal.dir/timer_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/ledc_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj: /home/danny/esp-idf/components/hal/ledc_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj -MF CMakeFiles/__idf_hal.dir/ledc_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/ledc_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/ledc_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj -MF CMakeFiles/__idf_hal.dir/ledc_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/ledc_hal.c.obj -c /home/danny/esp-idf/components/hal/ledc_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/ledc_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/ledc_hal.c > CMakeFiles/__idf_hal.dir/ledc_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/ledc_hal.c > CMakeFiles/__idf_hal.dir/ledc_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/ledc_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/ledc_hal.c -o CMakeFiles/__idf_hal.dir/ledc_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/ledc_hal.c -o CMakeFiles/__idf_hal.dir/ledc_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/ledc_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj: /home/danny/esp-idf/components/hal/ledc_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/ledc_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/ledc_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/ledc_hal_iram.c > CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/ledc_hal_iram.c > CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/ledc_hal_iram.c -o CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/ledc_hal_iram.c -o CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/i2c_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj: /home/danny/esp-idf/components/hal/i2c_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj -MF CMakeFiles/__idf_hal.dir/i2c_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/i2c_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/i2c_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj -MF CMakeFiles/__idf_hal.dir/i2c_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/i2c_hal.c.obj -c /home/danny/esp-idf/components/hal/i2c_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/i2c_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/i2c_hal.c > CMakeFiles/__idf_hal.dir/i2c_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/i2c_hal.c > CMakeFiles/__idf_hal.dir/i2c_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/i2c_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/i2c_hal.c -o CMakeFiles/__idf_hal.dir/i2c_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/i2c_hal.c -o CMakeFiles/__idf_hal.dir/i2c_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/i2c_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj: /home/danny/esp-idf/components/hal/i2c_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/i2c_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/i2c_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/i2c_hal_iram.c > CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/i2c_hal_iram.c > CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/i2c_hal_iram.c -o CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/i2c_hal_iram.c -o CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/rmt_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj: /home/danny/esp-idf/components/hal/rmt_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj -MF CMakeFiles/__idf_hal.dir/rmt_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/rmt_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/rmt_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj -MF CMakeFiles/__idf_hal.dir/rmt_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/rmt_hal.c.obj -c /home/danny/esp-idf/components/hal/rmt_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/rmt_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/rmt_hal.c > CMakeFiles/__idf_hal.dir/rmt_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/rmt_hal.c > CMakeFiles/__idf_hal.dir/rmt_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/rmt_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/rmt_hal.c -o CMakeFiles/__idf_hal.dir/rmt_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/rmt_hal.c -o CMakeFiles/__idf_hal.dir/rmt_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/pcnt_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj: /home/danny/esp-idf/components/hal/pcnt_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj -MF CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/pcnt_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj -MF CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj -c /home/danny/esp-idf/components/hal/pcnt_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/pcnt_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/pcnt_hal.c > CMakeFiles/__idf_hal.dir/pcnt_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/pcnt_hal.c > CMakeFiles/__idf_hal.dir/pcnt_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/pcnt_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/pcnt_hal.c -o CMakeFiles/__idf_hal.dir/pcnt_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/pcnt_hal.c -o CMakeFiles/__idf_hal.dir/pcnt_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/mcpwm_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj: /home/danny/esp-idf/components/hal/mcpwm_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj -MF CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/mcpwm_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj -MF CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj -c /home/danny/esp-idf/components/hal/mcpwm_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/mcpwm_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/mcpwm_hal.c > CMakeFiles/__idf_hal.dir/mcpwm_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/mcpwm_hal.c > CMakeFiles/__idf_hal.dir/mcpwm_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/mcpwm_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/mcpwm_hal.c -o CMakeFiles/__idf_hal.dir/mcpwm_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/mcpwm_hal.c -o CMakeFiles/__idf_hal.dir/mcpwm_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/twai_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj: /home/danny/esp-idf/components/hal/twai_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj -MF CMakeFiles/__idf_hal.dir/twai_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/twai_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/twai_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj -MF CMakeFiles/__idf_hal.dir/twai_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/twai_hal.c.obj -c /home/danny/esp-idf/components/hal/twai_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/twai_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/twai_hal.c > CMakeFiles/__idf_hal.dir/twai_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/twai_hal.c > CMakeFiles/__idf_hal.dir/twai_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/twai_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/twai_hal.c -o CMakeFiles/__idf_hal.dir/twai_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/twai_hal.c -o CMakeFiles/__idf_hal.dir/twai_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/twai_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj: /home/danny/esp-idf/components/hal/twai_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/twai_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/twai_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/twai_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/twai_hal_iram.c > CMakeFiles/__idf_hal.dir/twai_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/twai_hal_iram.c > CMakeFiles/__idf_hal.dir/twai_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/twai_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/twai_hal_iram.c -o CMakeFiles/__idf_hal.dir/twai_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/twai_hal_iram.c -o CMakeFiles/__idf_hal.dir/twai_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/i2s_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj: /home/danny/esp-idf/components/hal/i2s_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj -MF CMakeFiles/__idf_hal.dir/i2s_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/i2s_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/i2s_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj -MF CMakeFiles/__idf_hal.dir/i2s_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/i2s_hal.c.obj -c /home/danny/esp-idf/components/hal/i2s_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/i2s_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/i2s_hal.c > CMakeFiles/__idf_hal.dir/i2s_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/i2s_hal.c > CMakeFiles/__idf_hal.dir/i2s_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/i2s_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/i2s_hal.c -o CMakeFiles/__idf_hal.dir/i2s_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/i2s_hal.c -o CMakeFiles/__idf_hal.dir/i2s_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/sdm_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj: /home/danny/esp-idf/components/hal/sdm_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj -MF CMakeFiles/__idf_hal.dir/sdm_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/sdm_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/sdm_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj -MF CMakeFiles/__idf_hal.dir/sdm_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/sdm_hal.c.obj -c /home/danny/esp-idf/components/hal/sdm_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/sdm_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/sdm_hal.c > CMakeFiles/__idf_hal.dir/sdm_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/sdm_hal.c > CMakeFiles/__idf_hal.dir/sdm_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/sdm_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/sdm_hal.c -o CMakeFiles/__idf_hal.dir/sdm_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/sdm_hal.c -o CMakeFiles/__idf_hal.dir/sdm_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/sdmmc_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj: /home/danny/esp-idf/components/hal/sdmmc_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj -MF CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/sdmmc_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj -MF CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/sdmmc_hal.c.obj -c /home/danny/esp-idf/components/hal/sdmmc_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/sdmmc_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/sdmmc_hal.c > CMakeFiles/__idf_hal.dir/sdmmc_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/sdmmc_hal.c > CMakeFiles/__idf_hal.dir/sdmmc_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdmmc_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/sdmmc_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/sdmmc_hal.c -o CMakeFiles/__idf_hal.dir/sdmmc_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/sdmmc_hal.c -o CMakeFiles/__idf_hal.dir/sdmmc_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/emac_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.obj: /home/danny/esp-idf/components/hal/emac_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.obj -MF CMakeFiles/__idf_hal.dir/emac_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/emac_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/emac_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.obj -MF CMakeFiles/__idf_hal.dir/emac_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/emac_hal.c.obj -c /home/danny/esp-idf/components/hal/emac_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/emac_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/emac_hal.c > CMakeFiles/__idf_hal.dir/emac_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/emac_hal.c > CMakeFiles/__idf_hal.dir/emac_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/emac_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/emac_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/emac_hal.c -o CMakeFiles/__idf_hal.dir/emac_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/emac_hal.c -o CMakeFiles/__idf_hal.dir/emac_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/adc_hal_common.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj: /home/danny/esp-idf/components/hal/adc_hal_common.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj -MF CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj.d -o CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/adc_hal_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj -MF CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj.d -o CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj -c /home/danny/esp-idf/components/hal/adc_hal_common.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/adc_hal_common.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/adc_hal_common.c > CMakeFiles/__idf_hal.dir/adc_hal_common.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/adc_hal_common.c > CMakeFiles/__idf_hal.dir/adc_hal_common.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/adc_hal_common.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/adc_hal_common.c -o CMakeFiles/__idf_hal.dir/adc_hal_common.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/adc_hal_common.c -o CMakeFiles/__idf_hal.dir/adc_hal_common.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/adc_oneshot_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj: /home/danny/esp-idf/components/hal/adc_oneshot_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj -MF CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/adc_oneshot_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj -MF CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj -c /home/danny/esp-idf/components/hal/adc_oneshot_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/adc_oneshot_hal.c > CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/adc_oneshot_hal.c > CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/adc_oneshot_hal.c -o CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/adc_oneshot_hal.c -o CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/adc_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj: /home/danny/esp-idf/components/hal/adc_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj -MF CMakeFiles/__idf_hal.dir/adc_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/adc_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/adc_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj -MF CMakeFiles/__idf_hal.dir/adc_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/adc_hal.c.obj -c /home/danny/esp-idf/components/hal/adc_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/adc_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/adc_hal.c > CMakeFiles/__idf_hal.dir/adc_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/adc_hal.c > CMakeFiles/__idf_hal.dir/adc_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/adc_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/adc_hal.c -o CMakeFiles/__idf_hal.dir/adc_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/adc_hal.c -o CMakeFiles/__idf_hal.dir/adc_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/mpi_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj: /home/danny/esp-idf/components/hal/mpi_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj -MF CMakeFiles/__idf_hal.dir/mpi_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/mpi_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/mpi_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj -MF CMakeFiles/__idf_hal.dir/mpi_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/mpi_hal.c.obj -c /home/danny/esp-idf/components/hal/mpi_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/mpi_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/mpi_hal.c > CMakeFiles/__idf_hal.dir/mpi_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/mpi_hal.c > CMakeFiles/__idf_hal.dir/mpi_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/mpi_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/mpi_hal.c -o CMakeFiles/__idf_hal.dir/mpi_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/mpi_hal.c -o CMakeFiles/__idf_hal.dir/mpi_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/sha_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj: /home/danny/esp-idf/components/hal/sha_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj -MF CMakeFiles/__idf_hal.dir/sha_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/sha_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/sha_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj -MF CMakeFiles/__idf_hal.dir/sha_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/sha_hal.c.obj -c /home/danny/esp-idf/components/hal/sha_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/sha_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/sha_hal.c > CMakeFiles/__idf_hal.dir/sha_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/sha_hal.c > CMakeFiles/__idf_hal.dir/sha_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/sha_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/sha_hal.c -o CMakeFiles/__idf_hal.dir/sha_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/sha_hal.c -o CMakeFiles/__idf_hal.dir/sha_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/aes_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj: /home/danny/esp-idf/components/hal/aes_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj -MF CMakeFiles/__idf_hal.dir/aes_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/aes_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/aes_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj -MF CMakeFiles/__idf_hal.dir/aes_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/aes_hal.c.obj -c /home/danny/esp-idf/components/hal/aes_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/aes_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/aes_hal.c > CMakeFiles/__idf_hal.dir/aes_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/aes_hal.c > CMakeFiles/__idf_hal.dir/aes_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/aes_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/aes_hal.c -o CMakeFiles/__idf_hal.dir/aes_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/aes_hal.c -o CMakeFiles/__idf_hal.dir/aes_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/brownout_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj: /home/danny/esp-idf/components/hal/brownout_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj -MF CMakeFiles/__idf_hal.dir/brownout_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/brownout_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/brownout_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.obj -MF CMakeFiles/__idf_hal.dir/brownout_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/brownout_hal.c.obj -c /home/danny/esp-idf/components/hal/brownout_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/brownout_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/brownout_hal.c > CMakeFiles/__idf_hal.dir/brownout_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/brownout_hal.c > CMakeFiles/__idf_hal.dir/brownout_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/brownout_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/brownout_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/brownout_hal.c -o CMakeFiles/__idf_hal.dir/brownout_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/brownout_hal.c -o CMakeFiles/__idf_hal.dir/brownout_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/spi_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj: /home/danny/esp-idf/components/hal/spi_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj -MF CMakeFiles/__idf_hal.dir/spi_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/spi_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj -MF CMakeFiles/__idf_hal.dir/spi_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_hal.c.obj -c /home/danny/esp-idf/components/hal/spi_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/spi_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/spi_hal.c > CMakeFiles/__idf_hal.dir/spi_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/spi_hal.c > CMakeFiles/__idf_hal.dir/spi_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/spi_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/spi_hal.c -o CMakeFiles/__idf_hal.dir/spi_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/spi_hal.c -o CMakeFiles/__idf_hal.dir/spi_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/spi_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj: /home/danny/esp-idf/components/hal/spi_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/spi_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/spi_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/spi_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/spi_hal_iram.c > CMakeFiles/__idf_hal.dir/spi_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/spi_hal_iram.c > CMakeFiles/__idf_hal.dir/spi_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/spi_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/spi_hal_iram.c -o CMakeFiles/__idf_hal.dir/spi_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/spi_hal_iram.c -o CMakeFiles/__idf_hal.dir/spi_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/spi_slave_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj: /home/danny/esp-idf/components/hal/spi_slave_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj -MF CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/spi_slave_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj -MF CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj -c /home/danny/esp-idf/components/hal/spi_slave_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/spi_slave_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/spi_slave_hal.c > CMakeFiles/__idf_hal.dir/spi_slave_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/spi_slave_hal.c > CMakeFiles/__idf_hal.dir/spi_slave_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/spi_slave_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/spi_slave_hal.c -o CMakeFiles/__idf_hal.dir/spi_slave_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/spi_slave_hal.c -o CMakeFiles/__idf_hal.dir/spi_slave_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/spi_slave_hal_iram.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj: /home/danny/esp-idf/components/hal/spi_slave_hal_iram.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/spi_slave_hal_iram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj -MF CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj.d -o CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj -c /home/danny/esp-idf/components/hal/spi_slave_hal_iram.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/spi_slave_hal_iram.c > CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/spi_slave_hal_iram.c > CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/spi_slave_hal_iram.c -o CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/spi_slave_hal_iram.c -o CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/sdio_slave_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj: /home/danny/esp-idf/components/hal/sdio_slave_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj -MF CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/sdio_slave_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj -MF CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj -c /home/danny/esp-idf/components/hal/sdio_slave_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/sdio_slave_hal.c > CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/sdio_slave_hal.c > CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/sdio_slave_hal.c -o CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/sdio_slave_hal.c -o CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/esp32/touch_sensor_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj: /home/danny/esp-idf/components/hal/esp32/touch_sensor_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/esp32/touch_sensor_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj -c /home/danny/esp-idf/components/hal/esp32/touch_sensor_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/esp32/touch_sensor_hal.c > CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/esp32/touch_sensor_hal.c > CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/esp32/touch_sensor_hal.c -o CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/esp32/touch_sensor_hal.c -o CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/touch_sensor_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj: /home/danny/esp-idf/components/hal/touch_sensor_hal.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj -MF CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/touch_sensor_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj -MF CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj -c /home/danny/esp-idf/components/hal/touch_sensor_hal.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/touch_sensor_hal.c > CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/touch_sensor_hal.c > CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/touch_sensor_hal.c -o CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/touch_sensor_hal.c -o CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.s
+
+esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
+esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj: /home/danny/esp-idf/components/hal/touch_sens_hal.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj -MF CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj.d -o CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj -c /home/danny/esp-idf/components/hal/touch_sens_hal.c
+
+esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/touch_sens_hal.c.i"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/touch_sens_hal.c > CMakeFiles/__idf_hal.dir/touch_sens_hal.c.i
+
+esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/touch_sens_hal.c.s"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/touch_sens_hal.c -o CMakeFiles/__idf_hal.dir/touch_sens_hal.c.s
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/flags.make
-esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj: /home/danny/esp-idf-v5.3.2/components/hal/esp32/gpio_hal_workaround.c
+esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj: /home/danny/esp-idf/components/hal/esp32/gpio_hal_workaround.c
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj: esp-idf/hal/CMakeFiles/__idf_hal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj -c /home/danny/esp-idf-v5.3.2/components/hal/esp32/gpio_hal_workaround.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj -MF CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj.d -o CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj -c /home/danny/esp-idf/components/hal/esp32/gpio_hal_workaround.c
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.i"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf-v5.3.2/components/hal/esp32/gpio_hal_workaround.c > CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.i
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danny/esp-idf/components/hal/esp32/gpio_hal_workaround.c > CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.i
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.s"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf-v5.3.2/components/hal/esp32/gpio_hal_workaround.c -o CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.s
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && /home/danny/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danny/esp-idf/components/hal/esp32/gpio_hal_workaround.c -o CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.s
 
 # Object files for target __idf_hal
 __idf_hal_OBJECTS = \
@@ -745,6 +759,7 @@ __idf_hal_OBJECTS = \
 "CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj" \
 "CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj" \
 "CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj" \
+"CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj" \
 "CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj"
 
 # External object files for target __idf_hal
@@ -794,22 +809,23 @@ esp-idf/hal/libhal.a: esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.
 esp-idf/hal/libhal.a: esp-idf/hal/CMakeFiles/__idf_hal.dir/sdio_slave_hal.c.obj
 esp-idf/hal/libhal.a: esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/touch_sensor_hal.c.obj
 esp-idf/hal/libhal.a: esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj
+esp-idf/hal/libhal.a: esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj
 esp-idf/hal/libhal.a: esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/gpio_hal_workaround.c.obj
 esp-idf/hal/libhal.a: esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make
 esp-idf/hal/libhal.a: esp-idf/hal/CMakeFiles/__idf_hal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking C static library libhal.a"
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && $(CMAKE_COMMAND) -P CMakeFiles/__idf_hal.dir/cmake_clean_target.cmake
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_hal.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/esp-idf/projects/esp-deauther/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking C static library libhal.a"
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && $(CMAKE_COMMAND) -P CMakeFiles/__idf_hal.dir/cmake_clean_target.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_hal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/hal/CMakeFiles/__idf_hal.dir/build: esp-idf/hal/libhal.a
 .PHONY : esp-idf/hal/CMakeFiles/__idf_hal.dir/build
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/clean:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal && $(CMAKE_COMMAND) -P CMakeFiles/__idf_hal.dir/cmake_clean.cmake
+	cd /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal && $(CMAKE_COMMAND) -P CMakeFiles/__idf_hal.dir/cmake_clean.cmake
 .PHONY : esp-idf/hal/CMakeFiles/__idf_hal.dir/clean
 
 esp-idf/hal/CMakeFiles/__idf_hal.dir/depend:
-	cd /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf-v5.3.2/projects/esp-deauther /home/danny/esp-idf-v5.3.2/components/hal /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal /home/danny/esp-idf-v5.3.2/projects/esp-deauther/build/esp-idf/hal/CMakeFiles/__idf_hal.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/danny/esp-idf/projects/esp-deauther/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danny/esp-idf/projects/esp-deauther /home/danny/esp-idf/components/hal /home/danny/esp-idf/projects/esp-deauther/build /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal /home/danny/esp-idf/projects/esp-deauther/build/esp-idf/hal/CMakeFiles/__idf_hal.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/hal/CMakeFiles/__idf_hal.dir/depend
 
