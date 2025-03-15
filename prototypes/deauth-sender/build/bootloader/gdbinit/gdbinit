@@ -1,0 +1,2 @@
+source /home/danny/esp-idf/projects/prototypes/deauth-sender/build/bootloader/gdbinit/symbols
+source /home/danny/esp-idf/projects/prototypes/deauth-sender/build/bootloader/gdbinit/connect

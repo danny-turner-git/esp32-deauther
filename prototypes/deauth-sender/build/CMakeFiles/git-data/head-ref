@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 f9e7c88c18e317d7d2bed5db1153f0ca736e5804 danny <daniel.edenturner@gmail.com> 1740394227 +0000	clone: from https://github.com/danny-turner-git/esp32-deauther.git
+f9e7c88c18e317d7d2bed5db1153f0ca736e5804 975767c16c0e0440b5bf1ee86abe1b41c62e0f6e danny <daniel.edenturner@gmail.com> 1740588101 +0000	commit: Added a mac address scanner program to learning_programs directory to determine softAP mac address of ESP32. This will be used for the address fields in the deauthentication fame
