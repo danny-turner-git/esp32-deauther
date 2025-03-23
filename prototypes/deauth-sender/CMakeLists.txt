@@ -4,3 +4,6 @@ cmake_minimum_required(VERSION 3.16)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(deauth-sender)
+
+target_link_options(${CMAKE_PROJECT_NAME}.elf PRIVATE -Wl,--allow-multiple-definition)
+

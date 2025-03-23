@@ -8,6 +8,10 @@
 #include "nvs_flash.h"
 #include "esp_wifi.h"
 
+extern "C" int ieee80211_raw_frame_sanity_check(int32_t arg, int32_t arg2, int32_t arg3){
+  return 0;
+}
+
 const uint8_t deauth_frame[] = {
     // frame control start
     0xc0, 0x00, //type and subtype, to/fromDS
@@ -19,7 +23,7 @@ const uint8_t deauth_frame[] = {
 
 };
 
-void app_main(void)
+extern "C" void app_main()
 {
     nvs_flash_init(); // wifi configuration stored in nvs
     ESP_ERROR_CHECK(esp_netif_init());
