@@ -4,7 +4,6 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_system.h"
-#include "esp_spi_flash.h"
 #include "esp_event.h"
 #include "esp_err.h"
 #include "esp_netif.h"
@@ -12,7 +11,6 @@
 #include "esp_wifi.h"
 #include "esp_log.h"
 #include <esp_wifi_types.h>
-
 
 char * TAG = "debug";
 char * AP_TAG = "AP";
@@ -54,41 +52,38 @@ Scan scanner()
 
 };
 
-// this always broadcasts with default host name
 void evil_twin(wifi_ap_record_t clone_ap_record)
 {
-    esp_netif_t* nifx = esp_netif_create_default_wifi_ap();
-    esp_wifi_set_mode(WIFI_MODE_AP);
+	ESP_ERROR_CHECK(esp_wifi_deinit());
+	const wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT(); 
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
 
-
-    char * buffer = calloc(sizeof(clone_ap_record.ssid) +16, 1);
-    sprintf(buffer, "%s esp", clone_ap_record.ssid);
-    ESP_LOGI(AP_TAG, "Selected ssid %s", buffer);
-
-
-    wifi_config_t wifi_ap_cfg = {};
-    strcpy((char *)wifi_ap_cfg.sta.ssid, buffer);
-    wifi_ap_cfg.ap.ssid_len = strlen((char *)wifi_ap_cfg.sta.ssid);
-    wifi_ap_cfg.ap.channel = 1;
-    wifi_ap_cfg.ap.authmode = WIFI_AUTH_OPEN;
-    wifi_ap_cfg.ap.ssid_hidden = 0;
-    wifi_ap_cfg.ap.max_connection = 10;
-    wifi_ap_cfg.ap.beacon_interval = 100;
-    tcpip_adapter_init();
-
-    tcpip_adapter_set_hostname(TCPIP_ADAPTER_IF_AP, (char*)wifi_ap_cfg.sta.ssid);
-    esp_netif_set_hostname(nifx, (char*)wifi_ap_cfg.sta.ssid);
-
-
-
-
-    esp_wifi_set_config(WIFI_MODE_AP, &wifi_ap_cfg );
+    esp_netif_create_default_wifi_ap();
+	ESP_LOGI(AP_TAG, "Netif default ap created");
+	ESP_LOGI(AP_TAG, "AP mode initialized");
+	
+	wifi_config_t wifi_ap_cfg = {
+		.ap = {
+			.ssid_len = strlen((char*)clone_ap_record.ssid),
+			.channel = 1,
+			.authmode = WIFI_AUTH_OPEN,
+			.ssid_hidden = 0,
+			.max_connection = 10,
+			.beacon_interval = 100
+		}
+	};
+	strcpy((char*)wifi_ap_cfg.ap.ssid, (char*)clone_ap_record.ssid);
+		
+	esp_wifi_set_mode(WIFI_MODE_AP);
+	esp_wifi_set_config(WIFI_IF_AP, &wifi_ap_cfg );
     ESP_ERROR_CHECK(esp_wifi_start());
+	
 
     while (true){
         vTaskDelay(10000/ portTICK_PERIOD_MS);
-        ESP_LOGI(AP_TAG, "Broadcasting...");
+        ESP_LOGI(AP_TAG, "Broadcasting with %s...", (char*)wifi_ap_cfg.ap.ssid );
     };
+
     ESP_ERROR_CHECK(esp_wifi_stop()); //wifi stopped to allow for switching between wifi modes
     esp_wifi_set_mode(WIFI_MODE_NULL);
 
@@ -97,11 +92,10 @@ void evil_twin(wifi_ap_record_t clone_ap_record)
 
 void app_main()
 {
-    nvs_flash_init(); // wifi configuration stored in nvs
+    nvs_flash_init(); 
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
-    //esp_netif_create_default_wifi_sta();
-    const wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT(); // create default config here and alter config later
+    const wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT(); 
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
 
     Scan ap_scan = scanner();
@@ -114,3 +108,4 @@ void app_main()
     evil_twin(*ap_records_ptr);
 
 }
+

