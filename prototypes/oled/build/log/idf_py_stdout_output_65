@@ -1,0 +1,20 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /project/build/bootloader/esp-idf/esptool_py && /opt/esp/python_env/idf5.4_py3.12_env/bin/python /opt/esp/idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /project/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/oled.c.obj
+/project/main/oled.c:113:23: warning: 'on_enter_button_intr' defined but not used [-Wunused-function]
+  113 | static void IRAM_ATTR on_enter_button_intr(){
+      |                       ^~~~~~~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable oled.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /project/build/oled.bin
+[9/9] cd /project/build/esp-idf/esptool_py && /opt/esp/python_env/idf5.4_py3.12_env/bin/python /opt/esp/idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /project/build/partition_table/partition-table.bin /project/build/oled.bin
+oled.bin binary size 0x341a0 bytes. Smallest app partition is 0x100000 bytes. 0xcbe60 bytes (80%) free.

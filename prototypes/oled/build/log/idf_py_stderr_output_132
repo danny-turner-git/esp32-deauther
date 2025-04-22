@@ -1,0 +1,215 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a01: panic_abort at /opt/esp/idf/components/esp_system/panic.c:468
+--- 0x400869b9: esp_system_abort at /opt/esp/idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008cba9: __assert_func at /opt/esp/idf/components/newlib/assert.c:80
+--- 0x400d705a: u8g2_esp32_i2c_byte_cb at /project/main/u8g2_esp32_hal.c:130 (discriminator 17)
+--- 0x400d7d0d: u8x8_cad_ssd13xx_fast_i2c at /project/components/u8g2/csrc/u8x8_cad.c:639
+--- 0x400d7e8e: u8x8_d_helper_display_init at /project/components/u8g2/csrc/u8x8_display.c:68
+--- 0x400d7d69: u8x8_d_ssd1306_128x32_generic at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:117
+--- 0x400d7e6d: u8x8_d_ssd1306_128x32_univision at /project/components/u8g2/csrc/u8x8_d_ssd1306_128x32.c:211
+--- 0x400e6321: u8x8_InitDisplay at /project/components/u8g2/csrc/u8x8_display.c:137
+--- 0x400d6e89: task_test_SSD1306i2c at /project/main/oled.c:38
+--- 0x400d6f4f: app_main at /project/main/oled.c:61
+--- 0x400e6bc8: main_task at /opt/esp/idf/components/freertos/app_startup.c:208
+--- 0x400873b9: vPortTaskWrapper at /opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

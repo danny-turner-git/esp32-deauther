@@ -1,0 +1,66 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /project/build/bootloader/esp-idf/esptool_py && /opt/esp/python_env/idf5.4_py3.12_env/bin/python /opt/esp/idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /project/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/oled.c.obj
+/project/main/oled.c: In function 'ButtonTask':
+/project/main/oled.c:159:41: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  159 |                                         xTaskCreatePinnedToCore(display_page, "Display Page", 4096, current_page, 10, &pushButtonTaskHandle, 1);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/project/main/oled.c:161:33: note: here
+  161 |                                 default:
+      |                                 ^~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable oled.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /project/build/oled.bin
+[9/10] cd /project/build/esp-idf/esptool_py && /opt/esp/python_env/idf5.4_py3.12_env/bin/python /opt/esp/idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /project/build/partition_table/partition-table.bin /project/build/oled.bin
+oled.bin binary size 0x34210 bytes. Smallest app partition is 0x100000 bytes. 0xcbdf0 bytes (80%) free.
+[9/10] cd /opt/esp/idf/components/esptool_py && /opt/esp/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/opt/esp/idf -D "SERIAL_TOOL=/opt/esp/python_env/idf5.4_py3.12_env/bin/python;;/opt/esp/idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/project/build -P /opt/esp/idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 oled.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 48:e7:29:98:0b:7c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00044fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16395...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000757b... (100 %)
+Wrote 25984 bytes (16395 compressed) at 0x00001000 in 0.9 seconds (effective 236.2 kbit/s)...
+Hash of data verified.
+Compressed 213520 bytes to 116944...
+Writing at 0x00010000... (12 %)
+Writing at 0x0001b6ba... (25 %)
+Writing at 0x00022f04... (37 %)
+Writing at 0x00028ce9... (50 %)
+Writing at 0x0002ebb9... (62 %)
+Writing at 0x000372a8... (75 %)
+Writing at 0x0003cf33... (87 %)
+Writing at 0x00043284... (100 %)
+Wrote 213520 bytes (116944 compressed) at 0x00010000 in 2.8 seconds (effective 615.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 327.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

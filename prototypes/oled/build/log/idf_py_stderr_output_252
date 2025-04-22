@@ -1,0 +1,8 @@
+CMake Error at /opt/esp/idf/tools/cmake/component.cmake:317 (message):
+  Include directory '/project/main/{CMAKE_SOURCE_DIR}' is not a directory.
+Call Stack (most recent call first):
+  /opt/esp/idf/tools/cmake/component.cmake:492 (__component_add_include_dirs)
+  main/CMakeLists.txt:2 (idf_component_register)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

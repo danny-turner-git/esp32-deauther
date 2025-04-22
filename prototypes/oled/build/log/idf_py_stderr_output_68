@@ -1,0 +1,15 @@
+fatal: detected dubious ownership in repository at '/opt/esp/idf/components/openthread/openthread'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /opt/esp/idf/components/openthread/openthread
+ESP Insights Project commit: HEAD-HASH-NOTFOUND
+ESP RainMaker Project commit: HEAD-HASH-NOTFOUND
+CMake Error at /opt/esp/idf/tools/cmake/component.cmake:317 (message):
+  Include directory '/project/main/arduino/libraries/Adafruit_SH110X' is not
+  a directory.
+Call Stack (most recent call first):
+  /opt/esp/idf/tools/cmake/component.cmake:492 (__component_add_include_dirs)
+  main/CMakeLists.txt:2 (idf_component_register)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed
