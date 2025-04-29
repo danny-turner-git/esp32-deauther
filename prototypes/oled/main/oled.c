@@ -17,11 +17,6 @@
 #define ORIGIN_Y 15
 #define OPTION_PADDING 15
 #define OPTION_BACK_Y 120
-/*
-#define UP_BUTTON_GPIO 12
-#define DOWN_BUTTON_GPIO 14
-#define ENTER_BUTTON_GPIO 27
-*/
 #define MAX_DISPLAY_LINES 8
 
 static const char* OLED_TAG = "sh1107";
@@ -98,14 +93,6 @@ void display_page(void* arg){
 
 }
 
-/*
-void select_line(int new_line ){
-	current_page->selected_line = new_line;
-	display_page(current_page, false);
-	
-}
-*/
-
 static void IRAM_ATTR on_up_button_intr(){
 	xQueueSendFromISR(buttonQueue, &UP_BUTTON_GPIO, NULL);
 }
@@ -174,20 +161,17 @@ void app_main(void) {
 	u8g2_esp32_hal.bus.i2c.scl = PIN_SCL;
 	u8g2_esp32_hal_init(u8g2_esp32_hal);
 
-	  // this structure which will contain all the data for the display
-
-
     u8g2_Setup_sh1107_i2c_128x128_f(&u8g2, U8G2_R0,
       u8g2_esp32_i2c_byte_cb,
-      u8g2_esp32_gpio_and_delay_cb);  // These are I2C callback function for mapping 
+      u8g2_esp32_gpio_and_delay_cb);  
 
   
-	u8x8_SetI2CAddress(&u8g2.u8x8, 0x78);  // The address is left-shifted 1 bit
+	u8x8_SetI2CAddress(&u8g2.u8x8, 0x78); 
   	ESP_LOGI(OLED_TAG, "u8g2_InitDisplay");
-  	u8g2_InitDisplay(&u8g2);  // send init sequence to the display, display is in sleep mode after this,
+  	u8g2_InitDisplay(&u8g2);  
 
   	ESP_LOGI(OLED_TAG, "u8g2_SetPowerSave");
-  	u8g2_SetPowerSave(&u8g2, 0);  // wake up display
+  	u8g2_SetPowerSave(&u8g2, 0);  
   	ESP_LOGI(OLED_TAG, "u8g2_ClearBuffer");
   	u8g2_ClearBuffer(&u8g2);
 	u8g2_ClearDisplay(&u8g2);
@@ -243,11 +227,7 @@ void app_main(void) {
 		.selected_line = &deauthenticator_option
 	};
 	
-	//xTaskCreate()
-	xTaskCreate(display_page, "Display Page", 4096, &home_page, 10, &buttonTaskHandle);
-	//select_line(&home_page, 1);
-	
-	//xTaskCreatePinnedToCore(&ButtonTask, "ButtonTask", 4096, NULL, 9, &buttonTaskHandle, 1);
+	xTaskCreate(display_page, "Display Page", 4096, &home_page, 10, &buttonTaskHandle);	
 	ESP_LOGI(BUTTON_TAG, "about to call ButtonTask");
 	ButtonTask();
 	
